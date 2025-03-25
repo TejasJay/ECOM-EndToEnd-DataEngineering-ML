@@ -2442,4 +2442,122 @@ def predict(features: dict):
 * * *
 
 
+# 🔹 **Redis / DynamoDB – Real-Time Feature & Prediction Store**
+
+* * *
+
+### 🧠 **What Are Redis and DynamoDB?**
+
+These are both **low-latency key-value stores**, optimized for **fast lookups** and **real-time workloads**:
+
+| Tool | Description |
+| --- | --- |
+| **Redis** | Open-source in-memory data store (sub-ms latency) used for caching, pub-sub, TTL |
+| **DynamoDB** | AWS-managed NoSQL key-value and document DB with built-in scaling, TTL, and global replication |
+
+> Think of them as **real-time memory banks**—holding the most recent or critical features, scores, and decisions that your ML models or APIs need to react fast.
+
+* * *
+
+### 📌 **Where They Fit in Your Architecture**
+
+| Use Case | Store’s Role |
+| --- | --- |
+| **Store precomputed features** | Push latest user profile from Feast or Kafka |
+| **Serve real-time lookups** | FastAPI checks Redis for `user_id` → feature vector |
+| **Cache model predictions** | Avoid recomputing if same inputs are queried again |
+| **Enrich API inputs** | FastAPI fetches context features before prediction |
+| **TTL-based freshness control** | Auto-expire stale sessions, recommendations, risk scores |
+
+✅ These are **essential when your models require real-time, user-specific data**.
+
+* * *
+
+### 💡 **Example Workflow in Your Project**
+
+> Serve dynamic pricing or recommendations in < 50ms:
+
+-   **Producer** (e.g., Flink job or Feast) pushes features to Redis:
+
+```python
+redis.set("user:123", json.dumps({"avg_cart_value": 124.0, "last_txn": 3}), ex=600)
+```
+
+-   **FastAPI Inference** API loads features + runs model:
+
+```python
+features = json.loads(redis.get("user:123"))
+prediction = model.predict(pd.DataFrame([features]))
+```
+
+✅ You now have **instant personalization with minimal latency**.
+
+* * *
+
+### 🏢 **Real Companies Using Redis/DynamoDB for ML**
+
+| Company | Use Case |
+| --- | --- |
+| **Amazon** | Personalization and product scoring with DynamoDB TTL |
+| **Uber** | Real-time features for ETA predictions (Redis) |
+| **Zillow** | Live risk score caching with Redis |
+| **Netflix** | Real-time user session enrichment |
+| **Rappi** | Location-aware recommendations (Redis for geohashing) |
+
+* * *
+
+### ✅ **Advantages**
+
+| Advantage | Why It Matters |
+| --- | --- |
+| **<1ms access times** | Super-fast lookups for features and scores |
+| **TTL support** | Auto-expire data after N seconds/minutes |
+| **Horizontal scalability** | Especially with DynamoDB or Redis Cluster |
+| **Streaming integration** | Works well with Kafka, Flink, and Feast |
+| **Flexible keys** | User ID, session ID, IP, device ID, etc. |
+| **Low ops overhead** | Especially for DynamoDB (managed) or Redis Cloud |
+
+* * *
+
+### ⚠️ **Disadvantages / Limitations**
+
+| Limitation | Notes |
+| --- | --- |
+| **In-memory cost (Redis)** | Redis is memory-bound; watch for large datasets |
+| **Write contention (Dynamo)** | Needs good partition key design for high throughput |
+| **No native model logic** | Use alongside FastAPI or other model servers |
+| **Stale data risk** | TTL + update lag can cause training/serving skew if not monitored |
+
+* * *
+
+### 🔁 **Alternatives & Complements**
+
+| Tool | Use Case |
+| --- | --- |
+| **Feast (Online Store)** | Use Redis or DynamoDB behind the scenes |
+| **Cassandra** | Write-heavy use cases needing wide-column stores |
+| **Elasticache** | AWS-managed Redis with failover and backups |
+| **MemoryStore (GCP)** | Fully managed Redis for GCP workloads |
+| **Hazelcast / Aerospike** | Ultra-low latency in-memory grid options |
+
+* * *
+
+### 🧠 **When Should _You_ Use Redis / DynamoDB?**
+
+✅ Use when:
+
+-   You need to **lookup features/predictions in <10ms**
+-   You’re exposing **real-time APIs** via FastAPI or Flask
+-   You want to **decouple compute from storage**
+-   You use **Feast** and need an **online store** underneath
+-   You want to **precompute and reuse predictions** efficiently
+
+❌ Avoid if:
+
+-   Your models can tolerate high latency (use batch instead)
+-   You don’t need caching or low-latency read patterns
+-   Your features change **rarely** (serve directly from Delta or S3)
+* * *
+
+
 

@@ -1,3 +1,6 @@
+<img src="architechture.png">
+
+
 ```mermaid
 graph TD
 

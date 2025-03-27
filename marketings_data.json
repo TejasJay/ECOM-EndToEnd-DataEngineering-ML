@@ -1,0 +1,92 @@
+[
+    {
+        "user_id": "USR-37a1a2ad3885402b8115491df5ba2d35",
+        "ad_campaign_id": "CAM-60aef41af27943ef963bc3e438ce5c47",
+        "referral_source": "Organic Search",
+        "utm_source": "Twitter",
+        "utm_medium": "Organic",
+        "utm_campaign": "Holiday Discounts",
+        "discount_code_used": true
+    },
+    {
+        "user_id": "USR-a2f9c757d58646b68c38da8f5e374252",
+        "ad_campaign_id": "CAM-90c447b8e8a44456b129df8f508a0365",
+        "referral_source": "Direct",
+        "utm_source": "Twitter",
+        "utm_medium": "Organic",
+        "utm_campaign": "Holiday Discounts",
+        "discount_code_used": false
+    },
+    {
+        "user_id": "USR-f094e1d3ffc044498a9c390d23136f8f",
+        "ad_campaign_id": "CAM-e8ef7d2f56614348b8dc94fc624ff0cf",
+        "referral_source": "Social",
+        "utm_source": "Instagram",
+        "utm_medium": "CPC",
+        "utm_campaign": "New Arrivals",
+        "discount_code_used": true
+    },
+    {
+        "user_id": "USR-d9a3235ba7a94784852fab40abb0a51c",
+        "ad_campaign_id": "CAM-9294694ffc40487f8303c581bf338168",
+        "referral_source": "Paid Ads",
+        "utm_source": "Instagram",
+        "utm_medium": "Organic",
+        "utm_campaign": "Holiday Discounts",
+        "discount_code_used": false
+    },
+    {
+        "user_id": "USR-a50c4100b90b4224a93debd5cbd10c06",
+        "ad_campaign_id": "CAM-036e9bb6661449ee93a49c8adfbd76a5",
+        "referral_source": "Social",
+        "utm_source": "LinkedIn",
+        "utm_medium": "Organic",
+        "utm_campaign": "Black Friday",
+        "discount_code_used": false
+    },
+    {
+        "user_id": "USR-b4afc6d68232496abfeaedc277152c43",
+        "ad_campaign_id": "CAM-8d48747cb32e4b4b9d3efa693c9f8304",
+        "referral_source": "Organic Search",
+        "utm_source": "Twitter",
+        "utm_medium": "Referral",
+        "utm_campaign": "Black Friday",
+        "discount_code_used": false
+    },
+    {
+        "user_id": "USR-f3e902d295824ce8a77bd4c8b52a035b",
+        "ad_campaign_id": "CAM-9d6f9b881a6a4f7fb64184a14f755439",
+        "referral_source": "Direct",
+        "utm_source": "Twitter",
+        "utm_medium": "Referral",
+        "utm_campaign": "Holiday Discounts",
+        "discount_code_used": true
+    },
+    {
+        "user_id": "USR-61466a8145fd45f3a2cbfcb59ff73ce6",
+        "ad_campaign_id": "CAM-a175d73fb5cb4e188012d55398213cb2",
+        "referral_source": "Social",
+        "utm_source": "LinkedIn",
+        "utm_medium": "Referral",
+        "utm_campaign": "Black Friday",
+        "discount_code_used": true
+    },
+    {
+        "user_id": "USR-62c9d41060ff46ceb29bd213f3b28a4c",
+        "ad_campaign_id": "CAM-69d4d1005aee437ca039a9ae08831d67",
+        "referral_source": "Direct",
+        "utm_source": "Facebook",
+        "utm_medium": "Organic",
+        "utm_campaign": "Holiday Discounts",
+        "discount_code_used": false
+    },
+    {
+        "user_id": "USR-2da511e53e2246c199940810560d7e15",
+        "ad_campaign_id": "CAM-29729d4cce0c42d1b409a47f7764b0b1",
+        "referral_source": "Email",
+        "utm_source": "Instagram",
+        "utm_medium": "Organic",
+        "utm_campaign": "Summer Sale",
+        "discount_code_used": false
+    }
+]

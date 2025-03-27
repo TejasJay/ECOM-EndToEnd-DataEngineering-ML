@@ -1,0 +1,461 @@
+[
+    {
+        "user_id": "USR-37a1a2ad3885402b8115491df5ba2d35",
+        "session_id": "SES-702913364d2b4f76a0c2b9d898ee3b44",
+        "device_type": "Smart TV",
+        "browser_type": "Apple Safari",
+        "session_start_time": "2024-01-21 00:00:00",
+        "session_end_time": "2024-01-21 00:23:00",
+        "browsing_duration": 1380.0
+    },
+    {
+        "user_id": "USR-37a1a2ad3885402b8115491df5ba2d35",
+        "session_id": "SES-a65faf06a8994baba3b627909dbd25a5",
+        "device_type": "Gaming Console",
+        "browser_type": "Mozilla Firefox",
+        "session_start_time": "2024-01-21 00:23:00",
+        "session_end_time": "2024-01-21 00:44:00",
+        "browsing_duration": 1260.0
+    },
+    {
+        "user_id": "USR-37a1a2ad3885402b8115491df5ba2d35",
+        "session_id": "SES-6f5d7e9900a14b86be260655088e0b0e",
+        "device_type": "Voice Assistant",
+        "browser_type": "Google Chrome",
+        "session_start_time": "2024-01-23 00:44:00",
+        "session_end_time": "2024-01-23 01:10:00",
+        "browsing_duration": 1560.0
+    },
+    {
+        "user_id": "USR-37a1a2ad3885402b8115491df5ba2d35",
+        "session_id": "SES-17e89321c2734e40adf60f746d9c0769",
+        "device_type": "Gaming Console",
+        "browser_type": "Samsung Internet",
+        "session_start_time": "2024-01-23 01:10:00",
+        "session_end_time": "2024-01-23 01:28:00",
+        "browsing_duration": 1080.0
+    },
+    {
+        "user_id": "USR-37a1a2ad3885402b8115491df5ba2d35",
+        "session_id": "SES-1b07d711e4ee406da6ab39d09dd618bf",
+        "device_type": "Voice Assistant",
+        "browser_type": "Mozilla Firefox",
+        "session_start_time": "2024-01-23 01:28:00",
+        "session_end_time": "2024-01-23 01:46:00",
+        "browsing_duration": 1080.0
+    },
+    {
+        "user_id": "USR-37a1a2ad3885402b8115491df5ba2d35",
+        "session_id": "SES-082baf1fb20f4c3d95f805cb7c341c37",
+        "device_type": "Smartwatch",
+        "browser_type": "Apple Safari",
+        "session_start_time": "2024-01-23 01:46:00",
+        "session_end_time": "2024-01-23 02:10:00",
+        "browsing_duration": 1440.0
+    },
+    {
+        "user_id": "USR-37a1a2ad3885402b8115491df5ba2d35",
+        "session_id": "SES-6fd4798fb5fb429ebbaa85589a2b7b62",
+        "device_type": "Smart TV",
+        "browser_type": "Internet Explorer",
+        "session_start_time": "2024-01-23 02:10:00",
+        "session_end_time": "2024-01-23 02:31:00",
+        "browsing_duration": 1260.0
+    },
+    {
+        "user_id": "USR-37a1a2ad3885402b8115491df5ba2d35",
+        "session_id": "SES-537b89f777af465398ed70ad3fa3e121",
+        "device_type": "Laptop",
+        "browser_type": "Apple Safari",
+        "session_start_time": "2024-01-24 02:31:00",
+        "session_end_time": "2024-01-24 02:58:00",
+        "browsing_duration": 1620.0
+    },
+    {
+        "user_id": "USR-37a1a2ad3885402b8115491df5ba2d35",
+        "session_id": "SES-83150d8de047440eac2944394efd2370",
+        "device_type": "Smartphone",
+        "browser_type": "Mozilla Firefox",
+        "session_start_time": "2024-01-25 02:58:00",
+        "session_end_time": "2024-01-25 03:20:00",
+        "browsing_duration": 1320.0
+    },
+    {
+        "user_id": "USR-a2f9c757d58646b68c38da8f5e374252",
+        "session_id": "SES-4cdb634840d84ef4a90c2eb2d6d59bd2",
+        "device_type": "Tablet",
+        "browser_type": "Apple Safari",
+        "session_start_time": "2024-01-26 03:20:00",
+        "session_end_time": "2024-01-26 03:30:00",
+        "browsing_duration": 600.0
+    },
+    {
+        "user_id": "USR-a2f9c757d58646b68c38da8f5e374252",
+        "session_id": "SES-6e00de7d69cd490e9585e3dc7e85de98",
+        "device_type": "Smart TV",
+        "browser_type": "Mozilla Firefox",
+        "session_start_time": "2024-01-26 03:30:00",
+        "session_end_time": "2024-01-26 03:57:00",
+        "browsing_duration": 1620.0
+    },
+    {
+        "user_id": "USR-a2f9c757d58646b68c38da8f5e374252",
+        "session_id": "SES-9e86aaed3d0e45f389e35c1a48527be3",
+        "device_type": "Tablet",
+        "browser_type": "Google Chrome",
+        "session_start_time": "2024-01-26 03:57:00",
+        "session_end_time": "2024-01-26 04:23:00",
+        "browsing_duration": 1560.0
+    },
+    {
+        "user_id": "USR-a2f9c757d58646b68c38da8f5e374252",
+        "session_id": "SES-bae7c67e7ee24b9a8522e3b8b3333285",
+        "device_type": "Smart TV",
+        "browser_type": "Samsung Internet",
+        "session_start_time": "2024-01-26 04:23:00",
+        "session_end_time": "2024-01-26 04:28:00",
+        "browsing_duration": 300.0
+    },
+    {
+        "user_id": "USR-a2f9c757d58646b68c38da8f5e374252",
+        "session_id": "SES-35ba236c83f94b83b37f785406531565",
+        "device_type": "Smartwatch",
+        "browser_type": "Apple Safari",
+        "session_start_time": "2024-01-26 04:28:00",
+        "session_end_time": "2024-01-26 04:48:00",
+        "browsing_duration": 1200.0
+    },
+    {
+        "user_id": "USR-a2f9c757d58646b68c38da8f5e374252",
+        "session_id": "SES-2cea19332d7a49aba611cbbf6ef5b3b7",
+        "device_type": "Voice Assistant",
+        "browser_type": "Samsung Internet",
+        "session_start_time": "2024-01-26 04:48:00",
+        "session_end_time": "2024-01-26 05:16:00",
+        "browsing_duration": 1680.0
+    },
+    {
+        "user_id": "USR-a2f9c757d58646b68c38da8f5e374252",
+        "session_id": "SES-7d67b75fc37c4466ae8b7a79931c9e50",
+        "device_type": "Smartwatch",
+        "browser_type": "Apple Safari",
+        "session_start_time": "2024-01-28 05:16:00",
+        "session_end_time": "2024-01-28 05:23:00",
+        "browsing_duration": 420.0
+    },
+    {
+        "user_id": "USR-a2f9c757d58646b68c38da8f5e374252",
+        "session_id": "SES-f1114c42a70a461c8b0ad6bb8cd8b3c5",
+        "device_type": "Voice Assistant",
+        "browser_type": "Google Chrome",
+        "session_start_time": "2024-01-29 05:23:00",
+        "session_end_time": "2024-01-29 05:47:00",
+        "browsing_duration": 1440.0
+    },
+    {
+        "user_id": "USR-a2f9c757d58646b68c38da8f5e374252",
+        "session_id": "SES-2c67e9a1d0c64f97ac4067010cde03bf",
+        "device_type": "Smartwatch",
+        "browser_type": "Mozilla Firefox",
+        "session_start_time": "2024-01-29 05:47:00",
+        "session_end_time": "2024-01-29 06:07:00",
+        "browsing_duration": 1200.0
+    },
+    {
+        "user_id": "USR-a2f9c757d58646b68c38da8f5e374252",
+        "session_id": "SES-c763c7430272405d9dab7792e738e58f",
+        "device_type": "Tablet",
+        "browser_type": "Samsung Internet",
+        "session_start_time": "2024-01-29 06:07:00",
+        "session_end_time": "2024-01-29 06:37:00",
+        "browsing_duration": 1800.0
+    },
+    {
+        "user_id": "USR-f094e1d3ffc044498a9c390d23136f8f",
+        "session_id": "SES-20afbd950d00495caee1b8d7bf8a120a",
+        "device_type": "Laptop",
+        "browser_type": "Microsoft Edge",
+        "session_start_time": "2024-01-30 06:37:00",
+        "session_end_time": "2024-01-30 06:53:00",
+        "browsing_duration": 960.0
+    },
+    {
+        "user_id": "USR-f094e1d3ffc044498a9c390d23136f8f",
+        "session_id": "SES-be9861ed75db4d24aa2ee6cd73598800",
+        "device_type": "Smartwatch",
+        "browser_type": "Microsoft Edge",
+        "session_start_time": "2024-01-31 06:53:00",
+        "session_end_time": "2024-01-31 06:56:00",
+        "browsing_duration": 180.0
+    },
+    {
+        "user_id": "USR-f094e1d3ffc044498a9c390d23136f8f",
+        "session_id": "SES-d0722ce821db414b99fc3c9120c08f92",
+        "device_type": "Smart TV",
+        "browser_type": "Microsoft Edge",
+        "session_start_time": "2024-02-01 06:56:00",
+        "session_end_time": "2024-02-01 06:59:00",
+        "browsing_duration": 180.0
+    },
+    {
+        "user_id": "USR-f094e1d3ffc044498a9c390d23136f8f",
+        "session_id": "SES-317bb4f5e66b4d9d9a5aff965f8c2241",
+        "device_type": "Tablet",
+        "browser_type": "Google Chrome",
+        "session_start_time": "2024-02-02 06:59:00",
+        "session_end_time": "2024-02-02 07:16:00",
+        "browsing_duration": 1020.0
+    },
+    {
+        "user_id": "USR-f094e1d3ffc044498a9c390d23136f8f",
+        "session_id": "SES-ec0dab598cd6431eb7e955a725ad69ba",
+        "device_type": "Smartwatch",
+        "browser_type": "Mozilla Firefox",
+        "session_start_time": "2024-02-02 07:16:00",
+        "session_end_time": "2024-02-02 07:29:00",
+        "browsing_duration": 780.0
+    },
+    {
+        "user_id": "USR-f094e1d3ffc044498a9c390d23136f8f",
+        "session_id": "SES-d4b5c1b9adc24d3e9d5303f115b9cad0",
+        "device_type": "Smart TV",
+        "browser_type": "Apple Safari",
+        "session_start_time": "2024-02-02 07:29:00",
+        "session_end_time": "2024-02-02 07:49:00",
+        "browsing_duration": 1200.0
+    },
+    {
+        "user_id": "USR-f094e1d3ffc044498a9c390d23136f8f",
+        "session_id": "SES-8b14b3b780664ee9a49d3bc78a646ac2",
+        "device_type": "Smartphone",
+        "browser_type": "Samsung Internet",
+        "session_start_time": "2024-02-02 07:49:00",
+        "session_end_time": "2024-02-02 08:01:00",
+        "browsing_duration": 720.0
+    },
+    {
+        "user_id": "USR-f094e1d3ffc044498a9c390d23136f8f",
+        "session_id": "SES-fb906934ca7a497bb864f2a22b0e716a",
+        "device_type": "Laptop",
+        "browser_type": "Google Chrome",
+        "session_start_time": "2024-02-03 08:01:00",
+        "session_end_time": "2024-02-03 08:05:00",
+        "browsing_duration": 240.0
+    },
+    {
+        "user_id": "USR-f094e1d3ffc044498a9c390d23136f8f",
+        "session_id": "SES-dfd527af25374193b85b70fd940def56",
+        "device_type": "Laptop",
+        "browser_type": "Apple Safari",
+        "session_start_time": "2024-02-04 08:05:00",
+        "session_end_time": "2024-02-04 08:35:00",
+        "browsing_duration": 1800.0
+    },
+    {
+        "user_id": "USR-f094e1d3ffc044498a9c390d23136f8f",
+        "session_id": "SES-ebd70ac36f924162b956bcb441d57c9e",
+        "device_type": "Tablet",
+        "browser_type": "Apple Safari",
+        "session_start_time": "2024-02-04 08:35:00",
+        "session_end_time": "2024-02-04 08:53:00",
+        "browsing_duration": 1080.0
+    },
+    {
+        "user_id": "USR-d9a3235ba7a94784852fab40abb0a51c",
+        "session_id": "SES-2aa65116d39148f98db2fcc0da561d34",
+        "device_type": "Tablet",
+        "browser_type": "Google Chrome",
+        "session_start_time": "2024-02-05 08:53:00",
+        "session_end_time": "2024-02-05 09:21:00",
+        "browsing_duration": 1680.0
+    },
+    {
+        "user_id": "USR-d9a3235ba7a94784852fab40abb0a51c",
+        "session_id": "SES-b355580c16ff4995bd2ca90539210aa6",
+        "device_type": "Laptop",
+        "browser_type": "Apple Safari",
+        "session_start_time": "2024-02-05 09:21:00",
+        "session_end_time": "2024-02-05 09:22:00",
+        "browsing_duration": 60.0
+    },
+    {
+        "user_id": "USR-d9a3235ba7a94784852fab40abb0a51c",
+        "session_id": "SES-1e1fe629e40547a5a74e2d724ab07eda",
+        "device_type": "Smart TV",
+        "browser_type": "Samsung Internet",
+        "session_start_time": "2024-02-05 09:22:00",
+        "session_end_time": "2024-02-05 09:36:00",
+        "browsing_duration": 840.0
+    },
+    {
+        "user_id": "USR-d9a3235ba7a94784852fab40abb0a51c",
+        "session_id": "SES-9bdd68c61dfd4be6b3fdf7842bfa98cd",
+        "device_type": "Tablet",
+        "browser_type": "Apple Safari",
+        "session_start_time": "2024-02-05 09:36:00",
+        "session_end_time": "2024-02-05 09:51:00",
+        "browsing_duration": 900.0
+    },
+    {
+        "user_id": "USR-a50c4100b90b4224a93debd5cbd10c06",
+        "session_id": "SES-c2adbc56e6ec44f784e70880113de322",
+        "device_type": "Smart TV",
+        "browser_type": "Google Chrome",
+        "session_start_time": "2024-02-05 09:51:00",
+        "session_end_time": "2024-02-05 09:59:00",
+        "browsing_duration": 480.0
+    },
+    {
+        "user_id": "USR-a50c4100b90b4224a93debd5cbd10c06",
+        "session_id": "SES-4dde41a568f84c1a967df7459431a8d9",
+        "device_type": "Laptop",
+        "browser_type": "Microsoft Edge (Chromium-based)",
+        "session_start_time": "2024-02-05 09:59:00",
+        "session_end_time": "2024-02-05 10:08:00",
+        "browsing_duration": 540.0
+    },
+    {
+        "user_id": "USR-a50c4100b90b4224a93debd5cbd10c06",
+        "session_id": "SES-27b13dae20994a259f937071b5cf907e",
+        "device_type": "Smartphone",
+        "browser_type": "Google Chrome",
+        "session_start_time": "2024-02-05 10:08:00",
+        "session_end_time": "2024-02-05 10:18:00",
+        "browsing_duration": 600.0
+    },
+    {
+        "user_id": "USR-a50c4100b90b4224a93debd5cbd10c06",
+        "session_id": "SES-7d2c49c6c3bb415db55a02128c6e16ff",
+        "device_type": "Laptop",
+        "browser_type": "Apple Safari",
+        "session_start_time": "2024-02-05 10:18:00",
+        "session_end_time": "2024-02-05 10:34:00",
+        "browsing_duration": 960.0
+    },
+    {
+        "user_id": "USR-a50c4100b90b4224a93debd5cbd10c06",
+        "session_id": "SES-eb2f7dfc1a384152b99eb1d14e467ae5",
+        "device_type": "Smartphone",
+        "browser_type": "Google Chrome",
+        "session_start_time": "2024-02-05 10:34:00",
+        "session_end_time": "2024-02-05 10:39:00",
+        "browsing_duration": 300.0
+    },
+    {
+        "user_id": "USR-b4afc6d68232496abfeaedc277152c43",
+        "session_id": "SES-b5c5551158d745458dfc6eddd8439305",
+        "device_type": "Voice Assistant",
+        "browser_type": "Vivaldi",
+        "session_start_time": "2024-02-06 10:39:00",
+        "session_end_time": "2024-02-06 10:57:00",
+        "browsing_duration": 1080.0
+    },
+    {
+        "user_id": "USR-b4afc6d68232496abfeaedc277152c43",
+        "session_id": "SES-4d5ebf91232e47bcac1ee9fd686efc0d",
+        "device_type": "Smart TV",
+        "browser_type": "Microsoft Edge",
+        "session_start_time": "2024-02-08 10:57:00",
+        "session_end_time": "2024-02-08 11:24:00",
+        "browsing_duration": 1620.0
+    },
+    {
+        "user_id": "USR-b4afc6d68232496abfeaedc277152c43",
+        "session_id": "SES-eddb74838b8d4fcf89980f64f7de875f",
+        "device_type": "Smart TV",
+        "browser_type": "Mozilla Firefox",
+        "session_start_time": "2024-02-08 11:24:00",
+        "session_end_time": "2024-02-08 11:54:00",
+        "browsing_duration": 1800.0
+    },
+    {
+        "user_id": "USR-f3e902d295824ce8a77bd4c8b52a035b",
+        "session_id": "SES-5a09cf816fff402996480d757d0823f5",
+        "device_type": "Tablet",
+        "browser_type": "Microsoft Edge",
+        "session_start_time": "2024-02-09 11:54:00",
+        "session_end_time": "2024-02-09 12:23:00",
+        "browsing_duration": 1740.0
+    },
+    {
+        "user_id": "USR-f3e902d295824ce8a77bd4c8b52a035b",
+        "session_id": "SES-85eb306fc1774cb9b53217fb501f6a31",
+        "device_type": "Laptop",
+        "browser_type": "Google Chrome",
+        "session_start_time": "2024-02-10 12:23:00",
+        "session_end_time": "2024-02-10 12:45:00",
+        "browsing_duration": 1320.0
+    },
+    {
+        "user_id": "USR-f3e902d295824ce8a77bd4c8b52a035b",
+        "session_id": "SES-8ab79061f98b432581debd8d44fedb31",
+        "device_type": "Smartphone",
+        "browser_type": "Microsoft Edge (Chromium-based)",
+        "session_start_time": "2024-02-11 12:45:00",
+        "session_end_time": "2024-02-11 12:51:00",
+        "browsing_duration": 360.0
+    },
+    {
+        "user_id": "USR-f3e902d295824ce8a77bd4c8b52a035b",
+        "session_id": "SES-988534a62b004635bf77579cb07a4f49",
+        "device_type": "Gaming Console",
+        "browser_type": "Google Chrome",
+        "session_start_time": "2024-02-11 12:51:00",
+        "session_end_time": "2024-02-11 12:59:00",
+        "browsing_duration": 480.0
+    },
+    {
+        "user_id": "USR-61466a8145fd45f3a2cbfcb59ff73ce6",
+        "session_id": "SES-87902f368d9646d78191c1fffd507231",
+        "device_type": "Smart TV",
+        "browser_type": "Brave",
+        "session_start_time": "2024-02-11 12:59:00",
+        "session_end_time": "2024-02-11 13:27:00",
+        "browsing_duration": 1680.0
+    },
+    {
+        "user_id": "USR-61466a8145fd45f3a2cbfcb59ff73ce6",
+        "session_id": "SES-fde5dfe2aa6d4106a5c990885bb1530f",
+        "device_type": "Smartwatch",
+        "browser_type": "Apple Safari",
+        "session_start_time": "2024-02-11 13:27:00",
+        "session_end_time": "2024-02-11 13:28:00",
+        "browsing_duration": 60.0
+    },
+    {
+        "user_id": "USR-62c9d41060ff46ceb29bd213f3b28a4c",
+        "session_id": "SES-859e29808c7d44f9b0da4a88c67f75b3",
+        "device_type": "Tablet",
+        "browser_type": "Microsoft Edge (Chromium-based)",
+        "session_start_time": "2024-02-11 13:28:00",
+        "session_end_time": "2024-02-11 13:35:00",
+        "browsing_duration": 420.0
+    },
+    {
+        "user_id": "USR-62c9d41060ff46ceb29bd213f3b28a4c",
+        "session_id": "SES-c80246d7b4ab4ddfa0ca8cdd7dc9cf54",
+        "device_type": "Laptop",
+        "browser_type": "Microsoft Edge (Chromium-based)",
+        "session_start_time": "2024-02-13 13:35:00",
+        "session_end_time": "2024-02-13 14:03:00",
+        "browsing_duration": 1680.0
+    },
+    {
+        "user_id": "USR-62c9d41060ff46ceb29bd213f3b28a4c",
+        "session_id": "SES-d922a067255a47a8a8eb55246166bff3",
+        "device_type": "Tablet",
+        "browser_type": "Apple Safari",
+        "session_start_time": "2024-02-14 14:03:00",
+        "session_end_time": "2024-02-14 14:03:00",
+        "browsing_duration": 0.0
+    },
+    {
+        "user_id": "USR-2da511e53e2246c199940810560d7e15",
+        "session_id": "SES-1439bc6ae9b64cf0bab16159f34572c4",
+        "device_type": "Smartphone",
+        "browser_type": "Google Chrome",
+        "session_start_time": "2024-02-14 14:03:00",
+        "session_end_time": "2024-02-14 14:06:00",
+        "browsing_duration": 180.0
+    }
+]

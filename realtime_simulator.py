@@ -60,13 +60,11 @@ def run_on_core(core_id, user_chunk, avg_sessions, concurrent_users):
 
             for _ in range(random.randint(1, avg_sessions)):
                 session_start_time = datetime.now()
-                await asyncio.sleep(random.randint(1, 5))
+                await asyncio.sleep(random.randint(1, 60))
                 session_end_time = datetime.now()
 
                 session = data.session_data(selected_user, session_start_time, session_end_time)[0]
                 sessions.append(session)
-
-                await asyncio.sleep(random.randint(1, 5))
 
                 order = data.order_data(selected_user, session, marketing_data)
                 orders.append(order)
@@ -74,7 +72,9 @@ def run_on_core(core_id, user_chunk, avg_sessions, concurrent_users):
                 behaviour = data.behaviour_data(selected_user, order, session)
                 behaviours.append(behaviour)
 
-            logger.info(f"✅ Finished session for {user_id}")
+                await asyncio.sleep(random.randint(1, 3600))
+                logger.info(f"🕒 {user_id} finished session {_}")
+            logger.info(f"✅ Finished all sessions for {user_id}")
         finally:
             async with session_lock:
                 active_sessions.remove(user_id)

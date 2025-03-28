@@ -73,5 +73,5 @@ class BatchDataSimulator:
 
 # Example usage:
 if __name__ == "__main__":
-    simulator = BatchDataSimulator(user_count=10, avg_sessions_per_user=5)
+    simulator = BatchDataSimulator(user_count=1000, avg_sessions_per_user=5)
     simulator.simulate()

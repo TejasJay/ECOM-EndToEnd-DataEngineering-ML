@@ -10,7 +10,7 @@ from datetime import datetime
 from kafka import KafkaProducer
 import orjson
 import psutil
-from simulator_logic import ECOM
+from simulation_scripts.simulator_logic import ECOM
 
 
 def split_users(users, num_chunks):
@@ -18,11 +18,11 @@ def split_users(users, num_chunks):
     return [users[i:i + chunk_size] for i in range(0, len(users), chunk_size)]
 
 
-def setup_logger(core_id):
+def setup_logger(core_id, level=logging.INFO):
     os.makedirs("logs", exist_ok=True)
     log_file = f"logs/core_{core_id}.log"
     logger = logging.getLogger(f"Core{core_id}")
-    logger.setLevel(logging.INFO)
+    logger.setLevel(level)
     if logger.hasHandlers():
         logger.handlers.clear()
     fh = logging.FileHandler(log_file)
@@ -31,17 +31,24 @@ def setup_logger(core_id):
     return logger
 
 
+def create_kafka_producer():
+    return KafkaProducer(
+        bootstrap_servers='localhost:9092',
+        value_serializer=lambda v: orjson.dumps(v),
+        linger_ms=10,
+        batch_size=32 * 1024,
+        compression_type='gzip'
+    )
+
+
 def run_on_core(core_id, user_chunk, avg_sessions, concurrent_users):
-    logger = setup_logger(core_id)
+    log_level = logging.WARNING if os.getenv("PROD") else logging.INFO
+    logger = setup_logger(core_id, level=log_level)
     session_lock = asyncio.Lock()
     active_sessions = set()
     session_semaphore = asyncio.Semaphore(concurrent_users)
     data = ECOM()
-
-    producer = KafkaProducer(
-        bootstrap_servers='localhost:9092',
-        value_serializer=lambda v: orjson.dumps(v)
-    )
+    producer = create_kafka_producer()
 
     async def real_time_simulate_data_async():
         async with session_semaphore:
@@ -56,6 +63,7 @@ def run_on_core(core_id, user_chunk, avg_sessions, concurrent_users):
             logger.info(f"🔵 Starting session for {user_id}")
 
             try:
+                producer.send("users", selected_user)
                 marketing_data = data.marketing_data(selected_user)[0]
                 producer.send("marketings", marketing_data)
 
@@ -73,9 +81,12 @@ def run_on_core(core_id, user_chunk, avg_sessions, concurrent_users):
                     behaviour = data.behaviour_data(selected_user, order, session)
                     producer.send("behaviours", behaviour)
 
-                    await asyncio.sleep(random.uniform(1, 3600))
+                    wait_time = random.uniform(1, 3600)
+                    logger.info(f"🕒 {user_id} sleeping for {int(wait_time)}s before next session")
+                    await asyncio.sleep(wait_time)
 
                 logger.info(f"✅ Finished session for {user_id}")
+
             finally:
                 async with session_lock:
                     active_sessions.remove(user_id)
@@ -83,16 +94,25 @@ def run_on_core(core_id, user_chunk, avg_sessions, concurrent_users):
     async def run_loop():
         try:
             while True:
-                tasks = [asyncio.create_task(real_time_simulate_data_async()) for _ in range(concurrent_users)]
+                cpu_load = psutil.cpu_percent()
+                adjusted_concurrent = concurrent_users
+                if cpu_load > 90:
+                    adjusted_concurrent = max(10, concurrent_users // 2)
+
+                tasks = [asyncio.create_task(real_time_simulate_data_async()) for _ in range(adjusted_concurrent)]
                 await asyncio.gather(*tasks)
                 await asyncio.sleep(random.uniform(1, 2))
         except asyncio.CancelledError:
-            logger.info("🛑 Coroutine shutdown signal received.")
+            logger.warning("🛑 Coroutine shutdown signal received.")
 
     try:
         asyncio.run(run_loop())
     except KeyboardInterrupt:
-        logger.info("🛑 KeyboardInterrupt in core. Shutting down...")
+        logger.warning("🛑 KeyboardInterrupt in core. Flushing Kafka...")
+    finally:
+        producer.flush()
+        producer.close()
+        logger.warning("✅ Kafka producer closed.")
 
 
 class RealTimeSimulator:
@@ -131,6 +151,9 @@ class RealTimeSimulator:
 
 
 if __name__ == "__main__":
-    sim = RealTimeSimulator(batch_data_path="./json_files/full_data.json", avg_sessions=10, concurrent_users=50)
+    sim = RealTimeSimulator(
+        batch_data_path="./json_files/full_data.json",
+        avg_sessions=10,
+        concurrent_users=50
+    )
     sim.run()
-

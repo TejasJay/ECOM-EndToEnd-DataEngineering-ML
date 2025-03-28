@@ -8,7 +8,7 @@ import signal
 import sys
 from datetime import datetime
 import psutil
-from simulator_logic import ECOM
+from simulation_scripts.simulator_logic import ECOM
 from kafka import KafkaProducer
 
 

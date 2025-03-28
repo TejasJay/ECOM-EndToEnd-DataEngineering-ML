@@ -132,5 +132,5 @@ class RealTimeSimulator:
 
 
 if __name__ == "__main__":
-    sim = RealTimeSimulator(batch_data_path="full_data.json", avg_sessions=10, concurrent_users=5)
+    sim = RealTimeSimulator(batch_data_path="full_data.json", avg_sessions=10, concurrent_users=500)
     sim.run()

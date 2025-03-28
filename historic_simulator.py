@@ -3,77 +3,75 @@ import random
 from simulator_logic import *
 import json
 
-def simulate_data(user_count= 1, avg_sesssion_count_per_user = 10):
-  data = ECOM()
+import json
+import random
+# from ECOM import ECOM  # Make sure ECOM class is defined in your module or same file
 
-  users = []
-  sessions = []
-  marketings = []
-  orders = []
-  behaviours = []
+class BatchDataSimulator:
+    """
+    Batch simulator that generates synthetic E-Commerce user activity data and writes to a JSON file.
+    """
 
+    def __init__(self, user_count=1, avg_sessions_per_user=10, output_file="full_data.json"):
+        """
+        Initializes the simulator.
 
-  for _ in range(user_count):
-    # print("\n# INITIAL USER DATA\n")  
-    # Generate user data
-    user = data.user_data()[0]  # Extract dictionary from list
-    users.append(user)
-    # Print user data
-    # print(json.dumps(user, indent=4))
+        Args:
+            user_count (int): Number of users to simulate.
+            avg_sessions_per_user (int): Average number of sessions per user.
+            output_file (str): Filename to export the generated JSON data.
+        """
+        self.user_count = user_count
+        self.avg_sessions_per_user = avg_sessions_per_user
+        self.output_file = output_file
+        self.data = ECOM()
 
-    # print("\n# MARKETING DATA\n")
-    marketing_data = data.marketing_data(user)[0]
-    marketings.append(marketing_data)
-    # Print marketing data
-    # print(json.dumps(marketing_data, indent=4))
+    def simulate(self):
+        """
+        Main function to simulate and compile all data types.
+        Generates:
+            - users
+            - sessions
+            - marketing metadata
+            - orders
+            - behavioral insights
+        """
+        users, sessions, marketings, orders, behaviours = [], [], [], [], []
 
-    # Simulate multiple session runs and observe last_session_time updates
-    # print("\n# SESSION DATA UPDATES\n")
-    for _ in range(random.randint(1,avg_sesssion_count_per_user)):  # Run multiple sessions
-      session = data.session_data(user)[0]  # Extract dictionary from list
-      sessions.append(session)
-      # print(f"Session {_+1}:")
-      # print(json.dumps(session, indent=4))
-      # print(f"Updated last_session_time: {data.last_session_time}")
-      # print(f"Updated last_login_time: {user['last_login_time']}") 
+        for _ in range(self.user_count):
+            user = self.data.user_data()[0]
+            users.append(user)
 
-      # print("\n# ORDER DATA\n")
-      order = data.order_data(user, session, marketing_data)
-      orders.append(order)
-      # print(json.dumps(order, indent=4))
-      # print("-" * 100)
+            marketing_data = self.data.marketing_data(user)[0]
+            marketings.append(marketing_data)
 
-      print("\n# BEHAVIOUR DATA\n")
-      behaviour = data.behaviour_data(user, order, session)
-      behaviours.append(behaviour)
-      print(json.dumps(behaviour, indent=4))
-      print("-" * 100)
+            for _ in range(random.randint(1, self.avg_sessions_per_user)):
+                session_times = self.data.session_time(user)
+                session_start_time, session_end_time = session_times
+                session = self.data.session_data(user, session_start_time, session_end_time)[0]
+                sessions.append(session)
 
-  return users, sessions, marketings, orders, behaviours
+                order = self.data.order_data(user, session, marketing_data)
+                orders.append(order)
 
+                behaviour = self.data.behaviour_data(user, order, session)
+                behaviours.append(behaviour)
 
-simulated_data = simulate_data(user_count= 10000, avg_sesssion_count_per_user = 10)
+        result = [users, sessions, marketings, orders, behaviours]
+        self._write_to_json(result)
+        print(f"✅ Simulation complete. Data written to `{self.output_file}`")
 
-# Assuming the data parts in the simulated_data are structured as follows
-user_data = simulated_data[0]  # Example, adjust based on your data structure
-sessions_data = simulated_data[1]
-marketings_data = simulated_data[2]
-orders_data = simulated_data[3]
-behaviours_data = simulated_data[4]
+    def _write_to_json(self, data):
+        """
+        Writes the given data to the configured output JSON file.
 
-# Combine into a list
-full_data = [(user_data, "user_data"), (sessions_data, "sessions_data"), (marketings_data, "marketings_data"), 
-             (orders_data, "orders_data"), (behaviours_data, "behaviours_data")]
+        Args:
+            data (list): A list of all generated data types.
+        """
+        with open(self.output_file, "w") as json_file:
+            json.dump(data, json_file, indent=4)
 
-# Iterate over full_data, where i is the data and j is the name
-for data, name in full_data:
-    # Convert the simulated data to JSON format
-    json_data = json.dumps(data, indent=4)
-
-    # Write to a JSON file
-    file_path = f"{name}.json"
-
-    with open(file_path, 'w') as json_file:
-        json_file.write(json_data)
-
-    print(f"Data written to {file_path}")
+# Example usage:
+if __name__ == "__main__":
+    simulator = BatchDataSimulator(user_count=10, avg_sessions_per_user=5)
+    simulator.simulate()

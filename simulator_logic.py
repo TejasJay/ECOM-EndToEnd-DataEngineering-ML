@@ -8,15 +8,16 @@ import regex as re
 import pandas as pd
 from match_persona_to_behaviour import *
 
+
+
 class ECOM:
 
   fake = faker.Faker()
 
-  def __init__(self, count=2):
-    self.count = count
+  def __init__(self):
     self.products_catalog = self.generate_product_catalog()
     self.last_session_time = ""
-    
+
 
   def user_data(self):
     user_id = ("USR-" + uuid.uuid4().hex)
@@ -35,12 +36,13 @@ class ECOM:
     country = "USA"
     # session_date = datetime.strptime(self.last_session_time, "%Y-%m-%d %H:%M:%S")
     account_creation_date = self.fake.date_between(start_date="-3y", end_date=datetime.now()) - timedelta(days=random.randint(0, 10)) if self.last_session_time == "" else self.fake.date_between(start_date="-3y", end_date=datetime.strptime(self.last_session_time, "%Y-%m-%d %H:%M:%S"))
-    last_login_time =  account_creation_date if self.last_session_time == "" else datetime.strptime(self.last_session_time, "%Y-%m-%d %H:%M:%S") 
+    last_login_time =  account_creation_date if self.last_session_time == "" else datetime.strptime(self.last_session_time, "%Y-%m-%d %H:%M:%S")
+
     preferred_language = random.choice(["English", "Spanish", "French", "German", "Italian"])
-    personas = random.choice(['Bargain Hunter', 'Impulse Buyer', 'Brand Loyalist', 'Casual Browser', 'Window Shopper', 'Deal Seeker', 'Last-Minute Shopper', 
-                              'Mobile Shopper', 'Researcher', 'Subscription Shopper', 'Loyal Customer', 'Abandoner', 'Gift Buyer', 
+    personas = random.choice(['Bargain Hunter', 'Impulse Buyer', 'Brand Loyalist', 'Casual Browser', 'Window Shopper', 'Deal Seeker', 'Last-Minute Shopper',
+                              'Mobile Shopper', 'Researcher', 'Subscription Shopper', 'Loyal Customer', 'Abandoner', 'Gift Buyer',
                               'Bulk Buyer', 'Eco-Conscious Shopper'])
-    
+
     output = [
         {   "user_id" : user_id,
             "first_name" : first_name,
@@ -63,14 +65,20 @@ class ECOM:
     return output
 
 
-  def session_data(self, user):
+  def session_time(self, user):
+    session_start_time = datetime.strptime(self.last_session_time or user['last_login_time'], "%Y-%m-%d %H:%M:%S") + timedelta(days=random.randint(0, random.randint(0,5) if not self.last_session_time else random.randint(0,2)))
+    session_end_time = session_start_time + timedelta(minutes=random.randint(0, 30))
+    return [session_start_time, session_end_time]
+
+
+  def session_data(self, user, session_start_time, session_end_time):
     session_id = ("SES-" + uuid.uuid4().hex)
     user_id = user["user_id"]
     device_types = random.choice(["Smartphone", "Laptop", "Tablet", "Smartwatch", "Smart TV", "Gaming Console", "Voice Assistant"])
     browser_types = random.choices(["Google Chrome", "Mozilla Firefox", "Apple Safari", "Microsoft Edge", "Opera", "Internet Explorer", "Brave", "Vivaldi", "Microsoft Edge (Chromium-based)", "Samsung Internet"],
                                    weights=[7, 5, 6, 2, 1, 1, 1, 1, 1, 4], k=1)
-    session_start_time = datetime.strptime(self.last_session_time or user['last_login_time'], "%Y-%m-%d %H:%M:%S") + timedelta(days=random.randint(0, random.randint(0,5) if not self.last_session_time else random.randint(0,2)))
-    session_end_time = session_start_time + timedelta(minutes=random.randint(0, 30))
+    session_start_time = session_start_time
+    session_end_time = session_end_time
     browsing_duration = (session_end_time - session_start_time).total_seconds()
     self.last_session_time = session_end_time.strftime("%Y-%m-%d %H:%M:%S")
     user['last_login_time'] = self.last_session_time
@@ -159,7 +167,9 @@ class ECOM:
     user_id = user['user_id']
     session_id = session['session_id']
     order_id = "ORD-" + uuid.uuid4().hex
-    if user['persona'] == 'Abandoner':
+    persona = user.get("persona", "Default Persona")
+    address = user.get("address", "Unknown Address")
+    if persona == 'Abandoner':
       order_status = "Abandoned"
     else:
       order_status = random.choices(
@@ -185,8 +195,6 @@ class ECOM:
           ["Successful", "Refunded", "Abandoned", "Failed"],
           weights=[10, 2, 6, 1], k=1
         )[0]
-  
-
 
     promo_discount_applied = round(random.uniform(0.0, order_total_value * 0.2), 2) if marketing['discount_code_used'] else 0.0
 
@@ -205,11 +213,11 @@ class ECOM:
 
     # Shipping & billing address variations
     if order_status in ["Completed", "Canceled"]:
-        shipping_address = self.fake.address() if random.randint(0, 999) < 20 else user['address']
-        billing_address = self.fake.address() if random.randint(0, 1999) == 0 else user['address']
+        shipping_address = self.fake.address() if random.randint(0, 999) < 20 else address
+        billing_address = self.fake.address() if random.randint(0, 1999) == 0 else address
     else:
-        shipping_address = user['address']
-        billing_address = user['address']
+        shipping_address = address
+        billing_address = address
 
     return {
         "user_id": user_id,
@@ -233,9 +241,9 @@ class ECOM:
     user_id = order['user_id']
     session_id = session['session_id']
     tracking_id = "TRK-" + uuid.uuid4().hex
-    persona = user['persona']
-    order_status = order['order_status'],
-    payment_status = order['payment_status'],
+    persona = user.get("persona", "Default Persona")
+    order_status = order.get('order_status', 'Unknown Status')
+    payment_status = order.get('payment_status', 'Unknown Status')
     # Convert session start and end times to datetime objects
     session_start_time = datetime.strptime(session['session_start_time'], "%Y-%m-%d %H:%M:%S")
     session_end_time = datetime.strptime(session['session_end_time'], "%Y-%m-%d %H:%M:%S")
@@ -249,9 +257,10 @@ class ECOM:
     # Add user_id, session_id, and tracking_id to the behavior
     behavior['user_id'] = user_id
     behavior['session_id'] = session_id
-    behavior['tracking_id'] = tracking_id    
+    behavior['tracking_id'] = tracking_id
     if order['order_status'] == 'Abandoned' or order['order_status'] == 'Failed':
       behavior['payment_processing_time'] = 0.0
       return behavior
     return behavior
+
 

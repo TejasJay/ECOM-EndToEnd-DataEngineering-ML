@@ -1,335 +1,340 @@
-[2025-03-29 23:05:02,811] 🔵 Starting session for USR-62dfb36ff310475a811419904fe27d77
-[2025-03-29 23:05:03,569] 🔵 Starting session for USR-57531886c74f4acd87b0dae8949b6eb8
-[2025-03-29 23:05:04,260] 🔵 Starting session for USR-a8da19b3063d4f228f27bd5df3ca4431
-[2025-03-29 23:05:05,458] 🔵 Starting session for USR-7568579c7e4e40fdbc95979aaf4ca094
-[2025-03-29 23:05:06,331] 🔵 Starting session for USR-11b71706fe874106a26356154309ac54
-[2025-03-29 23:05:07,022] 🔵 Starting session for USR-f5f3ea035426423d97124cf7c43658cc
-[2025-03-29 23:05:08,389] 🔵 Starting session for USR-3520471d1c0a4648b8477db9da579518
-[2025-03-29 23:05:08,578] 🚀 user actions log in session 0 {'mouse_hover_time': 0.47, 'scroll_depth': 1.03, 'cart_view_time': 1.45, 'num_clicks_before_purchase': 27, 'checkout_completion_time': 1.87, 'payment_processing_time': 0.0, 'user_id': 'USR-57531886c74f4acd87b0dae8949b6eb8', 'session_id': 'SES-aa624723504e4db990918aeca26fb8d8', 'tracking_id': 'TRK-c8a8100f53874a80a2051f1838bee988'}
-[2025-03-29 23:05:08,979] 🔵 Starting session for USR-e5ac60b0dc3341808191477b7c4ad332
-[2025-03-29 23:05:10,276] 🔵 Starting session for USR-3c15e08b56b14dea97e65aaa7e4bba70
-[2025-03-29 23:05:11,660] 🔵 Starting session for USR-b76fc9b0d9144bc8b6805f2ad5424fbb
-[2025-03-29 23:05:13,046] ⏸️ Skipping USR-3520471d1c0a4648b8477db9da579518 — session already running
-[2025-03-29 23:05:14,067] 🔵 Starting session for USR-1e76671edd4046bf855ab974f2d04408
-[2025-03-29 23:05:14,799] 🔵 Starting session for USR-868f4e481b0540c4866b02163da45653
-[2025-03-29 23:05:15,460] 🚀 user actions log in session 0 {'mouse_hover_time': 0.41, 'scroll_depth': 4.39, 'cart_view_time': 2.24, 'num_clicks_before_purchase': 5, 'checkout_completion_time': 2.23, 'payment_processing_time': 0.72, 'user_id': 'USR-7568579c7e4e40fdbc95979aaf4ca094', 'session_id': 'SES-e5bf4c30fb70406d8cb2063f75f54a1c', 'tracking_id': 'TRK-ef5e8eb66c7143acb1eff4f4bac1e5f9'}
-[2025-03-29 23:05:16,262] 🔵 Starting session for USR-101ecc51a9474e96a4b815bfab264482
-[2025-03-29 23:05:17,707] 🔵 Starting session for USR-ea469e9b8a3944d6bc95da30866c5882
-[2025-03-29 23:05:18,956] 🔵 Starting session for USR-ce73a7eec4ee469ba2ad2e25e7d22d08
-[2025-03-29 23:05:20,176] 🔵 Starting session for USR-d68887901ea745d4aba3cbf52e60b481
-[2025-03-29 23:05:21,496] ⏸️ Skipping USR-868f4e481b0540c4866b02163da45653 — session already running
-[2025-03-29 23:05:22,190] ⏸️ Skipping USR-b76fc9b0d9144bc8b6805f2ad5424fbb — session already running
-[2025-03-29 23:05:23,616] 🔵 Starting session for USR-7096889fc0ca45949099c787653bc711
-[2025-03-29 23:05:25,013] 🔵 Starting session for USR-1059c3fcf9974b58805fa1ea28be57ab
-[2025-03-29 23:05:26,223] ⏸️ Skipping USR-ce73a7eec4ee469ba2ad2e25e7d22d08 — session already running
-[2025-03-29 23:05:26,800] 🚀 user actions log in session 0 {'mouse_hover_time': 1.75, 'scroll_depth': 3.25, 'cart_view_time': 4.18, 'num_clicks_before_purchase': 15, 'checkout_completion_time': 2.46, 'payment_processing_time': 0.37, 'user_id': 'USR-868f4e481b0540c4866b02163da45653', 'session_id': 'SES-a13446560f20432ab6da0d3e7964ada1', 'tracking_id': 'TRK-5697515c963249b2b8945cbb4c12b3d0'}
-[2025-03-29 23:05:27,423] 🔵 Starting session for USR-58ae544bd4ae49f496cd568e40372ea1
-[2025-03-29 23:05:28,264] 🚀 user actions log in session 0 {'mouse_hover_time': 2.23, 'scroll_depth': 2.45, 'cart_view_time': 6.09, 'num_clicks_before_purchase': 6, 'checkout_completion_time': 1.07, 'payment_processing_time': 0.16, 'user_id': 'USR-101ecc51a9474e96a4b815bfab264482', 'session_id': 'SES-f49dc30ca083442cad7cb4f65a080080', 'tracking_id': 'TRK-4563869a0ef54256bbb0dc40affb3dff'}
-[2025-03-29 23:05:28,804] 🔵 Starting session for USR-23778e69f370471ebb48ed5bb5e6af1a
-[2025-03-29 23:05:29,739] 🔵 Starting session for USR-da7ef54525804e8cafa79f0f16f06935
-[2025-03-29 23:05:30,283] 🔵 Starting session for USR-6a94708e8b724923bbb0577844233fdd
-[2025-03-29 23:05:31,418] 🔵 Starting session for USR-7b478de1a01b45a284000bf381292269
-[2025-03-29 23:05:32,509] 🔵 Starting session for USR-a1b18418055740a48969e3e02acbf17d
-[2025-03-29 23:05:33,337] ⏸️ Skipping USR-3520471d1c0a4648b8477db9da579518 — session already running
-[2025-03-29 23:05:34,085] 🔵 Starting session for USR-102739b4f5d140c9b4f2609bca80f58b
-[2025-03-29 23:05:35,107] 🔵 Starting session for USR-325b5b8f6e27434bbe22d87e6c5c8ea6
-[2025-03-29 23:05:36,088] 🚀 user actions log in session 0 {'mouse_hover_time': 0.18, 'scroll_depth': 0.96, 'cart_view_time': 0.45, 'num_clicks_before_purchase': 3, 'checkout_completion_time': 0.32, 'payment_processing_time': 0.09, 'user_id': 'USR-102739b4f5d140c9b4f2609bca80f58b', 'session_id': 'SES-10ed00b633184e188878bf756d0daec9', 'tracking_id': 'TRK-f67d712ff43748db8091a4643beefc15'}
-[2025-03-29 23:05:36,101] 🔵 Starting session for USR-1a06e4f296694b9290ac104c8bea8173
-[2025-03-29 23:05:36,618] 🚀 user actions log in session 0 {'mouse_hover_time': 1.82, 'scroll_depth': 3.63, 'cart_view_time': 3.62, 'num_clicks_before_purchase': 12, 'checkout_completion_time': 2.9, 'payment_processing_time': 0.0, 'user_id': 'USR-7096889fc0ca45949099c787653bc711', 'session_id': 'SES-bce0b46bf3204986907b022573c7f88a', 'tracking_id': 'TRK-9bbc38e4e4eb488a8ae0216bf6cbe6be'}
-[2025-03-29 23:05:37,069] 🚀 user actions log in session 0 {'mouse_hover_time': 5.67, 'scroll_depth': 11.01, 'cart_view_time': 6.32, 'num_clicks_before_purchase': 6, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-1e76671edd4046bf855ab974f2d04408', 'session_id': 'SES-5d5d27278ac24aab9f3d73572300b835', 'tracking_id': 'TRK-1b10404b58e541849fac0a1323113550'}
-[2025-03-29 23:05:37,506] 🔵 Starting session for USR-08d8ec979ad14ed0a37da97483932df9
-[2025-03-29 23:05:38,061] 🔵 Starting session for USR-1e77f35ed83a4f638079a86ba661c434
-[2025-03-29 23:05:38,425] 🚀 user actions log in session 0 {'mouse_hover_time': 0.23, 'scroll_depth': 2.99, 'cart_view_time': 0.36, 'num_clicks_before_purchase': 1, 'checkout_completion_time': 3.25, 'payment_processing_time': 0.0, 'user_id': 'USR-7b478de1a01b45a284000bf381292269', 'session_id': 'SES-4d78006677e041009c2488d914fdc914', 'tracking_id': 'TRK-af6fa0a2cdc74451af1b4f83c26f6f89'}
-[2025-03-29 23:05:38,936] 🔵 Starting session for USR-6e354c0a4e774db6981ffd4dbe887dff
-[2025-03-29 23:05:39,634] 🔵 Starting session for USR-425f1483494b416b9dd8f1d85cdca5b1
-[2025-03-29 23:05:40,381] 🔵 Starting session for USR-a1f4171fa7c64ec6a12c5476b8a387ec
-[2025-03-29 23:05:41,024] 🚀 user actions log in session 0 {'mouse_hover_time': 6.1, 'scroll_depth': 10.73, 'cart_view_time': 11.1, 'num_clicks_before_purchase': 12, 'checkout_completion_time': 4.92, 'payment_processing_time': 1.14, 'user_id': 'USR-f5f3ea035426423d97124cf7c43658cc', 'session_id': 'SES-45e9ba3930de4a5782995782b904bb10', 'tracking_id': 'TRK-09c17db6231d411d89bb32e68f4a2b4e'}
-[2025-03-29 23:05:41,187] 🔵 Starting session for USR-b915049f141b4f3da980b342992267d8
-[2025-03-29 23:05:42,099] 🔵 Starting session for USR-7f62bb0e434a4256b52dadc5fbd1c8b4
-[2025-03-29 23:05:42,813] 🚀 user actions log in session 0 {'mouse_hover_time': 2.91, 'scroll_depth': 11.09, 'cart_view_time': 14.73, 'num_clicks_before_purchase': 7, 'checkout_completion_time': 9.86, 'payment_processing_time': 1.4, 'user_id': 'USR-62dfb36ff310475a811419904fe27d77', 'session_id': 'SES-e8506cf03fe44e68b7803dfa64bb9351', 'tracking_id': 'TRK-af91564d9eeb4a7f88e1f7387c58db58'}
-[2025-03-29 23:05:43,409] 🔵 Starting session for USR-a91d6f1ccc3a477a8b86236dc9bbcd87
-[2025-03-29 23:05:44,450] 🔵 Starting session for USR-10c47d8b977a4002be42574387c1e78f
-[2025-03-29 23:05:45,685] 🔵 Starting session for USR-31b2a4cd3efc4743a1aa387046a4ba70
-[2025-03-29 23:05:46,263] 🚀 user actions log in session 0 {'mouse_hover_time': 0.45, 'scroll_depth': 19.24, 'cart_view_time': 1.46, 'num_clicks_before_purchase': 5, 'checkout_completion_time': 19.35, 'payment_processing_time': 0.0, 'user_id': 'USR-a8da19b3063d4f228f27bd5df3ca4431', 'session_id': 'SES-0db8c3915ba64e47a293c7c8c2fb6d3f', 'tracking_id': 'TRK-ec351c6ef48c43b5898765ff8cb246c3'}
-[2025-03-29 23:05:46,583] 🔵 Starting session for USR-1f6726f430e140d7af6b17838c7d9219
-[2025-03-29 23:05:47,462] 🔵 Starting session for USR-9752003c497b4d1f97d1684bd1fde84d
-[2025-03-29 23:05:48,513] 🔵 Starting session for USR-4aa6223845164fa6a45eb2cf17f9647d
-[2025-03-29 23:05:49,028] 🔵 Starting session for USR-194683cdf6694f56807811e7ae085f26
-[2025-03-29 23:05:50,462] 🔵 Starting session for USR-aff88370cfc54043b8ce28043fc27abe
-[2025-03-29 23:05:50,981] 🚀 user actions log in session 0 {'mouse_hover_time': 2.67, 'scroll_depth': 11.25, 'cart_view_time': 13.41, 'num_clicks_before_purchase': 7, 'checkout_completion_time': 14.25, 'payment_processing_time': 0.0, 'user_id': 'USR-e5ac60b0dc3341808191477b7c4ad332', 'session_id': 'SES-e08f1d0dec864530919490910f06b9d9', 'tracking_id': 'TRK-6cee3f61f6ae46119a25397e95bcdd59'}
-[2025-03-29 23:05:51,278] 🚀 user actions log in session 0 {'mouse_hover_time': 2.43, 'scroll_depth': 11.17, 'cart_view_time': 5.31, 'num_clicks_before_purchase': 24, 'checkout_completion_time': 20.02, 'payment_processing_time': 2.06, 'user_id': 'USR-3c15e08b56b14dea97e65aaa7e4bba70', 'session_id': 'SES-0769e934fff64f09b781630e382c002e', 'tracking_id': 'TRK-15460cd8716946509539ffba3a7762ea'}
-[2025-03-29 23:05:51,588] 🔵 Starting session for USR-6e748719340c4dc99f21725caea2e9cb
-[2025-03-29 23:05:52,031] 🚀 user actions log in session 0 {'mouse_hover_time': 0.2, 'scroll_depth': 1.24, 'cart_view_time': 0.46, 'num_clicks_before_purchase': 3, 'checkout_completion_time': 0.84, 'payment_processing_time': 0.0, 'user_id': 'USR-194683cdf6694f56807811e7ae085f26', 'session_id': 'SES-dea400617a324a96bc98bdc9b340f1cf', 'tracking_id': 'TRK-0d6449464f114d5a9ecb2cd75d2d75cf'}
-[2025-03-29 23:05:52,436] 🔵 Starting session for USR-6e39e0d7621e473a9ae9fa78ec73d061
-[2025-03-29 23:05:53,837] 🔵 Starting session for USR-d409d2c6640f4aab99853dcfe596f805
-[2025-03-29 23:05:54,180] 🚀 user actions log in session 0 {'mouse_hover_time': 2.08, 'scroll_depth': 16.3, 'cart_view_time': 7.66, 'num_clicks_before_purchase': 6, 'checkout_completion_time': 7.15, 'payment_processing_time': 0.0, 'user_id': 'USR-d68887901ea745d4aba3cbf52e60b481', 'session_id': 'SES-0a5429263569407299ef20033118015c', 'tracking_id': 'TRK-7f6b856cb1604477ba9b1dbc15523d20'}
-[2025-03-29 23:05:55,049] 🔵 Starting session for USR-1f012366803c4b0984f1a9e7a3079328
-[2025-03-29 23:05:55,101] 🚀 user actions log in session 0 {'mouse_hover_time': 0.06, 'scroll_depth': 4.86, 'cart_view_time': 5.78, 'num_clicks_before_purchase': 6, 'checkout_completion_time': 1.79, 'payment_processing_time': 0.51, 'user_id': 'USR-7f62bb0e434a4256b52dadc5fbd1c8b4', 'session_id': 'SES-d4352590b27244b7aa475009e8ddcf66', 'tracking_id': 'TRK-d623247aada54c7586d87e2d274608b8'}
-[2025-03-29 23:05:55,102] 🚀 user actions log in session 0 {'mouse_hover_time': 0.3, 'scroll_depth': 13.61, 'cart_view_time': 2.26, 'num_clicks_before_purchase': 4, 'checkout_completion_time': 1.91, 'payment_processing_time': 0.0, 'user_id': 'USR-1a06e4f296694b9290ac104c8bea8173', 'session_id': 'SES-dbf9bfee294647509b4629162f152b90', 'tracking_id': 'TRK-da6ee916875a45a0b7f90ea89a76ab03'}
-[2025-03-29 23:05:56,319] 🔵 Starting session for USR-3c718d760e9f4417ab81b5d368a69320
-[2025-03-29 23:05:57,703] 🔵 Starting session for USR-e740a73b11214c7eb6b39c1eca927fa7
-[2025-03-29 23:05:58,452] 🚀 user actions log in session 0 {'mouse_hover_time': 1.62, 'scroll_depth': 6.83, 'cart_view_time': 4.08, 'num_clicks_before_purchase': 4, 'checkout_completion_time': 1.23, 'payment_processing_time': 0.0, 'user_id': 'USR-10c47d8b977a4002be42574387c1e78f', 'session_id': 'SES-e0dc2a9c00de410887bbac14f12b9b81', 'tracking_id': 'TRK-4ae19818769947c4b75642841f6d0c58'}
-[2025-03-29 23:05:58,453] 🔵 Starting session for USR-2be1a38274bd43d9ae181c13a43bf814
-[2025-03-29 23:05:58,709] 🚀 user actions log in session 0 {'mouse_hover_time': 4.36, 'scroll_depth': 8.94, 'cart_view_time': 9.85, 'num_clicks_before_purchase': 13, 'checkout_completion_time': 14.56, 'payment_processing_time': 0.0, 'user_id': 'USR-ea469e9b8a3944d6bc95da30866c5882', 'session_id': 'SES-60a92276fab74858a774d94b1a6b3770', 'tracking_id': 'TRK-cdf1cd6dd26543ce8f6e9b2873f1adab'}
-[2025-03-29 23:05:59,160] 🔵 Starting session for USR-e4284ac443c6427291f68cddce98749c
-[2025-03-29 23:06:00,333] 🚀 user actions log in session 0 {'mouse_hover_time': 7.98, 'scroll_depth': 13.2, 'cart_view_time': 24.68, 'num_clicks_before_purchase': 5, 'checkout_completion_time': 5.44, 'payment_processing_time': 0.0, 'user_id': 'USR-11b71706fe874106a26356154309ac54', 'session_id': 'SES-38ecf106129340d2b42bf460657b1596', 'tracking_id': 'TRK-da88f73c60504a8fb87e4d4b96300836'}
-[2025-03-29 23:06:00,605] ⏸️ Skipping USR-d68887901ea745d4aba3cbf52e60b481 — session already running
-[2025-03-29 23:06:01,177] 🔵 Starting session for USR-4c591fec73114253a0bdfa5b12940b38
-[2025-03-29 23:06:01,950] 🔵 Starting session for USR-ecabf767abde40f5bc6c5a3f580fc29f
-[2025-03-29 23:06:02,514] 🚀 user actions log in session 0 {'mouse_hover_time': 2.33, 'scroll_depth': 7.76, 'cart_view_time': 3.92, 'num_clicks_before_purchase': 5, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-4aa6223845164fa6a45eb2cf17f9647d', 'session_id': 'SES-adf625acbbab43a1b4fa0dcac0961dba', 'tracking_id': 'TRK-4869afcb98fb41c5a6747defc85a181f'}
-[2025-03-29 23:06:02,606] ⏸️ Skipping USR-b76fc9b0d9144bc8b6805f2ad5424fbb — session already running
-[2025-03-29 23:06:02,662] 🚀 user actions log in session 0 {'mouse_hover_time': 1.86, 'scroll_depth': 6.97, 'cart_view_time': 24.93, 'num_clicks_before_purchase': 30, 'checkout_completion_time': 16.17, 'payment_processing_time': 0.0, 'user_id': 'USR-b76fc9b0d9144bc8b6805f2ad5424fbb', 'session_id': 'SES-ae75ffeb15c649d9887e45f2202ca240', 'tracking_id': 'TRK-5ae916f446ba400498c9c272fd2a09b1'}
-[2025-03-29 23:06:03,327] ⏸️ Skipping USR-425f1483494b416b9dd8f1d85cdca5b1 — session already running
-[2025-03-29 23:06:03,963] ⏸️ Skipping USR-23778e69f370471ebb48ed5bb5e6af1a — session already running
-[2025-03-29 23:06:05,456] ⏸️ Skipping USR-ecabf767abde40f5bc6c5a3f580fc29f — session already running
-[2025-03-29 23:06:06,044] 🔵 Starting session for USR-9e3f50d9a0ca4b40a4e84fdbc170d32c
-[2025-03-29 23:06:06,392] 🚀 user actions log in session 0 {'mouse_hover_time': 9.05, 'scroll_depth': 14.1, 'cart_view_time': 21.2, 'num_clicks_before_purchase': 9, 'checkout_completion_time': 12.65, 'payment_processing_time': 1.01, 'user_id': 'USR-3520471d1c0a4648b8477db9da579518', 'session_id': 'SES-e9fb0c9d48994ec396b2708417b585e6', 'tracking_id': 'TRK-996b2ead045e4fc19ca605d30dc54e1e'}
-[2025-03-29 23:06:06,683] 🔵 Starting session for USR-fdad3eb2ef6b4685baa499b9f589f20e
-[2025-03-29 23:06:07,368] ⏸️ Skipping USR-a1f4171fa7c64ec6a12c5476b8a387ec — session already running
-[2025-03-29 23:06:07,383] 🚀 user actions log in session 0 {'mouse_hover_time': 4.22, 'scroll_depth': 3.69, 'cart_view_time': 11.19, 'num_clicks_before_purchase': 12, 'checkout_completion_time': 6.29, 'payment_processing_time': 0.0, 'user_id': 'USR-a1f4171fa7c64ec6a12c5476b8a387ec', 'session_id': 'SES-74861d5153d2490996df518b26557fcb', 'tracking_id': 'TRK-5aaad3a1be6a4cc7afc9954b0603ac1e'}
-[2025-03-29 23:06:07,411] 🚀 user actions log in session 0 {'mouse_hover_time': 0.62, 'scroll_depth': 1.49, 'cart_view_time': 17.45, 'num_clicks_before_purchase': 26, 'checkout_completion_time': 4.04, 'payment_processing_time': 0.4, 'user_id': 'USR-a91d6f1ccc3a477a8b86236dc9bbcd87', 'session_id': 'SES-e073628fe2194ea8ad2547f68a2a9a95', 'tracking_id': 'TRK-80f747ada5a743538af7be2b2ed6d8f7'}
-[2025-03-29 23:06:07,425] 🚀 user actions log in session 0 {'mouse_hover_time': 1.71, 'scroll_depth': 11.0, 'cart_view_time': 1.58, 'num_clicks_before_purchase': 5, 'checkout_completion_time': 24.87, 'payment_processing_time': 0.0, 'user_id': 'USR-58ae544bd4ae49f496cd568e40372ea1', 'session_id': 'SES-779595f0087c496f9a51c719e64f3699', 'tracking_id': 'TRK-3bb51988523c4201950c0e8e2db20a16'}
-[2025-03-29 23:06:07,585] 🚀 user actions log in session 0 {'mouse_hover_time': 2.68, 'scroll_depth': 5.44, 'cart_view_time': 12.89, 'num_clicks_before_purchase': 9, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-1f6726f430e140d7af6b17838c7d9219', 'session_id': 'SES-6fa43216cb19462497af1f62c21ddc40', 'tracking_id': 'TRK-9ca398f91e2545b0bc2d7f8aaa415124'}
-[2025-03-29 23:06:07,805] 🚀 user actions log in session 0 {'mouse_hover_time': 5.81, 'scroll_depth': 9.99, 'cart_view_time': 13.45, 'num_clicks_before_purchase': 23, 'checkout_completion_time': 8.21, 'payment_processing_time': 1.53, 'user_id': 'USR-23778e69f370471ebb48ed5bb5e6af1a', 'session_id': 'SES-dad1a6cdc73c4885a428d9e04b509d08', 'tracking_id': 'TRK-4d09d1d3827144b59271c72c75daacac'}
-[2025-03-29 23:06:08,839] ⏸️ Skipping USR-1e76671edd4046bf855ab974f2d04408 — session already running
-[2025-03-29 23:06:09,109] 🚀 user actions log in session 0 {'mouse_hover_time': 5.05, 'scroll_depth': 14.41, 'cart_view_time': 7.7, 'num_clicks_before_purchase': 11, 'checkout_completion_time': 6.13, 'payment_processing_time': 0.0, 'user_id': 'USR-325b5b8f6e27434bbe22d87e6c5c8ea6', 'session_id': 'SES-051828f78faf4604b34495e6f61409e8', 'tracking_id': 'TRK-f1013b65dcd24e2b88d77c174e04166c'}
-[2025-03-29 23:06:09,941] 🔵 Starting session for USR-db9b13f1a4fe4f5db685c6eb52f22ebe
-[2025-03-29 23:06:10,014] 🚀 user actions log in session 0 {'mouse_hover_time': 3.16, 'scroll_depth': 8.09, 'cart_view_time': 33.75, 'num_clicks_before_purchase': 12, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-1059c3fcf9974b58805fa1ea28be57ab', 'session_id': 'SES-0e682279766b489f8a805d5c1324e071', 'tracking_id': 'TRK-d3b55def096c46d483a96862d2ad49fb'}
-[2025-03-29 23:06:11,085] 🔵 Starting session for USR-8b475152ae7a4381b2627d90083bc3c3
-[2025-03-29 23:06:11,513] 🚀 user actions log in session 0 {'mouse_hover_time': 3.35, 'scroll_depth': 11.38, 'cart_view_time': 24.28, 'num_clicks_before_purchase': 6, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-a1b18418055740a48969e3e02acbf17d', 'session_id': 'SES-d2d003bcde8d466290174ccdf8d0f738', 'tracking_id': 'TRK-4b4088cbd10b45698adf233a1afea170'}
-[2025-03-29 23:06:12,381] ⏸️ Skipping USR-fdad3eb2ef6b4685baa499b9f589f20e — session already running
-[2025-03-29 23:06:13,285] 🚀 user actions log in session 0 {'mouse_hover_time': 5.91, 'scroll_depth': 6.23, 'cart_view_time': 30.86, 'num_clicks_before_purchase': 3, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-6a94708e8b724923bbb0577844233fdd', 'session_id': 'SES-58e4996cf18947f18c30b4908706d52c', 'tracking_id': 'TRK-7aff73ccc51f4953896cab4ccd0d5c0d'}
-[2025-03-29 23:06:13,734] ⏸️ Skipping USR-e740a73b11214c7eb6b39c1eca927fa7 — session already running
-[2025-03-29 23:06:14,494] 🔵 Starting session for USR-8a5a0878bd994db99cd8b9197182ebbc
-[2025-03-29 23:06:14,742] 🚀 user actions log in session 0 {'mouse_hover_time': 5.49, 'scroll_depth': 8.45, 'cart_view_time': 17.56, 'num_clicks_before_purchase': 8, 'checkout_completion_time': 13.25, 'payment_processing_time': 0.25, 'user_id': 'USR-da7ef54525804e8cafa79f0f16f06935', 'session_id': 'SES-0a8c7dc80c48458bb90336e44d408df6', 'tracking_id': 'TRK-3107df0fb33641d793ed776e0de9f4b3'}
-[2025-03-29 23:06:15,496] 🚀 user actions log in session 0 {'mouse_hover_time': 0.14, 'scroll_depth': 0.21, 'cart_view_time': 0.39, 'num_clicks_before_purchase': 15, 'checkout_completion_time': 0.19, 'payment_processing_time': 0.08, 'user_id': 'USR-8a5a0878bd994db99cd8b9197182ebbc', 'session_id': 'SES-8a50a262115f4178a59a3277d0e74f0b', 'tracking_id': 'TRK-d31f3a18c810432d99e9451c8b56b6fe'}
-[2025-03-29 23:06:15,636] 🚀 user actions log in session 0 {'mouse_hover_time': 3.17, 'scroll_depth': 15.77, 'cart_view_time': 3.73, 'num_clicks_before_purchase': 3, 'checkout_completion_time': 12.54, 'payment_processing_time': 0.0, 'user_id': 'USR-425f1483494b416b9dd8f1d85cdca5b1', 'session_id': 'SES-f7a020fdceb64891a90847611e58922d', 'tracking_id': 'TRK-2bc433678e1e4f14abedfd9e9dba3679'}
-[2025-03-29 23:06:15,819] 🔵 Starting session for USR-f7729af7abae4ff7896e0a3316915232
-[2025-03-29 23:06:15,938] 🚀 user actions log in session 0 {'mouse_hover_time': 0.81, 'scroll_depth': 1.85, 'cart_view_time': 16.45, 'num_clicks_before_purchase': 19, 'checkout_completion_time': 17.62, 'payment_processing_time': 0.0, 'user_id': 'USR-6e354c0a4e774db6981ffd4dbe887dff', 'session_id': 'SES-79e4b1a2cc044c56807f79492ea8f568', 'tracking_id': 'TRK-7313ae3deec6489bbe8aafbc68e313fa'}
-[2025-03-29 23:06:16,051] 🚀 user actions log in session 0 {'mouse_hover_time': 3.91, 'scroll_depth': 8.7, 'cart_view_time': 8.39, 'num_clicks_before_purchase': 8, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-1f012366803c4b0984f1a9e7a3079328', 'session_id': 'SES-867cc49671c44d9c8374b87c95a91053', 'tracking_id': 'TRK-7307c9760e434bd888da821eaa11485b'}
-[2025-03-29 23:06:17,064] 🚀 user actions log in session 0 {'mouse_hover_time': 2.01, 'scroll_depth': 8.26, 'cart_view_time': 12.09, 'num_clicks_before_purchase': 5, 'checkout_completion_time': 15.35, 'payment_processing_time': 1.29, 'user_id': 'USR-1e77f35ed83a4f638079a86ba661c434', 'session_id': 'SES-d1e0f47bf2ff4ffc866c4a70827363c9', 'tracking_id': 'TRK-4e6268f210ad45488b85b6c046116b75'}
-[2025-03-29 23:06:17,268] 🔵 Starting session for USR-2c89796d25eb4c888bba3af44297ee5c
-[2025-03-29 23:06:18,625] 🔵 Starting session for USR-6d4573c9cae5460c8884d5f1860af8ba
-[2025-03-29 23:06:18,962] 🚀 user actions log in session 0 {'mouse_hover_time': 3.81, 'scroll_depth': 11.56, 'cart_view_time': 16.42, 'num_clicks_before_purchase': 6, 'checkout_completion_time': 27.2, 'payment_processing_time': 1.01, 'user_id': 'USR-ce73a7eec4ee469ba2ad2e25e7d22d08', 'session_id': 'SES-7e331f0c7cf74193bfabfb578c103928', 'tracking_id': 'TRK-9671221ab7324996922524b087d5352a'}
-[2025-03-29 23:06:19,627] 🚀 user actions log in session 0 {'mouse_hover_time': 0.17, 'scroll_depth': 0.43, 'cart_view_time': 0.2, 'num_clicks_before_purchase': 8, 'checkout_completion_time': 0.17, 'payment_processing_time': 0.03, 'user_id': 'USR-6d4573c9cae5460c8884d5f1860af8ba', 'session_id': 'SES-551b62e6d6af4017b83500557643fec5', 'tracking_id': 'TRK-20fe06db84a845a8be66662f9aaf10ca'}
-[2025-03-29 23:06:19,924] 🔵 Starting session for USR-a4821a7dcb8b4749b671b66356cfaa84
-[2025-03-29 23:06:20,876] ⏸️ Skipping USR-6e748719340c4dc99f21725caea2e9cb — session already running
-[2025-03-29 23:06:21,321] 🚀 user actions log in session 0 {'mouse_hover_time': 2.14, 'scroll_depth': 7.11, 'cart_view_time': 9.74, 'num_clicks_before_purchase': 25, 'checkout_completion_time': 5.1, 'payment_processing_time': 0.92, 'user_id': 'USR-3c718d760e9f4417ab81b5d368a69320', 'session_id': 'SES-565e7091a6244e4d922d9e6a1a55e045', 'tracking_id': 'TRK-68e2a72e272443ea90829aa5a1c4071d'}
-[2025-03-29 23:06:21,670] ⏸️ Skipping USR-a1f4171fa7c64ec6a12c5476b8a387ec — session already running
-[2025-03-29 23:06:22,561] 🔵 Starting session for USR-498b80eaef644e3bb577214ba0e33b4a
-[2025-03-29 23:06:22,952] 🚀 user actions log in session 0 {'mouse_hover_time': 0.89, 'scroll_depth': 1.59, 'cart_view_time': 16.14, 'num_clicks_before_purchase': 24, 'checkout_completion_time': 2.29, 'payment_processing_time': 0.0, 'user_id': 'USR-ecabf767abde40f5bc6c5a3f580fc29f', 'session_id': 'SES-6995371368354900883d0740ee331006', 'tracking_id': 'TRK-894b58f7e25c48cc8bdf1a05995b666b'}
-[2025-03-29 23:06:23,906] ⏸️ Skipping USR-ea469e9b8a3944d6bc95da30866c5882 — session already running
-[2025-03-29 23:06:24,943] 🚀 user actions log in session 0 {'mouse_hover_time': 2.05, 'scroll_depth': 4.87, 'cart_view_time': 6.0, 'num_clicks_before_purchase': 7, 'checkout_completion_time': 1.63, 'payment_processing_time': 0.0, 'user_id': 'USR-db9b13f1a4fe4f5db685c6eb52f22ebe', 'session_id': 'SES-4ec304e29d844dc7880892cc6cd5cc87', 'tracking_id': 'TRK-dd5ab72f1d3245c29a8636e93afbbcd2'}
-[2025-03-29 23:06:25,330] 🔵 Starting session for USR-33ba68310e4646c3b61e5dd16e3d546d
-[2025-03-29 23:06:25,902] ⏸️ Skipping USR-33ba68310e4646c3b61e5dd16e3d546d — session already running
-[2025-03-29 23:06:26,439] 🚀 user actions log in session 0 {'mouse_hover_time': 2.07, 'scroll_depth': 16.66, 'cart_view_time': 6.74, 'num_clicks_before_purchase': 2, 'checkout_completion_time': 8.04, 'payment_processing_time': 0.0, 'user_id': 'USR-6e39e0d7621e473a9ae9fa78ec73d061', 'session_id': 'SES-87ab4e6982094380a58ea8734b0759c6', 'tracking_id': 'TRK-f8a610f5aa584a25ac95df8daa29fc08'}
-[2025-03-29 23:06:26,821] 🚀 user actions log in session 0 {'mouse_hover_time': 0.23, 'scroll_depth': 3.38, 'cart_view_time': 3.56, 'num_clicks_before_purchase': 2, 'checkout_completion_time': 3.52, 'payment_processing_time': 0.31, 'user_id': 'USR-f7729af7abae4ff7896e0a3316915232', 'session_id': 'SES-c29d6201fefb4dedb60054a9a330bb2e', 'tracking_id': 'TRK-0c55a1bbca554de4b0a9af20e1afacf7'}
-[2025-03-29 23:06:27,002] 🔵 Starting session for USR-a31561ace51d48e398d0fd392821f5b7
-[2025-03-29 23:06:28,414] ⏸️ Skipping USR-f5f3ea035426423d97124cf7c43658cc — session already running
-[2025-03-29 23:06:29,271] 🚀 user actions log in session 0 {'mouse_hover_time': 0.57, 'scroll_depth': 4.48, 'cart_view_time': 6.96, 'num_clicks_before_purchase': 16, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-2c89796d25eb4c888bba3af44297ee5c', 'session_id': 'SES-c34c493b351346dd8efb37954e845849', 'tracking_id': 'TRK-60bee49bb1584a9d9e0a595306da7eb2'}
-[2025-03-29 23:06:29,628] ⏸️ Skipping USR-62dfb36ff310475a811419904fe27d77 — session already running
-[2025-03-29 23:06:31,045] ⏸️ Skipping USR-9752003c497b4d1f97d1684bd1fde84d — session already running
-[2025-03-29 23:06:31,087] 🚀 user actions log in session 0 {'mouse_hover_time': 2.82, 'scroll_depth': 5.12, 'cart_view_time': 5.37, 'num_clicks_before_purchase': 15, 'checkout_completion_time': 5.1, 'payment_processing_time': 1.58, 'user_id': 'USR-8b475152ae7a4381b2627d90083bc3c3', 'session_id': 'SES-007cda635f5441bdb50f1f9eabc1175f', 'tracking_id': 'TRK-f8617f184248418bb387c52f20f60c27'}
-[2025-03-29 23:06:32,162] 🚀 user actions log in session 0 {'mouse_hover_time': 3.75, 'scroll_depth': 8.26, 'cart_view_time': 21.0, 'num_clicks_before_purchase': 6, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-e4284ac443c6427291f68cddce98749c', 'session_id': 'SES-28c17592d07b40fba140e1244eb8ea85', 'tracking_id': 'TRK-e611bbe7b53948bbb72c1712dbd84d99'}
-[2025-03-29 23:06:32,508] 🚀 user actions log in session 0 {'mouse_hover_time': 0.64, 'scroll_depth': 21.16, 'cart_view_time': 19.56, 'num_clicks_before_purchase': 5, 'checkout_completion_time': 11.17, 'payment_processing_time': 0.0, 'user_id': 'USR-08d8ec979ad14ed0a37da97483932df9', 'session_id': 'SES-ac4519fb217a41279246be090832128f', 'tracking_id': 'TRK-b873dfe70cf042a3b642d596e9cc5cca'}
-[2025-03-29 23:06:32,539] ⏸️ Skipping USR-d68887901ea745d4aba3cbf52e60b481 — session already running
-[2025-03-29 23:06:33,486] ⏸️ Skipping USR-1e77f35ed83a4f638079a86ba661c434 — session already running
-[2025-03-29 23:06:34,053] 🔵 Starting session for USR-61d243b776124bafb08ce5121d4d23c5
-[2025-03-29 23:06:35,180] 🚀 user actions log in session 0 {'mouse_hover_time': 3.54, 'scroll_depth': 8.2, 'cart_view_time': 22.27, 'num_clicks_before_purchase': 7, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-4c591fec73114253a0bdfa5b12940b38', 'session_id': 'SES-9a6888c69eba4923bac5d777d06fa74e', 'tracking_id': 'TRK-61d6a0fb83564fa9accb188ee138cdc0'}
-[2025-03-29 23:06:35,487] 🔵 Starting session for USR-1f75596d48334818872fbb3518223979
-[2025-03-29 23:06:36,518] ⏸️ Skipping USR-11b71706fe874106a26356154309ac54 — session already running
-[2025-03-29 23:06:37,047] 🚀 user actions log in session 0 {'mouse_hover_time': 5.09, 'scroll_depth': 4.47, 'cart_view_time': 11.46, 'num_clicks_before_purchase': 27, 'checkout_completion_time': 8.65, 'payment_processing_time': 0.0, 'user_id': 'USR-9e3f50d9a0ca4b40a4e84fdbc170d32c', 'session_id': 'SES-e363e38d621c436391c9476704150924', 'tracking_id': 'TRK-0b914c9a5f9547d497a3139772c48053'}
-[2025-03-29 23:06:37,188] 🚀 user actions log in session 0 {'mouse_hover_time': 7.68, 'scroll_depth': 20.11, 'cart_view_time': 13.82, 'num_clicks_before_purchase': 17, 'checkout_completion_time': 7.03, 'payment_processing_time': 0.0, 'user_id': 'USR-b915049f141b4f3da980b342992267d8', 'session_id': 'SES-228e1858ba8545d6b75cbae5812747f8', 'tracking_id': 'TRK-0d808ee14017494cbaf3f4af4906e8a6'}
-[2025-03-29 23:06:38,012] ⏸️ Skipping USR-d68887901ea745d4aba3cbf52e60b481 — session already running
-[2025-03-29 23:06:38,464] 🚀 user actions log in session 0 {'mouse_hover_time': 17.2, 'scroll_depth': 23.72, 'cart_view_time': 10.09, 'num_clicks_before_purchase': 7, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-9752003c497b4d1f97d1684bd1fde84d', 'session_id': 'SES-145dc8ff1fb7424889d132c744f3ddf5', 'tracking_id': 'TRK-71a20e7c6df04bff9aedf007d290bcc2'}
-[2025-03-29 23:06:38,727] ⏸️ Skipping USR-10c47d8b977a4002be42574387c1e78f — session already running
-[2025-03-29 23:06:39,679] ⏸️ Skipping USR-8b475152ae7a4381b2627d90083bc3c3 — session already running
-[2025-03-29 23:06:40,490] 🚀 user actions log in session 0 {'mouse_hover_time': 0.82, 'scroll_depth': 1.52, 'cart_view_time': 1.52, 'num_clicks_before_purchase': 10, 'checkout_completion_time': 0.92, 'payment_processing_time': 0.22, 'user_id': 'USR-1f75596d48334818872fbb3518223979', 'session_id': 'SES-11c1c652181f4c87a17e004c79b56be4', 'tracking_id': 'TRK-d9320d333c7c414fbb07d107228b1dc4'}
-[2025-03-29 23:06:41,008] ⏸️ Skipping USR-11b71706fe874106a26356154309ac54 — session already running
-[2025-03-29 23:06:41,688] 🚀 user actions log in session 0 {'mouse_hover_time': 2.78, 'scroll_depth': 22.58, 'cart_view_time': 15.33, 'num_clicks_before_purchase': 7, 'checkout_completion_time': 14.06, 'payment_processing_time': 1.25, 'user_id': 'USR-31b2a4cd3efc4743a1aa387046a4ba70', 'session_id': 'SES-b6873ba36bd74de09890298570b2e816', 'tracking_id': 'TRK-a092301fd129498394b5bac241a8937c'}
-[2025-03-29 23:06:42,423] ⏸️ Skipping USR-1f75596d48334818872fbb3518223979 — session already running
-[2025-03-29 23:06:43,590] 🚀 user actions log in session 0 {'mouse_hover_time': 8.02, 'scroll_depth': 12.54, 'cart_view_time': 21.17, 'num_clicks_before_purchase': 10, 'checkout_completion_time': 9.59, 'payment_processing_time': 0.0, 'user_id': 'USR-6e748719340c4dc99f21725caea2e9cb', 'session_id': 'SES-ed24c10ff2534ac5af273119973f6401', 'tracking_id': 'TRK-e165473269a44a4d884cc6949d0bf2c8'}
-[2025-03-29 23:06:43,627] 🔵 Starting session for USR-12a1063489d8403bae282b33798ef6e7
-[2025-03-29 23:06:44,451] ⏸️ Skipping USR-db9b13f1a4fe4f5db685c6eb52f22ebe — session already running
-[2025-03-29 23:06:44,840] 🚀 user actions log in session 0 {'mouse_hover_time': 7.12, 'scroll_depth': 24.32, 'cart_view_time': 14.12, 'num_clicks_before_purchase': 7, 'checkout_completion_time': 3.81, 'payment_processing_time': 1.63, 'user_id': 'USR-d409d2c6640f4aab99853dcfe596f805', 'session_id': 'SES-34666732e5f34c65aaec4d6917b1a438', 'tracking_id': 'TRK-d72157cb242d46e48353b23007dc2947'}
-[2025-03-29 23:06:45,333] 🚀 user actions log in session 0 {'mouse_hover_time': 2.62, 'scroll_depth': 6.27, 'cart_view_time': 4.94, 'num_clicks_before_purchase': 12, 'checkout_completion_time': 4.55, 'payment_processing_time': 1.63, 'user_id': 'USR-33ba68310e4646c3b61e5dd16e3d546d', 'session_id': 'SES-3c58788d26a94d9fa53a31d5178b88e9', 'tracking_id': 'TRK-0e4861cabebb4cd2a2c223461b236579'}
-[2025-03-29 23:06:45,813] 🔵 Starting session for USR-8e772ae8832d4fd3a81a0dc513923b9c
-[2025-03-29 23:06:47,307] ⏸️ Skipping USR-fdad3eb2ef6b4685baa499b9f589f20e — session already running
-[2025-03-29 23:06:47,470] 🚀 user actions log in session 0 {'mouse_hover_time': 8.11, 'scroll_depth': 13.42, 'cart_view_time': 21.23, 'num_clicks_before_purchase': 25, 'checkout_completion_time': 11.83, 'payment_processing_time': 2.41, 'user_id': 'USR-aff88370cfc54043b8ce28043fc27abe', 'session_id': 'SES-157f9153f72c47d7bbd02c8065024aae', 'tracking_id': 'TRK-81ca48ba3c904180bda4e70d8f98c3b0'}
-[2025-03-29 23:06:48,262] ⏸️ Skipping USR-ce73a7eec4ee469ba2ad2e25e7d22d08 — session already running
-[2025-03-29 23:06:48,706] 🚀 user actions log in session 0 {'mouse_hover_time': 0.47, 'scroll_depth': 11.27, 'cart_view_time': 14.32, 'num_clicks_before_purchase': 9, 'checkout_completion_time': 24.94, 'payment_processing_time': 0.0, 'user_id': 'USR-e740a73b11214c7eb6b39c1eca927fa7', 'session_id': 'SES-124e747c41ac4b7a88c0ef86123e4fae', 'tracking_id': 'TRK-56d5f64c3a1d4a8e9d3d292f0c19e0fa'}
-[2025-03-29 23:06:49,291] 🔵 Starting session for USR-4694bdb7b3b64b939ba0dcb47f24be0b
-[2025-03-29 23:06:50,685] 🚀 user actions log in session 0 {'mouse_hover_time': 8.51, 'scroll_depth': 6.8, 'cart_view_time': 6.03, 'num_clicks_before_purchase': 6, 'checkout_completion_time': 21.97, 'payment_processing_time': 0.69, 'user_id': 'USR-fdad3eb2ef6b4685baa499b9f589f20e', 'session_id': 'SES-cdcc3ee439534374828326ffba46edcc', 'tracking_id': 'TRK-f5f9d83c865344b0b3ebc06132ded3d3'}
-[2025-03-29 23:06:50,756] 🔵 Starting session for USR-73f253b01e884455adf3fa0fe94dfba3
-[2025-03-29 23:06:51,777] 🔵 Starting session for USR-525d71923cd8487bac32e891e099fd5f
-[2025-03-29 23:06:52,510] 🔵 Starting session for USR-625e9a9c51bb4c38ad55117992a29e7f
-[2025-03-29 23:06:53,293] 🚀 user actions log in session 0 {'mouse_hover_time': 0.34, 'scroll_depth': 0.91, 'cart_view_time': 2.75, 'num_clicks_before_purchase': 4, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-4694bdb7b3b64b939ba0dcb47f24be0b', 'session_id': 'SES-d5e42f120a8545dba87977fb2490bc09', 'tracking_id': 'TRK-673e7d49038f410b85538c7a05f4ab46'}
-[2025-03-29 23:06:53,369] ⏸️ Skipping USR-2be1a38274bd43d9ae181c13a43bf814 — session already running
-[2025-03-29 23:06:53,926] 🚀 user actions log in session 0 {'mouse_hover_time': 6.9, 'scroll_depth': 24.65, 'cart_view_time': 2.46, 'num_clicks_before_purchase': 3, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-a4821a7dcb8b4749b671b66356cfaa84', 'session_id': 'SES-815c83a636494a4f9366004cc04c7c06', 'tracking_id': 'TRK-e15748db9213497f9d3de3120b3f41fb'}
-[2025-03-29 23:06:54,092] ⏸️ Skipping USR-1f012366803c4b0984f1a9e7a3079328 — session already running
-[2025-03-29 23:06:54,455] 🚀 user actions log in session 0 {'mouse_hover_time': 5.56, 'scroll_depth': 22.33, 'cart_view_time': 10.78, 'num_clicks_before_purchase': 8, 'checkout_completion_time': 16.67, 'payment_processing_time': 0.0, 'user_id': 'USR-2be1a38274bd43d9ae181c13a43bf814', 'session_id': 'SES-f591b2c333d348aaba66bf8a6ac1ccdf', 'tracking_id': 'TRK-18914575a72a4cabb6bbaeffa3b4a527'}
-[2025-03-29 23:06:55,250] ⏸️ Skipping USR-1a06e4f296694b9290ac104c8bea8173 — session already running
-[2025-03-29 23:06:56,220] ⏸️ Skipping USR-a4821a7dcb8b4749b671b66356cfaa84 — session already running
-[2025-03-29 23:06:57,538] ⏸️ Skipping USR-525d71923cd8487bac32e891e099fd5f — session already running
-[2025-03-29 23:06:57,629] 🚀 user actions log in session 0 {'mouse_hover_time': 1.58, 'scroll_depth': 3.83, 'cart_view_time': 5.15, 'num_clicks_before_purchase': 6, 'checkout_completion_time': 3.07, 'payment_processing_time': 0.37, 'user_id': 'USR-12a1063489d8403bae282b33798ef6e7', 'session_id': 'SES-5ed09aaf95fb4d9797477bdde2f07ec8', 'tracking_id': 'TRK-3f10d76794dd464ebae2ca6430941643'}
-[2025-03-29 23:06:58,145] 🔵 Starting session for USR-5be28c2ffe2c4e1dafc816a7d860c82c
-[2025-03-29 23:06:58,820] ⏸️ Skipping USR-db9b13f1a4fe4f5db685c6eb52f22ebe — session already running
-[2025-03-29 23:06:59,817] 🔵 Starting session for USR-107b7a4f24084edba31ecde8739e81c8
-[2025-03-29 23:07:00,916] ⏸️ Skipping USR-b76fc9b0d9144bc8b6805f2ad5424fbb — session already running
-[2025-03-29 23:07:01,003] 🚀 user actions log in session 0 {'mouse_hover_time': 3.33, 'scroll_depth': 8.15, 'cart_view_time': 14.42, 'num_clicks_before_purchase': 26, 'checkout_completion_time': 5.86, 'payment_processing_time': 2.24, 'user_id': 'USR-a31561ace51d48e398d0fd392821f5b7', 'session_id': 'SES-1fddc9287aad4b77a8cf2b4a26634e66', 'tracking_id': 'TRK-fd9472349df047c58325a86ee5f5d8ec'}
-[2025-03-29 23:07:01,147] 🚀 user actions log in session 0 {'mouse_hover_time': 0.22, 'scroll_depth': 0.74, 'cart_view_time': 2.05, 'num_clicks_before_purchase': 8, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-5be28c2ffe2c4e1dafc816a7d860c82c', 'session_id': 'SES-086f9b1b191646cc9fe098e6c5b49435', 'tracking_id': 'TRK-4751d74bdbfd457b91e360eebf592b36'}
-[2025-03-29 23:07:02,144] 🔵 Starting session for USR-844848afb48c40c99ddd132659744e94
-[2025-03-29 23:07:02,883] 🔵 Starting session for USR-440babb7ec7d4bd2b7da419827c7bd3b
-[2025-03-29 23:07:03,728] ⏸️ Skipping USR-e5ac60b0dc3341808191477b7c4ad332 — session already running
-[2025-03-29 23:07:04,769] ⏸️ Skipping USR-d409d2c6640f4aab99853dcfe596f805 — session already running
-[2025-03-29 23:07:05,497] 🔵 Starting session for USR-9d16f4eb1f0149308ca80bfd794ff92b
-[2025-03-29 23:07:06,131] ⏸️ Skipping USR-3c718d760e9f4417ab81b5d368a69320 — session already running
-[2025-03-29 23:07:06,147] 🚀 user actions log in session 0 {'mouse_hover_time': 0.68, 'scroll_depth': 0.85, 'cart_view_time': 1.76, 'num_clicks_before_purchase': 9, 'checkout_completion_time': 0.69, 'payment_processing_time': 0.0, 'user_id': 'USR-844848afb48c40c99ddd132659744e94', 'session_id': 'SES-71eae900ba304aaa82331ab180ed5336', 'tracking_id': 'TRK-766c2627c94f4be792766ce5e394dffc'}
-[2025-03-29 23:07:07,170] 🔵 Starting session for USR-194ccb2698a4466b8712bf5ee8dfe3fd
-[2025-03-29 23:07:08,562] ⏸️ Skipping USR-1f6726f430e140d7af6b17838c7d9219 — session already running
-[2025-03-29 23:07:09,216] ⏸️ Skipping USR-6e748719340c4dc99f21725caea2e9cb — session already running
-[2025-03-29 23:07:10,377] 🔵 Starting session for USR-ffc1d9960a1d4232aa83e17f7bb19bd7
-[2025-03-29 23:07:11,130] ⏸️ Skipping USR-e5ac60b0dc3341808191477b7c4ad332 — session already running
-[2025-03-29 23:07:11,815] 🚀 user actions log in session 0 {'mouse_hover_time': 1.36, 'scroll_depth': 9.75, 'cart_view_time': 10.0, 'num_clicks_before_purchase': 11, 'checkout_completion_time': 2.19, 'payment_processing_time': 0.0, 'user_id': 'USR-8e772ae8832d4fd3a81a0dc513923b9c', 'session_id': 'SES-7846791e615543ac8be4baeef5f1a111', 'tracking_id': 'TRK-2993c0f1a657460c8e0eb99a16cd3bf6'}
-[2025-03-29 23:07:12,209] 🔵 Starting session for USR-35a98ea44efd4fc7a7ea51c513d21dcd
-[2025-03-29 23:07:13,494] ⏸️ Skipping USR-7f62bb0e434a4256b52dadc5fbd1c8b4 — session already running
-[2025-03-29 23:07:13,778] 🚀 user actions log in session 0 {'mouse_hover_time': 2.46, 'scroll_depth': 5.35, 'cart_view_time': 14.19, 'num_clicks_before_purchase': 16, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-525d71923cd8487bac32e891e099fd5f', 'session_id': 'SES-bdba10fcfabc410a93bd3371f2f405fb', 'tracking_id': 'TRK-eefe2e16b4264b62a2941bdd65e12c13'}
-[2025-03-29 23:07:14,076] 🔵 Starting session for USR-451de0133ab74477b3887e2b6bb36bb0
-[2025-03-29 23:07:15,079] 🚀 user actions log in session 0 {'mouse_hover_time': 0.08, 'scroll_depth': 0.33, 'cart_view_time': 0.58, 'num_clicks_before_purchase': 4, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-451de0133ab74477b3887e2b6bb36bb0', 'session_id': 'SES-25e3d81784fc4da8be8079a233b08739', 'tracking_id': 'TRK-f178b9f8873447b0a56438a8efd85edf'}
-[2025-03-29 23:07:15,216] 🔵 Starting session for USR-a76517ea96264262a58fbd00eb8e25fa
-[2025-03-29 23:07:16,116] 🔵 Starting session for USR-45cb2c2f8345406f996293e1d4c7972c
-[2025-03-29 23:07:17,055] 🚀 user actions log in session 0 {'mouse_hover_time': 1.62, 'scroll_depth': 9.78, 'cart_view_time': 25.59, 'num_clicks_before_purchase': 8, 'checkout_completion_time': 5.38, 'payment_processing_time': 0.64, 'user_id': 'USR-61d243b776124bafb08ce5121d4d23c5', 'session_id': 'SES-81d3cd6cb6904cc8adac3afcf7368868', 'tracking_id': 'TRK-a7fa82598cf643a0a802a45d887c155d'}
-[2025-03-29 23:07:17,405] 🔵 Starting session for USR-e294644b68854dad9110f05a1ec7195c
-[2025-03-29 23:07:18,395] ⏸️ Skipping USR-aff88370cfc54043b8ce28043fc27abe — session already running
-[2025-03-29 23:07:19,599] ⏸️ Skipping USR-11b71706fe874106a26356154309ac54 — session already running
-[2025-03-29 23:07:20,897] ⏸️ Skipping USR-ea469e9b8a3944d6bc95da30866c5882 — session already running
-[2025-03-29 23:07:21,564] 🚀 user actions log in session 0 {'mouse_hover_time': 0.56, 'scroll_depth': 24.07, 'cart_view_time': 34.37, 'num_clicks_before_purchase': 2, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-498b80eaef644e3bb577214ba0e33b4a', 'session_id': 'SES-74901c832dd1479ea090578fa8f2b4e6', 'tracking_id': 'TRK-1dba91cd51ab4eaca86a024f4f32295b'}
-[2025-03-29 23:07:22,052] ⏸️ Skipping USR-7096889fc0ca45949099c787653bc711 — session already running
-[2025-03-29 23:07:22,809] 🔵 Starting session for USR-786bc92c0a8d40379605de18521187c5
-[2025-03-29 23:07:24,121] 🔵 Starting session for USR-68882cbe2c3a4e5faf01f3bd5008cadb
-[2025-03-29 23:07:25,468] 🔵 Starting session for USR-e5cf2f9a41234d46a7011239969c8f2d
-[2025-03-29 23:07:26,066] 🕒 USR-1e77f35ed83a4f638079a86ba661c434 finished session 0
-[2025-03-29 23:07:26,865] 🔵 Starting session for USR-5d888e5cb2d94417badd379e90c9e824
-[2025-03-29 23:07:27,499] 🚀 user actions log in session 0 {'mouse_hover_time': 0.78, 'scroll_depth': 8.6, 'cart_view_time': 0.33, 'num_clicks_before_purchase': 3, 'checkout_completion_time': 11.6, 'payment_processing_time': 0.0, 'user_id': 'USR-9d16f4eb1f0149308ca80bfd794ff92b', 'session_id': 'SES-4751cdfbac764bf68b3f516a16639d24', 'tracking_id': 'TRK-3cb5bd4b7f11413dbc7067b8e836508c'}
-[2025-03-29 23:07:27,512] 🚀 user actions log in session 0 {'mouse_hover_time': 8.25, 'scroll_depth': 8.94, 'cart_view_time': 6.53, 'num_clicks_before_purchase': 28, 'checkout_completion_time': 9.58, 'payment_processing_time': 1.69, 'user_id': 'USR-625e9a9c51bb4c38ad55117992a29e7f', 'session_id': 'SES-8f1ea3764d834662854d4ec9e898fc46', 'tracking_id': 'TRK-ff0651d957074a6daefbfeab8587c0b9'}
-[2025-03-29 23:07:28,059] 🔵 Starting session for USR-5d72412c918146c5bffbc8282ab72a94
-[2025-03-29 23:07:29,354] ⏸️ Skipping USR-a91d6f1ccc3a477a8b86236dc9bbcd87 — session already running
-[2025-03-29 23:07:29,886] ⏸️ Skipping USR-db9b13f1a4fe4f5db685c6eb52f22ebe — session already running
-[2025-03-29 23:07:30,965] ⏸️ Skipping USR-7568579c7e4e40fdbc95979aaf4ca094 — session already running
-[2025-03-29 23:07:32,099] 🔵 Starting session for USR-533020dd60a8430ca9827da217d35ac0
-[2025-03-29 23:07:32,701] ⏸️ Skipping USR-ea469e9b8a3944d6bc95da30866c5882 — session already running
-[2025-03-29 23:07:33,366] 🔵 Starting session for USR-4c9ec5110b8e46f68c8936092c85c2fc
-[2025-03-29 23:07:34,236] ⏸️ Skipping USR-525d71923cd8487bac32e891e099fd5f — session already running
-[2025-03-29 23:07:34,250] 🛑 Coroutine shutdown signal received.
-[2025-03-29 23:07:42,004] 🔵 Starting session for USR-102739b4f5d140c9b4f2609bca80f58b
-[2025-03-29 23:07:43,258] 🔵 Starting session for USR-a76517ea96264262a58fbd00eb8e25fa
-[2025-03-29 23:07:44,148] 🔵 Starting session for USR-525d71923cd8487bac32e891e099fd5f
-[2025-03-29 23:07:44,261] 🚀 user actions log in session 0 {'mouse_hover_time': 0.09, 'scroll_depth': 0.26, 'cart_view_time': 0.52, 'num_clicks_before_purchase': 9, 'checkout_completion_time': 0.09, 'payment_processing_time': 0.0, 'user_id': 'USR-a76517ea96264262a58fbd00eb8e25fa', 'session_id': 'SES-1b0ba9dc3c564835b7cb9fafe4fef184', 'tracking_id': 'TRK-42ac138ff69640739625f56014d7244f'}
-[2025-03-29 23:07:45,255] 🔵 Starting session for USR-dc0628cc1f2a4865828df8c4bd72ee11
-[2025-03-29 23:07:46,603] 🔵 Starting session for USR-7a9d53b164834096912dacf0b1570f23
-[2025-03-29 23:07:48,077] 🔵 Starting session for USR-35a98ea44efd4fc7a7ea51c513d21dcd
-[2025-03-29 23:07:49,150] 🚀 user actions log in session 0 {'mouse_hover_time': 0.48, 'scroll_depth': 1.13, 'cart_view_time': 3.38, 'num_clicks_before_purchase': 11, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-525d71923cd8487bac32e891e099fd5f', 'session_id': 'SES-a29df25e7ebf4ac3b8084f013c26db29', 'tracking_id': 'TRK-a03cf97182bf42c192868caaa928f5d5'}
-[2025-03-29 23:07:49,436] 🔵 Starting session for USR-7b652419e6af48ff9a1f84cf43451b04
-[2025-03-29 23:07:50,139] ⏸️ Skipping USR-7a9d53b164834096912dacf0b1570f23 — session already running
-[2025-03-29 23:07:51,437] 🚀 user actions log in session 0 {'mouse_hover_time': 0.1, 'scroll_depth': 0.36, 'cart_view_time': 0.69, 'num_clicks_before_purchase': 8, 'checkout_completion_time': 0.84, 'payment_processing_time': 0.0, 'user_id': 'USR-7b652419e6af48ff9a1f84cf43451b04', 'session_id': 'SES-56bbb8854ca1459eaa418ad3a16c2ce2', 'tracking_id': 'TRK-9a15cb584c53419c8c8b36992d9a9c24'}
-[2025-03-29 23:07:51,548] ⏸️ Skipping USR-7a9d53b164834096912dacf0b1570f23 — session already running
-[2025-03-29 23:07:52,619] 🔵 Starting session for USR-b915049f141b4f3da980b342992267d8
-[2025-03-29 23:07:53,379] 🔵 Starting session for USR-e740a73b11214c7eb6b39c1eca927fa7
-[2025-03-29 23:07:54,080] 🚀 user actions log in session 0 {'mouse_hover_time': 0.11, 'scroll_depth': 2.92, 'cart_view_time': 2.97, 'num_clicks_before_purchase': 1, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-35a98ea44efd4fc7a7ea51c513d21dcd', 'session_id': 'SES-0e1eb4843ed84f259641b30bbe525c60', 'tracking_id': 'TRK-560fa8adb5304ee1a7147c75b802b3be'}
-[2025-03-29 23:07:54,283] 🔵 Starting session for USR-1059c3fcf9974b58805fa1ea28be57ab
-[2025-03-29 23:07:54,909] 🔵 Starting session for USR-7096889fc0ca45949099c787653bc711
-[2025-03-29 23:07:55,290] 🚀 user actions log in session 0 {'mouse_hover_time': 0.03, 'scroll_depth': 0.26, 'cart_view_time': 0.71, 'num_clicks_before_purchase': 13, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-1059c3fcf9974b58805fa1ea28be57ab', 'session_id': 'SES-9178682c43524ae28392323f4049ae1f', 'tracking_id': 'TRK-bea4284d86ba456783b45fd9d8339d75'}
-[2025-03-29 23:07:56,276] 🔵 Starting session for USR-11b71706fe874106a26356154309ac54
-[2025-03-29 23:07:57,449] 🔵 Starting session for USR-6e748719340c4dc99f21725caea2e9cb
-[2025-03-29 23:07:58,929] 🔵 Starting session for USR-4694bdb7b3b64b939ba0dcb47f24be0b
-[2025-03-29 23:07:59,734] 🔵 Starting session for USR-3b884ea54fc747c9aec6d70ce2deec6d
-[2025-03-29 23:08:00,778] 🔵 Starting session for USR-1e77f35ed83a4f638079a86ba661c434
-[2025-03-29 23:08:01,697] 🔵 Starting session for USR-09c2ee2877bb432792be501521474b46
-[2025-03-29 23:08:02,900] 🔵 Starting session for USR-fdad3eb2ef6b4685baa499b9f589f20e
-[2025-03-29 23:08:03,257] 🚀 user actions log in session 0 {'mouse_hover_time': 2.59, 'scroll_depth': 5.02, 'cart_view_time': 10.39, 'num_clicks_before_purchase': 7, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-dc0628cc1f2a4865828df8c4bd72ee11', 'session_id': 'SES-a2e85aa33b00470daf6c5974686f8ae4', 'tracking_id': 'TRK-1b5f7263239b48dea0606cca90389e76'}
-[2025-03-29 23:08:03,671] ⏸️ Skipping USR-4694bdb7b3b64b939ba0dcb47f24be0b — session already running
-[2025-03-29 23:08:04,988] ⏸️ Skipping USR-35a98ea44efd4fc7a7ea51c513d21dcd — session already running
-[2025-03-29 23:08:05,691] 🔵 Starting session for USR-1a06e4f296694b9290ac104c8bea8173
-[2025-03-29 23:08:06,606] 🚀 user actions log in session 0 {'mouse_hover_time': 0.4, 'scroll_depth': 5.54, 'cart_view_time': 3.64, 'num_clicks_before_purchase': 3, 'checkout_completion_time': 9.07, 'payment_processing_time': 0.0, 'user_id': 'USR-7a9d53b164834096912dacf0b1570f23', 'session_id': 'SES-2bd84ab5c1494360a671dcc2991b6851', 'tracking_id': 'TRK-09b57683cf74457494b0303621447ff4'}
-[2025-03-29 23:08:06,662] 🔵 Starting session for USR-81f4a21a8f564dc3b27e73d123bffbaf
-[2025-03-29 23:08:07,812] 🔵 Starting session for USR-d68887901ea745d4aba3cbf52e60b481
-[2025-03-29 23:08:08,395] 🔵 Starting session for USR-6e39e0d7621e473a9ae9fa78ec73d061
-[2025-03-29 23:08:09,399] 🚀 user actions log in session 0 {'mouse_hover_time': 0.02, 'scroll_depth': 0.18, 'cart_view_time': 0.26, 'num_clicks_before_purchase': 2, 'checkout_completion_time': 0.52, 'payment_processing_time': 0.02, 'user_id': 'USR-6e39e0d7621e473a9ae9fa78ec73d061', 'session_id': 'SES-0ca11529f3f14e1d8b8968e2765dfece', 'tracking_id': 'TRK-9ee00a2afca549a3b081ffae24e0bb9f'}
-[2025-03-29 23:08:09,784] 🔵 Starting session for USR-31b2a4cd3efc4743a1aa387046a4ba70
-[2025-03-29 23:08:10,815] 🚀 user actions log in session 0 {'mouse_hover_time': 0.48, 'scroll_depth': 0.82, 'cart_view_time': 1.21, 'num_clicks_before_purchase': 6, 'checkout_completion_time': 0.45, 'payment_processing_time': 0.05, 'user_id': 'USR-d68887901ea745d4aba3cbf52e60b481', 'session_id': 'SES-1b28e93721f147db8642e14811c70d44', 'tracking_id': 'TRK-80b1f92c4a2a4d19973bd25e509657fd'}
-[2025-03-29 23:08:10,867] 🔵 Starting session for USR-deccf77766bf4ed3835e38ffb91fd45c
-[2025-03-29 23:08:12,078] 🔵 Starting session for USR-3c718d760e9f4417ab81b5d368a69320
-[2025-03-29 23:08:13,093] 🔵 Starting session for USR-194683cdf6694f56807811e7ae085f26
-[2025-03-29 23:08:13,620] 🚀 user actions log in session 0 {'mouse_hover_time': 2.7, 'scroll_depth': 4.75, 'cart_view_time': 10.26, 'num_clicks_before_purchase': 20, 'checkout_completion_time': 1.83, 'payment_processing_time': 1.46, 'user_id': 'USR-b915049f141b4f3da980b342992267d8', 'session_id': 'SES-b6c639cb57bf46d18fb90b33a1c2e622', 'tracking_id': 'TRK-3940478e264d436988467913431de7f1'}
-[2025-03-29 23:08:14,406] ⏸️ Skipping USR-6e39e0d7621e473a9ae9fa78ec73d061 — session already running
-[2025-03-29 23:08:15,377] 🔵 Starting session for USR-ff0a1b5103a4443b913f2fbadb9b826b
-[2025-03-29 23:08:16,399] 🔵 Starting session for USR-c9cae450c4024884a06c3773723e2f90
-[2025-03-29 23:08:16,453] 🚀 user actions log in session 0 {'mouse_hover_time': 1.2, 'scroll_depth': 7.99, 'cart_view_time': 5.06, 'num_clicks_before_purchase': 10, 'checkout_completion_time': 4.54, 'payment_processing_time': 0.0, 'user_id': 'USR-6e748719340c4dc99f21725caea2e9cb', 'session_id': 'SES-e39cf36af14344a0b7d77bf8d2bcde2f', 'tracking_id': 'TRK-3a13d7c6a1494ffa84f35b2b68de1056'}
-[2025-03-29 23:08:17,457] ⏸️ Skipping USR-81f4a21a8f564dc3b27e73d123bffbaf — session already running
-[2025-03-29 23:08:17,787] 🚀 user actions log in session 0 {'mouse_hover_time': 0.72, 'scroll_depth': 2.73, 'cart_view_time': 2.55, 'num_clicks_before_purchase': 7, 'checkout_completion_time': 1.95, 'payment_processing_time': 0.05, 'user_id': 'USR-31b2a4cd3efc4743a1aa387046a4ba70', 'session_id': 'SES-eed78f5d9688469a85e26dae74a30401', 'tracking_id': 'TRK-aeb7ac2cbdb540428cba0be1308a4bb2'}
-[2025-03-29 23:08:18,870] 🔵 Starting session for USR-aff88370cfc54043b8ce28043fc27abe
-[2025-03-29 23:08:19,620] 🔵 Starting session for USR-440babb7ec7d4bd2b7da419827c7bd3b
-[2025-03-29 23:08:20,519] ⏸️ Skipping USR-11b71706fe874106a26356154309ac54 — session already running
-[2025-03-29 23:08:20,780] 🚀 user actions log in session 0 {'mouse_hover_time': 2.31, 'scroll_depth': 6.65, 'cart_view_time': 4.93, 'num_clicks_before_purchase': 4, 'checkout_completion_time': 5.53, 'payment_processing_time': 0.58, 'user_id': 'USR-1e77f35ed83a4f638079a86ba661c434', 'session_id': 'SES-87c83dc9251746c5ba502260dd72aa4e', 'tracking_id': 'TRK-0c493d65015f46d69b1058e73ae30801'}
-[2025-03-29 23:08:21,277] 🚀 user actions log in session 0 {'mouse_hover_time': 0.99, 'scroll_depth': 6.05, 'cart_view_time': 7.99, 'num_clicks_before_purchase': 9, 'checkout_completion_time': 8.88, 'payment_processing_time': 1.09, 'user_id': 'USR-11b71706fe874106a26356154309ac54', 'session_id': 'SES-2b600b1a059d4925a3d30061792872a1', 'tracking_id': 'TRK-14fc7816aeea46fab8c93e8eea39ebac'}
-[2025-03-29 23:08:21,714] 🔵 Starting session for USR-7b478de1a01b45a284000bf381292269
-[2025-03-29 23:08:22,438] 🔵 Starting session for USR-4aa6223845164fa6a45eb2cf17f9647d
-[2025-03-29 23:08:23,586] 🔵 Starting session for USR-9752003c497b4d1f97d1684bd1fde84d
-[2025-03-29 23:08:23,668] 🚀 user actions log in session 0 {'mouse_hover_time': 0.78, 'scroll_depth': 4.82, 'cart_view_time': 11.4, 'num_clicks_before_purchase': 8, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-81f4a21a8f564dc3b27e73d123bffbaf', 'session_id': 'SES-a3138a14d50346389f7cd516aedf4eca', 'tracking_id': 'TRK-dc78d92d360a406ebdd1c8438593cd08'}
-[2025-03-29 23:08:24,548] 🔵 Starting session for USR-b02091163a894fc880c88cf4564c1d37
-[2025-03-29 23:08:24,930] 🚀 user actions log in session 0 {'mouse_hover_time': 3.8, 'scroll_depth': 12.41, 'cart_view_time': 9.79, 'num_clicks_before_purchase': 6, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-4694bdb7b3b64b939ba0dcb47f24be0b', 'session_id': 'SES-06b586ff2c094c339b4ccd2ec10f9cd3', 'tracking_id': 'TRK-6b068192e05e40469db349f472c31768'}
-[2025-03-29 23:08:25,005] 🚀 user actions log in session 0 {'mouse_hover_time': 2.31, 'scroll_depth': 20.15, 'cart_view_time': 10.72, 'num_clicks_before_purchase': 2, 'checkout_completion_time': 7.36, 'payment_processing_time': 0.0, 'user_id': 'USR-102739b4f5d140c9b4f2609bca80f58b', 'session_id': 'SES-566081a4294947e39124ff43b65d336f', 'tracking_id': 'TRK-89f2f48191114d49be0ffd49974794ed'}
-[2025-03-29 23:08:25,840] 🔵 Starting session for USR-ea469e9b8a3944d6bc95da30866c5882
-[2025-03-29 23:08:27,109] ⏸️ Skipping USR-ea469e9b8a3944d6bc95da30866c5882 — session already running
-[2025-03-29 23:08:27,872] 🚀 user actions log in session 0 {'mouse_hover_time': 0.98, 'scroll_depth': 3.86, 'cart_view_time': 1.64, 'num_clicks_before_purchase': 26, 'checkout_completion_time': 1.8, 'payment_processing_time': 0.0, 'user_id': 'USR-aff88370cfc54043b8ce28043fc27abe', 'session_id': 'SES-a1a3100ebdf74e338ce13bb7fe84f3f6', 'tracking_id': 'TRK-a6b6f6b7fdfe408c960a1ec95210e0c6'}
-[2025-03-29 23:08:28,273] ⏸️ Skipping USR-1e77f35ed83a4f638079a86ba661c434 — session already running
-[2025-03-29 23:08:29,642] 🔵 Starting session for USR-49b30263584e4ca1800dfec59ee12a9d
-[2025-03-29 23:08:29,700] 🚀 user actions log in session 0 {'mouse_hover_time': 3.17, 'scroll_depth': 6.19, 'cart_view_time': 11.74, 'num_clicks_before_purchase': 7, 'checkout_completion_time': 5.89, 'payment_processing_time': 1.01, 'user_id': 'USR-09c2ee2877bb432792be501521474b46', 'session_id': 'SES-402d6b9b31a1486ca88c32358be14d90', 'tracking_id': 'TRK-649946f3533c46d49114ee0e64fc4273'}
-[2025-03-29 23:08:30,439] 🚀 user actions log in session 0 {'mouse_hover_time': 0.53, 'scroll_depth': 1.82, 'cart_view_time': 5.65, 'num_clicks_before_purchase': 19, 'checkout_completion_time': 0.0, 'payment_processing_time': 0.0, 'user_id': 'USR-4aa6223845164fa6a45eb2cf17f9647d', 'session_id': 'SES-b8b68b025e62451582ff703a44db2f63', 'tracking_id': 'TRK-65587191d3a04c8eaf69caac59912996'}
-[2025-03-29 23:08:30,534] ⏸️ Skipping USR-11b71706fe874106a26356154309ac54 — session already running
-[2025-03-29 23:08:31,839] ⏸️ Skipping USR-1e77f35ed83a4f638079a86ba661c434 — session already running
-[2025-03-29 23:08:33,165] 🔵 Starting session for USR-786bc92c0a8d40379605de18521187c5
-[2025-03-29 23:08:33,644] 🚀 user actions log in session 0 {'mouse_hover_time': 0.29, 'scroll_depth': 0.37, 'cart_view_time': 2.87, 'num_clicks_before_purchase': 6, 'checkout_completion_time': 0.42, 'payment_processing_time': 0.0, 'user_id': 'USR-49b30263584e4ca1800dfec59ee12a9d', 'session_id': 'SES-975bc2de8b3b48b894c6996f7b6e776f', 'tracking_id': 'TRK-68e6f00a606a4a0586930224fee90c2d'}
-[2025-03-29 23:08:34,640] 🔵 Starting session for USR-a6b0862a68154f7b9a65aa4358ed1bc1
-[2025-03-29 23:08:35,901] 🚀 user actions log in session 0 {'mouse_hover_time': 5.56, 'scroll_depth': 6.43, 'cart_view_time': 12.39, 'num_clicks_before_purchase': 7, 'checkout_completion_time': 8.16, 'payment_processing_time': 0.0, 'user_id': 'USR-fdad3eb2ef6b4685baa499b9f589f20e', 'session_id': 'SES-5f3cb958661f4fedb7ff458ba55345d3', 'tracking_id': 'TRK-47e68c92feba4f968751bd4319e18d30'}
-[2025-03-29 23:08:35,919] 🔵 Starting session for USR-844848afb48c40c99ddd132659744e94
-[2025-03-29 23:08:36,714] ⏸️ Skipping USR-a6b0862a68154f7b9a65aa4358ed1bc1 — session already running
-[2025-03-29 23:08:37,512] 🔵 Starting session for USR-a3bb27d8a5a041878485fe6ed92e310d
-[2025-03-29 23:08:38,084] 🔵 Starting session for USR-45cb2c2f8345406f996293e1d4c7972c
-[2025-03-29 23:08:38,643] 🚀 user actions log in session 0 {'mouse_hover_time': 0.11, 'scroll_depth': 0.97, 'cart_view_time': 1.95, 'num_clicks_before_purchase': 3, 'checkout_completion_time': 0.89, 'payment_processing_time': 0.0, 'user_id': 'USR-a6b0862a68154f7b9a65aa4358ed1bc1', 'session_id': 'SES-7249640f97ab448c9424e5d9341bce14', 'tracking_id': 'TRK-25e6d561ad944524baf0622354f4376f'}
-[2025-03-29 23:08:39,083] ⏸️ Skipping USR-6e748719340c4dc99f21725caea2e9cb — session already running
-[2025-03-29 23:08:40,209] 🔵 Starting session for USR-1d6ecabb911d478caac90151fd9bd6a0
-[2025-03-29 23:08:40,401] 🚀 user actions log in session 0 {'mouse_hover_time': 1.92, 'scroll_depth': 4.87, 'cart_view_time': 13.93, 'num_clicks_before_purchase': 15, 'checkout_completion_time': 1.53, 'payment_processing_time': 0.0, 'user_id': 'USR-c9cae450c4024884a06c3773723e2f90', 'session_id': 'SES-ec656a64725448669c517812b327b130', 'tracking_id': 'TRK-b62d9f43e1544058b7e285bf9559f68e'}
-[2025-03-29 23:08:41,536] 🔵 Starting session for USR-ce73a7eec4ee469ba2ad2e25e7d22d08
-[2025-03-29 23:08:41,920] 🚀 user actions log in session 0 {'mouse_hover_time': 0.49, 'scroll_depth': 0.7, 'cart_view_time': 3.28, 'num_clicks_before_purchase': 11, 'checkout_completion_time': 1.51, 'payment_processing_time': 0.03, 'user_id': 'USR-844848afb48c40c99ddd132659744e94', 'session_id': 'SES-cb68dbbc1ffa48e58975df6ff7bc48f2', 'tracking_id': 'TRK-3c176a08ebd942f49c88cd92129840ec'}
-[2025-03-29 23:08:42,080] 🚀 user actions log in session 0 {'mouse_hover_time': 4.38, 'scroll_depth': 6.55, 'cart_view_time': 10.12, 'num_clicks_before_purchase': 19, 'checkout_completion_time': 7.72, 'payment_processing_time': 1.23, 'user_id': 'USR-3c718d760e9f4417ab81b5d368a69320', 'session_id': 'SES-9dbf859bf62e458aa3325f97e9fa7769', 'tracking_id': 'TRK-f14f5df297b74548bcce5c58ba6a111a'}
-[2025-03-29 23:08:42,225] ⏸️ Skipping USR-844848afb48c40c99ddd132659744e94 — session already running
-[2025-03-29 23:08:43,586] 🔵 Starting session for USR-101ecc51a9474e96a4b815bfab264482
-[2025-03-29 23:08:43,736] 🚀 user actions log in session 0 {'mouse_hover_time': 0.59, 'scroll_depth': 3.56, 'cart_view_time': 1.59, 'num_clicks_before_purchase': 23, 'checkout_completion_time': 37.6, 'payment_processing_time': 0.0, 'user_id': 'USR-3b884ea54fc747c9aec6d70ce2deec6d', 'session_id': 'SES-be694ceeec234145ac6b2f0a4b16b176', 'tracking_id': 'TRK-e01bbc0d74f14883bb2e5162e876d9ac'}
-[2025-03-29 23:08:43,910] 🚀 user actions log in session 0 {'mouse_hover_time': 2.24, 'scroll_depth': 13.79, 'cart_view_time': 21.71, 'num_clicks_before_purchase': 17, 'checkout_completion_time': 7.8, 'payment_processing_time': 3.47, 'user_id': 'USR-7096889fc0ca45949099c787653bc711', 'session_id': 'SES-b305aafa20974d32b3405a9ad57c674b', 'tracking_id': 'TRK-6dc6cf6bdecb4ae28bf80bc73e430fb7'}
-[2025-03-29 23:08:44,237] 🔵 Starting session for USR-4aba95d72a3342eea4ad5383b137e04c
-[2025-03-29 23:08:45,566] ⏸️ Skipping USR-11b71706fe874106a26356154309ac54 — session already running
-[2025-03-29 23:08:46,100] 🔵 Starting session for USR-107b7a4f24084edba31ecde8739e81c8
-[2025-03-29 23:08:46,701] ⏸️ Skipping USR-1a06e4f296694b9290ac104c8bea8173 — session already running
-[2025-03-29 23:08:47,378] 🚀 user actions log in session 0 {'mouse_hover_time': 5.04, 'scroll_depth': 7.76, 'cart_view_time': 13.57, 'num_clicks_before_purchase': 19, 'checkout_completion_time': 4.95, 'payment_processing_time': 0.0, 'user_id': 'USR-ff0a1b5103a4443b913f2fbadb9b826b', 'session_id': 'SES-ac60fce60eb64385974758fb1e986ea3', 'tracking_id': 'TRK-092bfb9853984918a5a4945fea3af7c8'}
-[2025-03-29 23:08:47,693] 🚀 user actions log in session 0 {'mouse_hover_time': 0.48, 'scroll_depth': 20.72, 'cart_view_time': 9.06, 'num_clicks_before_purchase': 5, 'checkout_completion_time': 7.77, 'payment_processing_time': 3.97, 'user_id': 'USR-1a06e4f296694b9290ac104c8bea8173', 'session_id': 'SES-070b041461b643b799d19f700994415e', 'tracking_id': 'TRK-489eb36be75c412b90e140c524a60ca7'}
-[2025-03-29 23:08:48,190] ⏸️ Skipping USR-fdad3eb2ef6b4685baa499b9f589f20e — session already running
-[2025-03-29 23:08:49,439] 🔵 Starting session for USR-425f1483494b416b9dd8f1d85cdca5b1
-[2025-03-29 23:08:50,893] 🔵 Starting session for USR-e5cf2f9a41234d46a7011239969c8f2d
-[2025-03-29 23:08:51,381] 🚀 user actions log in session 0 {'mouse_hover_time': 0.83, 'scroll_depth': 7.83, 'cart_view_time': 17.12, 'num_clicks_before_purchase': 5, 'checkout_completion_time': 32.22, 'payment_processing_time': 0.0, 'user_id': 'USR-e740a73b11214c7eb6b39c1eca927fa7', 'session_id': 'SES-d86daa3d72894c5a9d0e25bebc439c2b', 'tracking_id': 'TRK-df96af96784948559e2ad3d60ea38dd6'}
-[2025-03-29 23:08:52,240] 🔵 Starting session for USR-8a5a0878bd994db99cd8b9197182ebbc
-[2025-03-29 23:08:53,601] 🔵 Starting session for USR-a8da19b3063d4f228f27bd5df3ca4431
-[2025-03-29 23:08:54,167] 🚀 user actions log in session 0 {'mouse_hover_time': 3.56, 'scroll_depth': 4.99, 'cart_view_time': 7.63, 'num_clicks_before_purchase': 24, 'checkout_completion_time': 4.21, 'payment_processing_time': 0.0, 'user_id': 'USR-786bc92c0a8d40379605de18521187c5', 'session_id': 'SES-39457789453d4c67adea1151a90bf6c2', 'tracking_id': 'TRK-56dbb758c56749b39f4cb479380ffb0f'}
-[2025-03-29 23:08:54,895] ⏸️ Skipping USR-c9cae450c4024884a06c3773723e2f90 — session already running
-[2025-03-29 23:08:55,211] 🚀 user actions log in session 0 {'mouse_hover_time': 1.56, 'scroll_depth': 3.98, 'cart_view_time': 5.69, 'num_clicks_before_purchase': 8, 'checkout_completion_time': 3.51, 'payment_processing_time': 0.0, 'user_id': 'USR-1d6ecabb911d478caac90151fd9bd6a0', 'session_id': 'SES-cbce00c2e9c1457985b15a7963e51c0b', 'tracking_id': 'TRK-57b9a60781994b1f97ea42d50365bd6c'}
-[2025-03-29 23:08:56,002] 🔵 Starting session for USR-e5ac60b0dc3341808191477b7c4ad332
-[2025-03-29 23:08:56,691] ⏸️ Skipping USR-b02091163a894fc880c88cf4564c1d37 — session already running
-[2025-03-29 23:08:57,102] 🚀 user actions log in session 0 {'mouse_hover_time': 0.11, 'scroll_depth': 1.46, 'cart_view_time': 1.7, 'num_clicks_before_purchase': 15, 'checkout_completion_time': 7.72, 'payment_processing_time': 0.0, 'user_id': 'USR-107b7a4f24084edba31ecde8739e81c8', 'session_id': 'SES-81a1fb64a6aa4cdfb2f320dba490a922', 'tracking_id': 'TRK-1e4de0a52aca4cc88c18a1e8bc95784c'}
-[2025-03-29 23:08:57,241] 🚀 user actions log in session 0 {'mouse_hover_time': 0.7, 'scroll_depth': 1.92, 'cart_view_time': 1.54, 'num_clicks_before_purchase': 14, 'checkout_completion_time': 0.41, 'payment_processing_time': 0.44, 'user_id': 'USR-8a5a0878bd994db99cd8b9197182ebbc', 'session_id': 'SES-df76af7d1ac64ccda279c318a2d1b310', 'tracking_id': 'TRK-b786fbecd1bb4578b093b288b373c568'}
-[2025-03-29 23:08:57,550] 🚀 user actions log in session 0 {'mouse_hover_time': 2.08, 'scroll_depth': 12.12, 'cart_view_time': 7.8, 'num_clicks_before_purchase': 3, 'checkout_completion_time': 10.47, 'payment_processing_time': 0.0, 'user_id': 'USR-b02091163a894fc880c88cf4564c1d37', 'session_id': 'SES-50d91bbdead746c9aea227f4354e13d3', 'tracking_id': 'TRK-9e7ebb60c01a42f2bdd991a84d88879c'}
-[2025-03-29 23:08:57,600] ⏸️ Skipping USR-45cb2c2f8345406f996293e1d4c7972c — session already running
-[2025-03-29 23:08:58,371] ⏸️ Skipping USR-aff88370cfc54043b8ce28043fc27abe — session already running
-[2025-03-29 23:08:59,097] 🚀 user actions log in session 0 {'mouse_hover_time': 1.44, 'scroll_depth': 16.36, 'cart_view_time': 8.99, 'num_clicks_before_purchase': 5, 'checkout_completion_time': 17.94, 'payment_processing_time': 1.27, 'user_id': 'USR-194683cdf6694f56807811e7ae085f26', 'session_id': 'SES-9a890a1417194e4189a0055f08d36b31', 'tracking_id': 'TRK-9e1431a40f9f45b59e480e247830475d'}
-[2025-03-29 23:08:59,275] 🔵 Starting session for USR-33ba68310e4646c3b61e5dd16e3d546d
-[2025-03-29 23:09:00,424] ⏸️ Skipping USR-a76517ea96264262a58fbd00eb8e25fa — session already running
-[2025-03-29 23:09:00,827] 🛑 Coroutine shutdown signal received.
+[2025-03-30 15:12:59,597] 🔵 Starting session for USR-b915049f141b4f3da980b342992267d8
+[2025-03-30 15:13:00,972] 🔵 Starting session for USR-e740a73b11214c7eb6b39c1eca927fa7
+[2025-03-30 15:13:01,657] ⏸️ Skipping USR-b915049f141b4f3da980b342992267d8 — session already running
+[2025-03-30 15:13:02,528] 🔵 Starting session for USR-12a1063489d8403bae282b33798ef6e7
+[2025-03-30 15:13:03,222] 🔵 Starting session for USR-f7729af7abae4ff7896e0a3316915232
+[2025-03-30 15:13:04,176] 🔵 Starting session for USR-d81356b7147d4129b1d714f080e30485
+[2025-03-30 15:13:04,677] 🔵 Starting session for USR-255455ffb0bf435b9537e87b8d2a8f68
+[2025-03-30 15:13:05,306] 🔵 Starting session for USR-7a9d53b164834096912dacf0b1570f23
+[2025-03-30 15:13:06,506] 🔵 Starting session for USR-1f012366803c4b0984f1a9e7a3079328
+[2025-03-30 15:13:07,796] 🔵 Starting session for USR-aff88370cfc54043b8ce28043fc27abe
+[2025-03-30 15:13:08,547] 🔵 Starting session for USR-1d6ecabb911d478caac90151fd9bd6a0
+[2025-03-30 15:13:09,438] 🔵 Starting session for USR-3c718d760e9f4417ab81b5d368a69320
+[2025-03-30 15:13:10,387] 🔵 Starting session for USR-989cec96403f4559898c5ff0e9ed654b
+[2025-03-30 15:13:11,387] 🔵 Starting session for USR-e5ac60b0dc3341808191477b7c4ad332
+[2025-03-30 15:13:11,440] 🚀 USR-3c718d760e9f4417ab81b5d368a69320 actions log in session 0
+[2025-03-30 15:13:11,441] 🖱️ Mouse hovered for: 0.24s
+[2025-03-30 15:13:11,441] 📜 Scrolled for: 0.63s
+[2025-03-30 15:13:11,441] 🛒 Viewed cart for: 0.57s
+[2025-03-30 15:13:11,441] ✅ Cart checkout time: 0.4s
+[2025-03-30 15:13:11,441] 💳 Payment time: 0.0s
+[2025-03-30 15:13:12,205] 🔵 Starting session for USR-4aba95d72a3342eea4ad5383b137e04c
+[2025-03-30 15:13:12,792] 🔵 Starting session for USR-9e3f50d9a0ca4b40a4e84fdbc170d32c
+[2025-03-30 15:13:14,098] 🔵 Starting session for USR-844848afb48c40c99ddd132659744e94
+[2025-03-30 15:13:14,648] 🔵 Starting session for USR-ea469e9b8a3944d6bc95da30866c5882
+[2025-03-30 15:13:16,009] 🔵 Starting session for USR-10c47d8b977a4002be42574387c1e78f
+[2025-03-30 15:13:16,693] 🔵 Starting session for USR-7568579c7e4e40fdbc95979aaf4ca094
+[2025-03-30 15:13:17,508] 🔵 Starting session for USR-9d16f4eb1f0149308ca80bfd794ff92b
+[2025-03-30 15:13:17,550] 🚀 USR-1d6ecabb911d478caac90151fd9bd6a0 actions log in session 0
+[2025-03-30 15:13:17,550] 🖱️ Mouse hovered for: 0.84s
+[2025-03-30 15:13:17,550] 📜 Scrolled for: 3.2s
+[2025-03-30 15:13:17,550] 🛒 Viewed cart for: 1.67s
+[2025-03-30 15:13:17,550] ✅ Cart checkout time: 3.05s
+[2025-03-30 15:13:17,551] 💳 Payment time: 0.24s
+[2025-03-30 15:13:18,678] 🔵 Starting session for USR-6e748719340c4dc99f21725caea2e9cb
+[2025-03-30 15:13:19,907] 🔵 Starting session for USR-4aa6223845164fa6a45eb2cf17f9647d
+[2025-03-30 15:13:21,400] 🔵 Starting session for USR-7096889fc0ca45949099c787653bc711
+[2025-03-30 15:13:21,927] 🔵 Starting session for USR-4c591fec73114253a0bdfa5b12940b38
+[2025-03-30 15:13:22,224] 🚀 USR-f7729af7abae4ff7896e0a3316915232 actions log in session 0
+[2025-03-30 15:13:22,225] 🖱️ Mouse hovered for: 0.34s
+[2025-03-30 15:13:22,225] 📜 Scrolled for: 6.64s
+[2025-03-30 15:13:22,225] 🛒 Viewed cart for: 7.55s
+[2025-03-30 15:13:22,225] ✅ Cart checkout time: 3.56s
+[2025-03-30 15:13:22,225] 💳 Payment time: 0.92s
+[2025-03-30 15:13:22,910] 🔵 Starting session for USR-325b5b8f6e27434bbe22d87e6c5c8ea6
+[2025-03-30 15:13:23,436] ⏸️ Skipping USR-989cec96403f4559898c5ff0e9ed654b — session already running
+[2025-03-30 15:13:23,794] 🚀 USR-9e3f50d9a0ca4b40a4e84fdbc170d32c actions log in session 0
+[2025-03-30 15:13:23,795] 🖱️ Mouse hovered for: 1.11s
+[2025-03-30 15:13:23,795] 📜 Scrolled for: 2.96s
+[2025-03-30 15:13:23,795] 🛒 Viewed cart for: 3.01s
+[2025-03-30 15:13:23,795] ✅ Cart checkout time: 3.39s
+[2025-03-30 15:13:23,795] 💳 Payment time: 0.52s
+[2025-03-30 15:13:24,737] 🔵 Starting session for USR-a6b0862a68154f7b9a65aa4358ed1bc1
+[2025-03-30 15:13:25,740] 🚀 USR-a6b0862a68154f7b9a65aa4358ed1bc1 actions log in session 0
+[2025-03-30 15:13:25,740] 🖱️ Mouse hovered for: 0.02s
+[2025-03-30 15:13:25,740] 📜 Scrolled for: 0.09s
+[2025-03-30 15:13:25,740] 🛒 Viewed cart for: 0.42s
+[2025-03-30 15:13:25,741] ✅ Cart checkout time: 0.45s
+[2025-03-30 15:13:25,741] 💳 Payment time: 0.0s
+[2025-03-30 15:13:25,995] 🔵 Starting session for USR-6392e44501194ffe8f65d0432db748f2
+[2025-03-30 15:13:26,531] 🚀 USR-12a1063489d8403bae282b33798ef6e7 actions log in session 0
+[2025-03-30 15:13:26,532] 🖱️ Mouse hovered for: 2.79s
+[2025-03-30 15:13:26,532] 📜 Scrolled for: 9.82s
+[2025-03-30 15:13:26,532] 🛒 Viewed cart for: 6.68s
+[2025-03-30 15:13:26,532] ✅ Cart checkout time: 3.99s
+[2025-03-30 15:13:26,532] 💳 Payment time: 0.0s
+[2025-03-30 15:13:27,122] ⏸️ Skipping USR-844848afb48c40c99ddd132659744e94 — session already running
+[2025-03-30 15:13:28,462] 🔵 Starting session for USR-102739b4f5d140c9b4f2609bca80f58b
+[2025-03-30 15:13:29,781] 🔵 Starting session for USR-1e76671edd4046bf855ab974f2d04408
+[2025-03-30 15:13:30,571] ⏸️ Skipping USR-12a1063489d8403bae282b33798ef6e7 — session already running
+[2025-03-30 15:13:30,695] 🚀 USR-7568579c7e4e40fdbc95979aaf4ca094 actions log in session 0
+[2025-03-30 15:13:30,695] 🖱️ Mouse hovered for: 0.27s
+[2025-03-30 15:13:30,695] 📜 Scrolled for: 4.6s
+[2025-03-30 15:13:30,695] 🛒 Viewed cart for: 6.14s
+[2025-03-30 15:13:30,695] ✅ Cart checkout time: 2.63s
+[2025-03-30 15:13:30,695] 💳 Payment time: 0.0s
+[2025-03-30 15:13:31,163] 🔵 Starting session for USR-432255fee90c45c3abdd7ec12a792135
+[2025-03-30 15:13:31,922] ⏸️ Skipping USR-12a1063489d8403bae282b33798ef6e7 — session already running
+[2025-03-30 15:13:32,178] 🚀 USR-d81356b7147d4129b1d714f080e30485 actions log in session 0
+[2025-03-30 15:13:32,178] 🖱️ Mouse hovered for: 7.22s
+[2025-03-30 15:13:32,178] 📜 Scrolled for: 5.84s
+[2025-03-30 15:13:32,178] 🛒 Viewed cart for: 6.95s
+[2025-03-30 15:13:32,178] ✅ Cart checkout time: 4.89s
+[2025-03-30 15:13:32,178] 💳 Payment time: 3.09s
+[2025-03-30 15:13:32,206] 🚀 USR-4aba95d72a3342eea4ad5383b137e04c actions log in session 0
+[2025-03-30 15:13:32,206] 🖱️ Mouse hovered for: 0.45s
+[2025-03-30 15:13:32,206] 📜 Scrolled for: 4.34s
+[2025-03-30 15:13:32,206] 🛒 Viewed cart for: 9.71s
+[2025-03-30 15:13:32,206] ✅ Cart checkout time: 4.52s
+[2025-03-30 15:13:32,206] 💳 Payment time: 0.99s
+[2025-03-30 15:13:32,402] 🚀 USR-7096889fc0ca45949099c787653bc711 actions log in session 0
+[2025-03-30 15:13:32,402] 🖱️ Mouse hovered for: 1.39s
+[2025-03-30 15:13:32,402] 📜 Scrolled for: 2.23s
+[2025-03-30 15:13:32,402] 🛒 Viewed cart for: 5.34s
+[2025-03-30 15:13:32,402] ✅ Cart checkout time: 1.22s
+[2025-03-30 15:13:32,402] 💳 Payment time: 0.0s
+[2025-03-30 15:13:33,068] 🔵 Starting session for USR-194ccb2698a4466b8712bf5ee8dfe3fd
+[2025-03-30 15:13:33,913] 🚀 USR-325b5b8f6e27434bbe22d87e6c5c8ea6 actions log in session 0
+[2025-03-30 15:13:33,914] 🖱️ Mouse hovered for: 0.91s
+[2025-03-30 15:13:33,914] 📜 Scrolled for: 1.48s
+[2025-03-30 15:13:33,914] 🛒 Viewed cart for: 5.3s
+[2025-03-30 15:13:33,914] ✅ Cart checkout time: 3.28s
+[2025-03-30 15:13:33,914] 💳 Payment time: 0.0s
+[2025-03-30 15:13:34,569] 🔵 Starting session for USR-c9197f76ae154ee6a6d3ef620c718847
+[2025-03-30 15:13:36,014] 🔵 Starting session for USR-463c0c9b13ab4c8aa0898aac643e2f35
+[2025-03-30 15:13:36,857] 🔵 Starting session for USR-fa6a90bef7c74318801e80d63e56aaf0
+[2025-03-30 15:13:38,159] 🔵 Starting session for USR-ce73a7eec4ee469ba2ad2e25e7d22d08
+[2025-03-30 15:13:39,134] 🔵 Starting session for USR-45cb2c2f8345406f996293e1d4c7972c
+[2025-03-30 15:13:39,161] 🚀 USR-ce73a7eec4ee469ba2ad2e25e7d22d08 actions log in session 0
+[2025-03-30 15:13:39,161] 🖱️ Mouse hovered for: 0.06s
+[2025-03-30 15:13:39,161] 📜 Scrolled for: 0.34s
+[2025-03-30 15:13:39,161] 🛒 Viewed cart for: 0.26s
+[2025-03-30 15:13:39,161] ✅ Cart checkout time: 0.3s
+[2025-03-30 15:13:39,161] 💳 Payment time: 0.04s
+[2025-03-30 15:13:40,093] 🔵 Starting session for USR-a8da19b3063d4f228f27bd5df3ca4431
+[2025-03-30 15:13:40,697] 🔵 Starting session for USR-2be1a38274bd43d9ae181c13a43bf814
+[2025-03-30 15:13:41,573] 🚀 USR-c9197f76ae154ee6a6d3ef620c718847 actions log in session 0
+[2025-03-30 15:13:41,573] 🖱️ Mouse hovered for: 1.11s
+[2025-03-30 15:13:41,574] 📜 Scrolled for: 0.94s
+[2025-03-30 15:13:41,574] 🛒 Viewed cart for: 2.81s
+[2025-03-30 15:13:41,574] ✅ Cart checkout time: 2.08s
+[2025-03-30 15:13:41,574] 💳 Payment time: 0.0s
+[2025-03-30 15:13:41,599] 🚀 USR-b915049f141b4f3da980b342992267d8 actions log in session 0
+[2025-03-30 15:13:41,599] 🖱️ Mouse hovered for: 3.11s
+[2025-03-30 15:13:41,599] 📜 Scrolled for: 13.32s
+[2025-03-30 15:13:41,599] 🛒 Viewed cart for: 16.43s
+[2025-03-30 15:13:41,599] ✅ Cart checkout time: 6.46s
+[2025-03-30 15:13:41,599] 💳 Payment time: 0.0s
+[2025-03-30 15:13:41,919] 🔵 Starting session for USR-61d243b776124bafb08ce5121d4d23c5
+[2025-03-30 15:13:42,788] 🔵 Starting session for USR-6d4573c9cae5460c8884d5f1860af8ba
+[2025-03-30 15:13:43,136] 🚀 USR-45cb2c2f8345406f996293e1d4c7972c actions log in session 0
+[2025-03-30 15:13:43,136] 🖱️ Mouse hovered for: 0.7s
+[2025-03-30 15:13:43,137] 📜 Scrolled for: 0.62s
+[2025-03-30 15:13:43,137] 🛒 Viewed cart for: 2.68s
+[2025-03-30 15:13:43,137] ✅ Cart checkout time: 0.0s
+[2025-03-30 15:13:43,137] 💳 Payment time: 0.0s
+[2025-03-30 15:13:44,002] ⏸️ Skipping USR-a8da19b3063d4f228f27bd5df3ca4431 — session already running
+[2025-03-30 15:13:44,571] ⏸️ Skipping USR-102739b4f5d140c9b4f2609bca80f58b — session already running
+[2025-03-30 15:13:45,860] 🚀 USR-fa6a90bef7c74318801e80d63e56aaf0 actions log in session 0
+[2025-03-30 15:13:45,860] 🖱️ Mouse hovered for: 0.63s
+[2025-03-30 15:13:45,860] 📜 Scrolled for: 1.97s
+[2025-03-30 15:13:45,860] 🛒 Viewed cart for: 3.81s
+[2025-03-30 15:13:45,860] ✅ Cart checkout time: 2.43s
+[2025-03-30 15:13:45,861] 💳 Payment time: 0.0s
+[2025-03-30 15:13:45,885] 🔵 Starting session for USR-6e354c0a4e774db6981ffd4dbe887dff
+[2025-03-30 15:13:46,987] 🔵 Starting session for USR-81f4a21a8f564dc3b27e73d123bffbaf
+[2025-03-30 15:13:47,389] 🚀 USR-989cec96403f4559898c5ff0e9ed654b actions log in session 0
+[2025-03-30 15:13:47,390] 🖱️ Mouse hovered for: 4.67s
+[2025-03-30 15:13:47,390] 📜 Scrolled for: 7.42s
+[2025-03-30 15:13:47,390] 🛒 Viewed cart for: 4.2s
+[2025-03-30 15:13:47,390] ✅ Cart checkout time: 20.34s
+[2025-03-30 15:13:47,390] 💳 Payment time: 0.37s
+[2025-03-30 15:13:47,573] ⏸️ Skipping USR-b915049f141b4f3da980b342992267d8 — session already running
+[2025-03-30 15:13:47,679] 🚀 USR-255455ffb0bf435b9537e87b8d2a8f68 actions log in session 0
+[2025-03-30 15:13:47,679] 🖱️ Mouse hovered for: 5.85s
+[2025-03-30 15:13:47,680] 📜 Scrolled for: 10.15s
+[2025-03-30 15:13:47,680] 🛒 Viewed cart for: 16.81s
+[2025-03-30 15:13:47,680] ✅ Cart checkout time: 8.27s
+[2025-03-30 15:13:47,680] 💳 Payment time: 1.92s
+[2025-03-30 15:13:48,651] 🚀 USR-ea469e9b8a3944d6bc95da30866c5882 actions log in session 0
+[2025-03-30 15:13:48,651] 🖱️ Mouse hovered for: 3.65s
+[2025-03-30 15:13:48,651] 📜 Scrolled for: 7.18s
+[2025-03-30 15:13:48,651] 🛒 Viewed cart for: 13.71s
+[2025-03-30 15:13:48,651] ✅ Cart checkout time: 7.42s
+[2025-03-30 15:13:48,651] 💳 Payment time: 2.04s
+[2025-03-30 15:13:48,797] 🚀 USR-aff88370cfc54043b8ce28043fc27abe actions log in session 0
+[2025-03-30 15:13:48,798] 🖱️ Mouse hovered for: 4.06s
+[2025-03-30 15:13:48,798] 📜 Scrolled for: 12.84s
+[2025-03-30 15:13:48,798] 🛒 Viewed cart for: 17.2s
+[2025-03-30 15:13:48,798] ✅ Cart checkout time: 5.39s
+[2025-03-30 15:13:48,798] 💳 Payment time: 0.0s
+[2025-03-30 15:13:48,920] 🚀 USR-61d243b776124bafb08ce5121d4d23c5 actions log in session 0
+[2025-03-30 15:13:48,920] 🖱️ Mouse hovered for: 0.37s
+[2025-03-30 15:13:48,921] 📜 Scrolled for: 2.28s
+[2025-03-30 15:13:48,921] 🛒 Viewed cart for: 2.89s
+[2025-03-30 15:13:48,921] ✅ Cart checkout time: 1.16s
+[2025-03-30 15:13:48,921] 💳 Payment time: 0.0s
+[2025-03-30 15:13:48,987] ⏸️ Skipping USR-e5ac60b0dc3341808191477b7c4ad332 — session already running
+[2025-03-30 15:13:49,851] 🔵 Starting session for USR-c9cae450c4024884a06c3773723e2f90
+[2025-03-30 15:13:50,612] 🔵 Starting session for USR-a3bb27d8a5a041878485fe6ed92e310d
+[2025-03-30 15:13:51,463] ⏸️ Skipping USR-255455ffb0bf435b9537e87b8d2a8f68 — session already running
+[2025-03-30 15:13:51,785] 🚀 USR-1e76671edd4046bf855ab974f2d04408 actions log in session 0
+[2025-03-30 15:13:51,785] 🖱️ Mouse hovered for: 2.87s
+[2025-03-30 15:13:51,785] 📜 Scrolled for: 4.31s
+[2025-03-30 15:13:51,785] 🛒 Viewed cart for: 14.82s
+[2025-03-30 15:13:51,785] ✅ Cart checkout time: 0.0s
+[2025-03-30 15:13:51,785] 💳 Payment time: 0.0s
+[2025-03-30 15:13:52,332] 🔵 Starting session for USR-09c2ee2877bb432792be501521474b46
+[2025-03-30 15:13:53,376] 🔵 Starting session for USR-22c580b35ab44c48b299a4840ff26eab
+[2025-03-30 15:13:54,101] 🚀 USR-844848afb48c40c99ddd132659744e94 actions log in session 0
+[2025-03-30 15:13:54,101] 🖱️ Mouse hovered for: 6.08s
+[2025-03-30 15:13:54,102] 📜 Scrolled for: 8.04s
+[2025-03-30 15:13:54,102] 🛒 Viewed cart for: 8.36s
+[2025-03-30 15:13:54,102] ✅ Cart checkout time: 17.02s
+[2025-03-30 15:13:54,102] 💳 Payment time: 0.0s
+[2025-03-30 15:13:54,794] 🔵 Starting session for USR-a91d6f1ccc3a477a8b86236dc9bbcd87
+[2025-03-30 15:13:54,928] 🚀 USR-4c591fec73114253a0bdfa5b12940b38 actions log in session 0
+[2025-03-30 15:13:54,928] 🖱️ Mouse hovered for: 2.68s
+[2025-03-30 15:13:54,928] 📜 Scrolled for: 5.36s
+[2025-03-30 15:13:54,928] 🛒 Viewed cart for: 24.96s
+[2025-03-30 15:13:54,928] ✅ Cart checkout time: 0.0s
+[2025-03-30 15:13:54,928] 💳 Payment time: 0.0s
+[2025-03-30 15:13:55,518] 🔵 Starting session for USR-8e015dc41eff445fb99466bacf7337bf
+[2025-03-30 15:13:55,791] 🚀 USR-6d4573c9cae5460c8884d5f1860af8ba actions log in session 0
+[2025-03-30 15:13:55,791] 🖱️ Mouse hovered for: 0.91s
+[2025-03-30 15:13:55,791] 📜 Scrolled for: 4.44s
+[2025-03-30 15:13:55,791] 🛒 Viewed cart for: 3.9s
+[2025-03-30 15:13:55,791] ✅ Cart checkout time: 3.56s
+[2025-03-30 15:13:55,791] 💳 Payment time: 0.0s
+[2025-03-30 15:13:55,988] 🚀 USR-81f4a21a8f564dc3b27e73d123bffbaf actions log in session 0
+[2025-03-30 15:13:55,989] 🖱️ Mouse hovered for: 0.74s
+[2025-03-30 15:13:55,989] 📜 Scrolled for: 3.06s
+[2025-03-30 15:13:55,989] 🛒 Viewed cart for: 5.19s
+[2025-03-30 15:13:55,989] ✅ Cart checkout time: 0.0s
+[2025-03-30 15:13:55,989] 💳 Payment time: 0.0s
+[2025-03-30 15:13:56,862] ⏸️ Skipping USR-6d4573c9cae5460c8884d5f1860af8ba — session already running
+[2025-03-30 15:13:57,510] 🚀 USR-9d16f4eb1f0149308ca80bfd794ff92b actions log in session 0
+[2025-03-30 15:13:57,510] 🖱️ Mouse hovered for: 3.22s
+[2025-03-30 15:13:57,510] 📜 Scrolled for: 11.42s
+[2025-03-30 15:13:57,510] 🛒 Viewed cart for: 10.19s
+[2025-03-30 15:13:57,510] ✅ Cart checkout time: 14.22s
+[2025-03-30 15:13:57,510] 💳 Payment time: 0.0s
+[2025-03-30 15:13:57,764] 🔵 Starting session for USR-1f6726f430e140d7af6b17838c7d9219
+[2025-03-30 15:13:58,308] 🚀 USR-7a9d53b164834096912dacf0b1570f23 actions log in session 0
+[2025-03-30 15:13:58,308] 🖱️ Mouse hovered for: 4.72s
+[2025-03-30 15:13:58,308] 📜 Scrolled for: 26.27s
+[2025-03-30 15:13:58,308] 🛒 Viewed cart for: 15.58s
+[2025-03-30 15:13:58,308] ✅ Cart checkout time: 3.94s
+[2025-03-30 15:13:58,308] 💳 Payment time: 2.49s
+[2025-03-30 15:13:58,611] 🔵 Starting session for USR-b0cde4d2ecd8489f9536113600e249b1
+[2025-03-30 15:13:59,708] 🔵 Starting session for USR-da7ef54525804e8cafa79f0f16f06935
+[2025-03-30 15:13:59,975] 🚀 USR-e740a73b11214c7eb6b39c1eca927fa7 actions log in session 0
+[2025-03-30 15:13:59,975] 🖱️ Mouse hovered for: 0.83s
+[2025-03-30 15:13:59,975] 📜 Scrolled for: 19.66s
+[2025-03-30 15:13:59,975] 🛒 Viewed cart for: 38.52s
+[2025-03-30 15:13:59,975] ✅ Cart checkout time: 0.0s
+[2025-03-30 15:13:59,975] 💳 Payment time: 0.0s
+[2025-03-30 15:14:00,417] 🔵 Starting session for USR-dc0628cc1f2a4865828df8c4bd72ee11
+[2025-03-30 15:14:01,509] 🚀 USR-1f012366803c4b0984f1a9e7a3079328 actions log in session 0
+[2025-03-30 15:14:01,509] 🖱️ Mouse hovered for: 9.88s
+[2025-03-30 15:14:01,509] 📜 Scrolled for: 10.91s
+[2025-03-30 15:14:01,509] 🛒 Viewed cart for: 34.22s
+[2025-03-30 15:14:01,509] ✅ Cart checkout time: 0.0s
+[2025-03-30 15:14:01,509] 💳 Payment time: 0.0s
+[2025-03-30 15:14:01,845] 🔵 Starting session for USR-37f819bf828e44fc8099715e8ba42b1e
+[2025-03-30 15:14:03,246] ⏸️ Skipping USR-a6b0862a68154f7b9a65aa4358ed1bc1 — session already running
+[2025-03-30 15:14:03,389] 🚀 USR-e5ac60b0dc3341808191477b7c4ad332 actions log in session 0
+[2025-03-30 15:14:03,389] 🖱️ Mouse hovered for: 3.21s
+[2025-03-30 15:14:03,389] 📜 Scrolled for: 16.22s
+[2025-03-30 15:14:03,389] 🛒 Viewed cart for: 17.09s
+[2025-03-30 15:14:03,389] ✅ Cart checkout time: 13.76s
+[2025-03-30 15:14:03,389] 💳 Payment time: 0.0s
+[2025-03-30 15:14:03,683] 🚀 USR-6e748719340c4dc99f21725caea2e9cb actions log in session 0
+[2025-03-30 15:14:03,683] 🖱️ Mouse hovered for: 5.49s
+[2025-03-30 15:14:03,683] 📜 Scrolled for: 17.75s
+[2025-03-30 15:14:03,683] 🛒 Viewed cart for: 13.15s
+[2025-03-30 15:14:03,683] ✅ Cart checkout time: 7.64s
+[2025-03-30 15:14:03,683] 💳 Payment time: 0.98s
+[2025-03-30 15:14:04,236] ⏸️ Skipping USR-1f012366803c4b0984f1a9e7a3079328 — session already running
+[2025-03-30 15:14:04,699] 🚀 USR-2be1a38274bd43d9ae181c13a43bf814 actions log in session 0
+[2025-03-30 15:14:04,699] 🖱️ Mouse hovered for: 2.6s
+[2025-03-30 15:14:04,699] 📜 Scrolled for: 9.19s
+[2025-03-30 15:14:04,699] 🛒 Viewed cart for: 4.44s
+[2025-03-30 15:14:04,699] ✅ Cart checkout time: 6.94s
+[2025-03-30 15:14:04,699] 💳 Payment time: 0.83s
+[2025-03-30 15:14:04,906] 🔵 Starting session for USR-525d71923cd8487bac32e891e099fd5f
+[2025-03-30 15:14:06,053] 🔵 Starting session for USR-a31561ace51d48e398d0fd392821f5b7
+[2025-03-30 15:14:07,015] 🚀 USR-463c0c9b13ab4c8aa0898aac643e2f35 actions log in session 0
+[2025-03-30 15:14:07,015] 🖱️ Mouse hovered for: 2.94s
+[2025-03-30 15:14:07,015] 📜 Scrolled for: 10.38s
+[2025-03-30 15:14:07,015] 🛒 Viewed cart for: 8.32s
+[2025-03-30 15:14:07,016] ✅ Cart checkout time: 7.19s
+[2025-03-30 15:14:07,016] 💳 Payment time: 2.17s
+[2025-03-30 15:14:07,079] ⏸️ Skipping USR-b0cde4d2ecd8489f9536113600e249b1 — session already running
+[2025-03-30 15:14:08,453] 🔵 Starting session for USR-35a98ea44efd4fc7a7ea51c513d21dcd
+[2025-03-30 15:14:08,909] 🚀 USR-4aa6223845164fa6a45eb2cf17f9647d actions log in session 0
+[2025-03-30 15:14:08,909] 🖱️ Mouse hovered for: 2.71s
+[2025-03-30 15:14:08,910] 📜 Scrolled for: 12.74s
+[2025-03-30 15:14:08,910] 🛒 Viewed cart for: 33.55s
+[2025-03-30 15:14:08,910] ✅ Cart checkout time: 0.0s
+[2025-03-30 15:14:08,910] 💳 Payment time: 0.0s
+[2025-03-30 15:14:09,064] 🔵 Starting session for USR-5d72412c918146c5bffbc8282ab72a94
+[2025-03-30 15:14:09,166] 🚀 USR-432255fee90c45c3abdd7ec12a792135 actions log in session 0
+[2025-03-30 15:14:09,167] 🖱️ Mouse hovered for: 1.41s
+[2025-03-30 15:14:09,167] 📜 Scrolled for: 5.66s
+[2025-03-30 15:14:09,167] 🛒 Viewed cart for: 18.13s
+[2025-03-30 15:14:09,167] ✅ Cart checkout time: 12.62s
+[2025-03-30 15:14:09,167] 💳 Payment time: 0.18s
+[2025-03-30 15:14:10,234] ⏸️ Skipping USR-a3bb27d8a5a041878485fe6ed92e310d — session already running
+[2025-03-30 15:14:10,969] ⏸️ Skipping USR-f7729af7abae4ff7896e0a3316915232 — session already running
+[2025-03-30 15:14:11,704] 🔵 Starting session for USR-a4821a7dcb8b4749b671b66356cfaa84
+[2025-03-30 15:14:12,335] 🚀 USR-09c2ee2877bb432792be501521474b46 actions log in session 0
+[2025-03-30 15:14:12,336] 🖱️ Mouse hovered for: 2.55s
+[2025-03-30 15:14:12,336] 📜 Scrolled for: 7.24s
+[2025-03-30 15:14:12,336] 🛒 Viewed cart for: 6.56s
+[2025-03-30 15:14:12,336] ✅ Cart checkout time: 3.46s
+[2025-03-30 15:14:12,336] 💳 Payment time: 0.2s
+[2025-03-30 15:14:13,143] ⏸️ Skipping USR-7568579c7e4e40fdbc95979aaf4ca094 — session already running
+[2025-03-30 15:14:14,011] 🚀 USR-10c47d8b977a4002be42574387c1e78f actions log in session 0
+[2025-03-30 15:14:14,011] 🖱️ Mouse hovered for: 2.72s
+[2025-03-30 15:14:14,011] 📜 Scrolled for: 16.18s
+[2025-03-30 15:14:14,011] 🛒 Viewed cart for: 24.38s
+[2025-03-30 15:14:14,011] ✅ Cart checkout time: 13.29s
+[2025-03-30 15:14:14,011] 💳 Payment time: 0.0s
+[2025-03-30 15:14:14,555] ⏸️ Skipping USR-7096889fc0ca45949099c787653bc711 — session already running
+[2025-03-30 15:14:14,888] 🚀 USR-6e354c0a4e774db6981ffd4dbe887dff actions log in session 0
+[2025-03-30 15:14:14,888] 🖱️ Mouse hovered for: 0.42s
+[2025-03-30 15:14:14,888] 📜 Scrolled for: 4.72s
+[2025-03-30 15:14:14,888] 🛒 Viewed cart for: 18.38s
+[2025-03-30 15:14:14,888] ✅ Cart checkout time: 5.22s
+[2025-03-30 15:14:14,888] 💳 Payment time: 0.25s
+[2025-03-30 15:14:15,143] 🔵 Starting session for USR-7b478de1a01b45a284000bf381292269
+[2025-03-30 15:14:15,790] ⏸️ Skipping USR-d81356b7147d4129b1d714f080e30485 — session already running
+[2025-03-30 15:14:16,303] 🔵 Starting session for USR-08d8ec979ad14ed0a37da97483932df9
+[2025-03-30 15:14:17,091] ⏸️ Skipping USR-194ccb2698a4466b8712bf5ee8dfe3fd — session already running
+[2025-03-30 15:14:17,947] ⏸️ Skipping USR-22c580b35ab44c48b299a4840ff26eab — session already running
+[2025-03-30 15:14:18,998] 🚀 USR-6392e44501194ffe8f65d0432db748f2 actions log in session 0
+[2025-03-30 15:14:18,998] 🖱️ Mouse hovered for: 1.98s
+[2025-03-30 15:14:18,998] 📜 Scrolled for: 12.54s
+[2025-03-30 15:14:18,998] 🛒 Viewed cart for: 6.21s
+[2025-03-30 15:14:18,998] ✅ Cart checkout time: 31.07s
+[2025-03-30 15:14:18,998] 💳 Payment time: 1.2s
+[2025-03-30 15:14:19,406] 🔵 Starting session for USR-3b884ea54fc747c9aec6d70ce2deec6d
+[2025-03-30 15:14:20,068] 🔵 Starting session for USR-33ba68310e4646c3b61e5dd16e3d546d
+[2025-03-30 15:14:21,124] 🔵 Starting session for USR-786bc92c0a8d40379605de18521187c5
+[2025-03-30 15:14:21,959] 🔵 Starting session for USR-f5f3ea035426423d97124cf7c43658cc
+[2025-03-30 15:14:22,466] 🚀 USR-102739b4f5d140c9b4f2609bca80f58b actions log in session 0
+[2025-03-30 15:14:22,467] 🖱️ Mouse hovered for: 3.22s
+[2025-03-30 15:14:22,467] 📜 Scrolled for: 20.77s
+[2025-03-30 15:14:22,467] 🛒 Viewed cart for: 6.27s
+[2025-03-30 15:14:22,467] ✅ Cart checkout time: 19.75s
+[2025-03-30 15:14:22,467] 💳 Payment time: 3.98s
+[2025-03-30 15:14:23,070] 🚀 USR-33ba68310e4646c3b61e5dd16e3d546d actions log in session 0
+[2025-03-30 15:14:23,070] 🖱️ Mouse hovered for: 0.48s
+[2025-03-30 15:14:23,070] 📜 Scrolled for: 0.77s
+[2025-03-30 15:14:23,071] 🛒 Viewed cart for: 0.72s
+[2025-03-30 15:14:23,071] ✅ Cart checkout time: 0.77s
+[2025-03-30 15:14:23,071] 💳 Payment time: 0.0s
+[2025-03-30 15:14:23,213] ⏸️ Skipping USR-08d8ec979ad14ed0a37da97483932df9 — session already running
+[2025-03-30 15:14:23,804] ⏸️ Skipping USR-a4821a7dcb8b4749b671b66356cfaa84 — session already running
+[2025-03-30 15:14:23,833] 🛑 Coroutine shutdown signal received.

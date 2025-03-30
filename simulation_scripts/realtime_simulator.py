@@ -70,7 +70,12 @@ def run_on_core(core_id, user_chunk, avg_sessions, concurrent_users):
                 orders.append(order)
 
                 behaviour = data.behaviour_data(selected_user, order, session)
-                logger.info(f"🚀 user actions log in session {_} {behaviour}")
+                logger.info(f"🚀 {selected_user['user_id']} actions log in session {_}")
+                logger.info(f"🖱️ Mouse hovered for: {behaviour['mouse_hover_time']}s")
+                logger.info(f"📜 Scrolled for: {behaviour['scroll_depth']}s")
+                logger.info(f"🛒 Viewed cart for: {behaviour['cart_view_time']}s")
+                logger.info(f"✅ Cart checkout time: {behaviour['checkout_completion_time']}s")
+                logger.info(f"💳 Payment time: {behaviour['payment_processing_time']}s")
                 behaviours.append(behaviour)
 
                 await asyncio.sleep(random.randint(1, 3600))

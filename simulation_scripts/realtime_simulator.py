@@ -70,6 +70,7 @@ def run_on_core(core_id, user_chunk, avg_sessions, concurrent_users):
                 orders.append(order)
 
                 behaviour = data.behaviour_data(selected_user, order, session)
+                logger.info(f"🚀 user actions log in session {_} {behaviour}")
                 behaviours.append(behaviour)
 
                 await asyncio.sleep(random.randint(1, 3600))

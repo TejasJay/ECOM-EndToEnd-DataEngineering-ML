@@ -7,6 +7,7 @@ import json
 import regex as re
 import pandas as pd
 from match_persona_to_behaviour import *
+import logging
 
 
 

@@ -9,8 +9,8 @@
 
 ```
 📦 .github  
- ┣━━ 📂 workflows  
-     ┗━━ 📝 build_simulator.yml
+ ┗━━ 📂 workflows  
+     ┣━━ 📝 build_simulator.yml
 
 
 📦 data_sources                 # Raw data generation (POS logs, clickstreams, etc.)

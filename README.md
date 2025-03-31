@@ -8,6 +8,11 @@
 # File Structure
 
 ```
+📦 .github  
+ ┣━━ 📂 workflows  
+ ┃   ┗━━ 📝 build_simulator.yml
+
+
 📦 data_sources                 # Raw data generation (POS logs, clickstreams, etc.)
  ┣━━ 📂 pos_logs
  ┃   ┣━━ simulate_pos.py              # Simulates checkout/transaction logs
@@ -54,12 +59,12 @@
  ┃   ┣━━ 📂 resources/schemas
  ┃   ┃   ┗━━ click_event_schema.json      # JSON schema for incoming events
  ┃   ┗━━ Dockerfile
- ┣━━ 📂 flink_python
- ┃   ┣━━ 📂 cep_jobs
- ┃   ┃   ┗━━ fraud_pattern_detector.py    # Complex event pattern detection (CEP)
- ┃   ┣━━ 📂 windows
- ┃   ┃   ┗━━ session_aggregator.py        # Aggregates sessions (time windowing)
- ┃   ┗━━ Dockerfile
+ ┗━━ 📂 flink_python
+     ┣━━ 📂 cep_jobs
+     ┃   ┗━━ fraud_pattern_detector.py    # Complex event pattern detection (CEP)
+     ┣━━ 📂 windows
+     ┃   ┗━━ session_aggregator.py        # Aggregates sessions (time windowing)
+     ┗━━ Dockerfile
 
 
 📦 data_lake                 # Raw and refined historical storage

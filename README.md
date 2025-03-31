@@ -350,6 +350,60 @@
  ┃   ┗━━ 📂 usage_reporting
  ┃       ┗━━ 📄 cost_summary_generator.py
 
+
+📦 shared_utils
+ ┣━━ 📝 logging_config.py
+ ┣━━ 📝 kafka_helpers.py
+ ┣━━ 📝 s3_utils.py
+ ┣━━ 📝 db_connection.py
+ ┣━━ 📝 time_utils.py
+ ┣━━ 📄 __init__.py
+
+
+📦 contracts/
+ ┣━━ 📂 schemas
+ ┃   ┣━━ 📝 click_event.schema.json
+ ┃   ┗━━ 📝 transaction_event.schema.json
+ ┣━━ 📂 validators
+ ┃   ┗━━ 📝 validate_kafka_event.py
+
+
+📦 config/
+ ┣━━ 📄 dev.env
+ ┣━━ 📄 staging.env
+ ┣━━ 📄 prod.env
+ ┣━━ 📄 default_config.yaml
+ ┗━━ 📄 model_params_dev.yaml
+
+
+📦 tests/
+ ┣━━ 📂 unit/
+ ┃   ┗━━ test_model_serving.py
+ ┣━━ 📂 integration/
+ ┃   ┗━━ test_etl_end_to_end.py
+ ┣━━ 📂 load_tests/
+ ┃   ┗━━ locustfile.py
+ ┣━━ 📂 smoke_tests/
+ ┃   ┗━━ test_pipeline_smoke.py
+
+
+📦 research/
+ ┣━━ 📂 notebooks/
+ ┃   ┗━━ model_exploration.ipynb
+ ┣━━ 📂 whiteboard_diagrams/
+ ┃   ┗━━ retraining_loop.png
+ ┣━━ 📂 benchmarks/
+ ┃   ┗━━ model_latency.csv
+ ┣━━ 📂 discarded/
+ ┃   ┗━━ old_feature_selection.py
+
+
+📦 runbooks/
+ ┣━━ 📄 how_to_fix_s3_access.md
+ ┣━━ 📄 airflow_failure_coe.md
+ ┣━━ 📄 model_drift_rca_2024_04.md
+
+
 ```
 
 

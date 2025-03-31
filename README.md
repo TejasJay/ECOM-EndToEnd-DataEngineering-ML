@@ -8,401 +8,362 @@
 # File Structure
 
 ```
-📦 data_sources
+📦 data_sources                 # Raw data generation (POS logs, clickstreams, etc.)
  ┣━━ 📂 pos_logs
- ┃   ┣━━ 📝 simulate_pos.py        # Simulates checkout logs
- ┃   ┗━━ 📄 pos_events.json        # Sample JSON events
- ┃
+ ┃   ┣━━ simulate_pos.py              # Simulates checkout/transaction logs
+ ┃   ┗━━ pos_events.json              # Sample events used in simulations
  ┣━━ 📂 user_activity
- ┃   ┣━━ 📝 generate_clickstream.py # Generates session clicks
- ┃   ┗━━ 📄 activity_events.csv
- ┃
+ ┃   ┣━━ generate_clickstream.py      # Simulates user clicks & web activity
+ ┃   ┗━━ activity_events.csv          # Sample clickstream data
  ┣━━ 📂 inventory
- ┃   ┗━━ 📝 inventory_feed.py      # SKU & product data API
- ┃
+ ┃   ┗━━ inventory_feed.py            # Inventory API mock (SKU/stock data)
  ┗━━ 📂 external_apis
-     ┣━━ 📝 weather_feed.py        # Calls weather API
-     ┣━━ 📝 pricing_scraper.py     # Competitor pricing
-     ┗━━ 📝 promotions_feed.py   
+     ┣━━ weather_feed.py              # Simulates weather API responses
+     ┣━━ pricing_scraper.py           # Pulls competitor pricing
+     ┗━━ promotions_feed.py           # Pulls marketing or campaign offers
 
 
-📦 ingestion_layer
+📦 ingestion_layer            # Ingest data from producers to streaming systems
  ┣━━ 📂 kafka
- ┃   ┣━━ 📜 docker-compose.yml
+ ┃   ┣━━ docker-compose.yml          # Spins up Kafka + Zookeeper cluster
  ┃   ┣━━ 📂 config
- ┃   ┃   ┗━━ 📝 server.properties
+ ┃   ┃   ┗━━ server.properties        # Kafka broker settings
  ┃   ┣━━ 📂 topics
- ┃   ┃   ┗━━ 📝 create_topics.py       # Uses Kafka admin client
- ┃
+ ┃   ┃   ┗━━ create_topics.py         # Creates Kafka topics programmatically
  ┣━━ 📂 nifi
  ┃   ┣━━ 📂 flows
- ┃   ┃   ┗━━ 📝 ecommerce_data_flow.xml # Drag & drop UI export
+ ┃   ┃   ┗━━ ecommerce_data_flow.xml  # Nifi drag-drop pipeline definition
  ┃   ┣━━ 📂 processors
- ┃   ┃   ┗━━ 📝 api_fetch_processor.py
- ┃   ┗━━ 📜 Dockerfile
- ┃
+ ┃   ┃   ┗━━ api_fetch_processor.py   # Custom processor to ingest APIs
+ ┃   ┗━━ Dockerfile                   # Builds Nifi Docker image
  ┗━━ 📂 flume
      ┣━━ 📂 conf
-     ┃   ┗━━ 📝 flume_agent.conf
+     ┃   ┗━━ flume_agent.conf         # Log collection config (e.g., syslog)
      ┣━━ 📂 input_logs
-     ┗━━ 📜 Dockerfile
+     ┗━━ Dockerfile
 
 
-📦 stream_processing
+📦 stream_processing          # Real-time processing & enrichment
  ┣━━ 📂 spark_streaming
  ┃   ┣━━ 📂 streaming_jobs
- ┃   ┃   ┣━━ 📝 process_clickstream.py
- ┃   ┃   ┣━━ 📝 enrich_transaction.py
- ┃   ┃   ┗━━ 📝 create_realtime_features.py
+ ┃   ┃   ┣━━ process_clickstream.py       # Parses and filters clickstream data
+ ┃   ┃   ┣━━ enrich_transaction.py        # Adds external context (e.g., weather)
+ ┃   ┃   ┗━━ create_realtime_features.py  # Feature engineering in real-time
  ┃   ┣━━ 📂 config
- ┃   ┃   ┗━━ 📝 spark_defaults.conf
- ┃   ┣━━ 📂 resources
- ┃   ┃   ┗━━ 📂 schemas
- ┃   ┃       ┗━━ 📄 click_event_schema.json
- ┃   ┗━━ 📜 Dockerfile
- ┃
+ ┃   ┃   ┗━━ spark_defaults.conf          # Spark runtime configs
+ ┃   ┣━━ 📂 resources/schemas
+ ┃   ┃   ┗━━ click_event_schema.json      # JSON schema for incoming events
+ ┃   ┗━━ Dockerfile
  ┣━━ 📂 flink_python
  ┃   ┣━━ 📂 cep_jobs
- ┃   ┃   ┗━━ 📝 fraud_pattern_detector.py
+ ┃   ┃   ┗━━ fraud_pattern_detector.py    # Complex event pattern detection (CEP)
  ┃   ┣━━ 📂 windows
- ┃   ┃   ┗━━ 📝 session_aggregator.py
- ┃   ┗━━ 📜 Dockerfile
+ ┃   ┃   ┗━━ session_aggregator.py        # Aggregates sessions (time windowing)
+ ┃   ┗━━ Dockerfile
 
 
-📦 data_lake
+📦 data_lake                 # Raw and refined historical storage
  ┣━━ 📂 delta_lake
- ┃   ┣━━ 📂 bronze
- ┃   ┃   ┗━━ 📄 raw_clickstream          # Spark writes raw data
- ┃   ┣━━ 📂 silver
- ┃   ┃   ┗━━ 📄 cleaned_transactions
- ┃   ┣━━ 📂 gold
- ┃   ┃   ┗━━ 📄 customer_profile_table
- ┃
+ ┃   ┣━━ 📂 bronze                   # Stores raw ingested data
+ ┃   ┣━━ 📂 silver                   # Cleaned/filtered data
+ ┃   ┗━━ 📂 gold                     # Business-level analytics tables
  ┣━━ 📂 hive_metastore
  ┃   ┣━━ 📂 schema
- ┃   ┃   ┗━━ 📝 ddl_create_tables.sql     # External tables for Spark
+ ┃   ┃   ┗━━ ddl_create_tables.sql      # Table creation for Spark SQL
  ┃   ┣━━ 📂 conf
- ┃   ┃   ┗━━ 📝 hive-site.xml             # Connects to Delta tables
- ┃   ┗━━ 📜 Dockerfile
- ┃
+ ┃   ┃   ┗━━ hive-site.xml              # Connects Hive with Delta tables
+ ┃   ┗━━ Dockerfile
  ┗━━ 📂 minio_s3
-     ┣━━ 📜 docker-compose.yml
+     ┣━━ docker-compose.yml
      ┣━━ 📂 buckets
-     ┃   ┗━━ 📄 delta-lake/
-     ┗━━ 📜 access_credentials.env
+     ┃   ┗━━ delta-lake/                # S3 bucket for Delta table storage
+     ┗━━ access_credentials.env
 
 
-📦 batch_processing
+📦 batch_processing          # Offline data transformations
  ┣━━ 📂 spark_jobs
- ┃   ┣━━ 📝 aggregate_product_views.py    # Batch aggregation
- ┃   ┣━━ 📝 calculate_churn_features.py   # Offline feature gen
- ┃   ┣━━ 📝 join_bronze_to_silver.py
- ┃   ┗━━ 📝 output_to_gold.py
- ┃
+ ┃   ┣━━ aggregate_product_views.py     # Daily aggregations
+ ┃   ┣━━ calculate_churn_features.py    # Feature generation for modeling
+ ┃   ┣━━ join_bronze_to_silver.py       # ETL bronze to cleaned silver layer
+ ┃   ┗━━ output_to_gold.py              # Final output to business tables
  ┣━━ 📂 pipeline_configs
- ┃   ┗━━ 📄 daily_aggregates.yml          # Used by Airflow/CLI
- ┃
- ┗━━ 📜 Dockerfile
+ ┃   ┗━━ daily_aggregates.yml           # Job-level config (used by CLI/Airflow)
+ ┗━━ Dockerfile
 
 
-📦 airflow_orchestration
+📦 airflow_orchestration     # DAG automation for batch and ML workflows
  ┣━━ 📂 dags
- ┃   ┣━━ 📝 etl_clickstream_dag.py
- ┃   ┣━━ 📝 train_model_dag.py
- ┃   ┣━━ 📝 model_monitoring_dag.py
- ┃   ┗━━ 📝 retrain_on_drift_dag.py
- ┃
+ ┃   ┣━━ etl_clickstream_dag.py        # DAG for data ingestion and transformation
+ ┃   ┣━━ train_model_dag.py            # DAG for training models on schedule
+ ┃   ┣━━ model_monitoring_dag.py       # DAG for detecting drift and anomalies
+ ┃   ┗━━ retrain_on_drift_dag.py       # DAG that retrains models on drift triggers
  ┣━━ 📂 plugins
  ┃   ┣━━ 📂 operators
- ┃   ┃   ┗━━ 📝 mlflow_register_operator.py
+ ┃   ┃   ┗━━ mlflow_register_operator.py
  ┃   ┣━━ 📂 hooks
- ┃   ┃   ┗━━ 📝 feast_feature_store_hook.py
+ ┃   ┃   ┗━━ feast_feature_store_hook.py
  ┃   ┣━━ 📂 sensors
- ┃   ┃   ┗━━ 📝 delta_ingestion_sensor.py
- ┃
+ ┃   ┃   ┗━━ delta_ingestion_sensor.py
  ┣━━ 📂 configs
- ┃   ┗━━ 📄 airflow.cfg
- ┃
- ┣━━ 📜 Dockerfile
- ┗━━ 📜 docker-compose.yml
+ ┃   ┗━━ airflow.cfg
+ ┣━━ Dockerfile
+ ┗━━ docker-compose.yml
 
 
-📦 feature_store
+📦 feature_store             # Manages feature generation, storage & retrieval
  ┣━━ 📂 feature_repo
  ┃   ┣━━ 📂 driver_stats
- ┃   ┃   ┣━━ 📝 driver_hourly_stats.py
- ┃   ┃   ┗━━ 📝 driver_churn_features.py
+ ┃   ┃   ┣━━ driver_hourly_stats.py        # Real-time aggregation features
+ ┃   ┃   ┗━━ driver_churn_features.py      # Features related to churn modeling
  ┃   ┣━━ 📂 data_sources
- ┃   ┃   ┗━━ 📝 kafka_config.py
- ┃   ┗━━ 📄 feature_store.yaml
- ┃
+ ┃   ┃   ┗━━ kafka_config.py               # Kafka topic & source config
+ ┃   ┗━━ feature_store.yaml                # Feast feature repo config
  ┣━━ 📂 online_store
  ┃   ┗━━ 📂 redis
- ┃       ┣━━ 📜 Dockerfile
- ┃       ┗━━ 📄 redis.conf
- ┃
+ ┃       ┣━━ Dockerfile                    # Redis container for online retrieval
+ ┃       ┗━━ redis.conf                    # Redis setup for fast reads
  ┗━━ 📂 offline_store
-     ┗━━ 📂 parquet_data
+     ┗━━ parquet_data                      # Offline feature snapshots for training
 
 
-📦 ml_modeling
+📦 ml_modeling               # End-to-end ML pipeline: train → evaluate → register
  ┣━━ 📂 training_scripts
- ┃   ┣━━ 📝 train_xgboost.py              # Main training script
- ┃   ┣━━ 📝 train_lightgbm.py
- ┃   ┣━━ 📝 model_selection.py            # Compares AUC/Precision/etc
- ┃   ┣━━ 📝 run_pipeline.py               # Entrypoint for Airflow or CLI
- ┃   ┗━━ 📄 model_config.yaml             # Model hyperparams, version tags
- ┃
+ ┃   ┣━━ train_xgboost.py                 # XGBoost training code
+ ┃   ┣━━ train_lightgbm.py               # LightGBM training code
+ ┃   ┣━━ model_selection.py              # Compares different models/metrics
+ ┃   ┣━━ run_pipeline.py                 # Main training entrypoint (CLI or DAG)
+ ┃   ┗━━ model_config.yaml               # Hyperparameters and model metadata
  ┣━━ 📂 preprocessing
- ┃   ┣━━ 📝 clean_features.py             # Apply standardization, fill NA
- ┃   ┣━━ 📝 encode_categoricals.py
- ┃   ┗━━ 📝 feature_selector.py
- ┃
+ ┃   ┣━━ clean_features.py               # Preprocessing & NA handling
+ ┃   ┣━━ encode_categoricals.py          # One-hot, label encoding, etc.
+ ┃   ┗━━ feature_selector.py             # Feature selection using filters or SHAP
  ┣━━ 📂 evaluation
- ┃   ┣━━ 📝 metrics.py                    # AUC, precision, recall
- ┃   ┣━━ 📝 explainability.py             # SHAP, LIME
- ┃   ┗━━ 📝 fairness_audit.py             # AIF360 or Fairlearn integration
- ┃
+ ┃   ┣━━ metrics.py                      # Evaluation metrics: AUC, precision, etc.
+ ┃   ┣━━ explainability.py               # SHAP/LIME explanations
+ ┃   ┗━━ fairness_audit.py               # Bias & fairness checks
  ┣━━ 📂 registry
- ┃   ┣━━ 📝 register_with_mlflow.py
- ┃   ┣━━ 📝 register_in_airflow.py
- ┃   ┗━━ 📝 tag_best_model.py
- ┃
- ┗━━ 📜 Dockerfile
+ ┃   ┣━━ register_with_mlflow.py         # Registers best model to MLflow
+ ┃   ┣━━ register_in_airflow.py          # Triggers registry from Airflow DAG
+ ┃   ┗━━ tag_best_model.py               # Tags model version (production/candidate)
+ ┗━━ Dockerfile
 
 
-📦 mlflow_tracking
+📦 mlflow_tracking           # Experiment tracking and artifact logging
  ┣━━ 📂 server
- ┃   ┣━━ 📝 start_server.sh               # Launches MLflow tracking server
- ┃   ┣━━ 📂 mlruns                       # Artifact and metrics storage
- ┃   ┗━━ 📜 Dockerfile
- ┃
+ ┃   ┣━━ start_server.sh                # Starts local MLflow tracking UI
+ ┃   ┣━━ 📂 mlruns                      # Stores experiments, runs, metrics
+ ┃   ┗━━ Dockerfile
  ┣━━ 📂 configs
- ┃   ┣━━ 📄 backend_store.db              # SQLite/PostgreSQL
- ┃   ┗━━ 📄 mlflow_env.yaml               # Tracking URI, experiment names
- ┃
+ ┃   ┣━━ backend_store.db               # SQLite or DB backend store
+ ┃   ┗━━ mlflow_env.yaml                # MLflow environment config
  ┗━━ 📂 notebooks
-     ┗━━ 📓 view_experiments.ipynb        # Jupyter for local UI access
+     ┗━━ view_experiments.ipynb         # View and compare runs in Jupyter
 
 
-📦 model_serving
+📦 model_serving             # Serve models as APIs using FastAPI
  ┣━━ 📂 fastapi_server
- ┃   ┣━━ 📝 main.py                       # Entrypoint
- ┃   ┣━━ 📝 predict.py                    # Loads model, does inference
- ┃   ┣━━ 📝 model_loader.py               # Loads from MLflow
- ┃   ┣━━ 📝 feature_fetcher.py            # Online store query (Feast/Redis)
- ┃   ┣━━ 📝 schemas.py                    # Pydantic request/response models
- ┃   ┣━━ 📝 logger.py                     # Structured logging
- ┃   ┣━━ 📝 test_predict.py               # Pytest or unittest
- ┃   ┣━━ 📜 Dockerfile
- ┃   ┗━━ 📜 requirements.txt
- ┃
+ ┃   ┣━━ main.py                        # Entrypoint: launches FastAPI server
+ ┃   ┣━━ predict.py                     # Defines /predict route logic
+ ┃   ┣━━ model_loader.py                # Loads MLflow model
+ ┃   ┣━━ feature_fetcher.py             # Queries Feast online store
+ ┃   ┣━━ schemas.py                     # Request/response Pydantic models
+ ┃   ┣━━ logger.py                      # Structured request/response logs
+ ┃   ┣━━ test_predict.py                # Unit test for prediction endpoint
+ ┃   ┣━━ Dockerfile
+ ┃   ┗━━ requirements.txt
  ┗━━ 📂 redis_cache
-     ┣━━ 📄 redis.conf
-     ┗━━ 📜 Dockerfile
+     ┣━━ redis.conf                     # Redis used to store recent predictions
+     ┗━━ Dockerfile
 
 
-📦 ui_layer
+📦 ui_layer                  # Frontend interfaces: admin + user UI
  ┣━━ 📂 flask_admin_panel
- ┃   ┣━━ 📝 app.py                      # Flask app startup
+ ┃   ┣━━ app.py                        # Flask app launcher
  ┃   ┣━━ 📂 routes
- ┃   ┃   ┣━━ 📝 pricing.py              # Manual price overrides
- ┃   ┃   ┗━━ 📝 recommendations.py
+ ┃   ┃   ┣━━ pricing.py                # Admin pricing override endpoint
+ ┃   ┃   ┗━━ recommendations.py        # Manual recommendations
  ┃   ┣━━ 📂 templates
- ┃   ┃   ┗━━ 📄 index.html              # Admin dashboard
+ ┃   ┃   ┗━━ index.html                # Dashboard view
  ┃   ┣━━ 📂 static
- ┃   ┣━━ 📝 settings.py
- ┃   ┗━━ 📜 Dockerfile
- ┃
+ ┃   ┣━━ settings.py
+ ┃   ┗━━ Dockerfile
  ┗━━ 📂 react_frontend
      ┣━━ 📂 public
      ┣━━ 📂 src
-     ┃   ┣━━ 📝 App.js
-     ┃   ┣━━ 📝 api.js                  # Calls FastAPI backend
+     ┃   ┣━━ App.js
+     ┃   ┣━━ api.js                    # Axios wrapper to call FastAPI backend
      ┃   ┗━━ 📂 components
-     ┃       ┗━━ 📝 RecommendationCard.js
-     ┣━━ 📜 package.json
-     ┗━━ 📜 Dockerfile
+     ┃       ┗━━ RecommendationCard.js
+     ┣━━ package.json
+     ┗━━ Dockerfile
 
 
-📦 monitoring_logging
+📦 monitoring_logging        # Observability stack: metrics, logs, and alerts
  ┣━━ 📂 prometheus
- ┃   ┣━━ 📄 prometheus.yml              # Targets: FastAPI, Airflow, etc.
- ┃   ┗━━ 📂 rules                      # Alerting rules
- ┃
+ ┃   ┣━━ prometheus.yml               # Scrapes FastAPI, Airflow, etc.
+ ┃   ┗━━ 📂 rules
+ ┃       ┗━━ ...                      # Custom alert rules (e.g., latency, 5xx)
  ┣━━ 📂 grafana
  ┃   ┣━━ 📂 dashboards
- ┃   ┃   ┣━━ 📄 latency_metrics.json
- ┃   ┃   ┗━━ 📄 model_accuracy.json
+ ┃   ┃   ┣━━ latency_metrics.json     # Visualize API/DB latency
+ ┃   ┃   ┗━━ model_accuracy.json      # Visual ML model performance
  ┃   ┗━━ 📂 datasources
- ┃       ┗━━ 📄 prometheus.yaml
- ┃
+ ┃       ┗━━ prometheus.yaml          # Prometheus datasource for Grafana
  ┣━━ 📂 elasticsearch
- ┃   ┗━━ 📄 elasticsearch.yml
- ┃
+ ┃   ┗━━ elasticsearch.yml            # Stores application logs
  ┣━━ 📂 kibana
- ┃   ┗━━ 📄 kibana.yml
- ┃
+ ┃   ┗━━ kibana.yml                   # Frontend to explore logs and visualize patterns
  ┣━━ 📂 filebeat
- ┃   ┗━━ 📄 filebeat.yml               # Ships logs to Elasticsearch
- ┃
+ ┃   ┗━━ filebeat.yml                 # Ships logs from containers to Elasticsearch
  ┗━━ 📂 alerting
-     ┣━━ 📝 pagerduty_webhook.sh
-     ┗━━ 📝 opsgenie_notifier.py
+     ┣━━ pagerduty_webhook.sh         # Sends alerts to PagerDuty
+     ┗━━ opsgenie_notifier.py         # Sends alerts to Opsgenie
 
 
-📦 ci_cd
- ┣━━ 📂 github_actions
- ┃   ┣━━ 📄 build_model.yml            # Trains + logs to MLflow
- ┃   ┣━━ 📄 build_api.yml              # Lints + builds FastAPI Docker
- ┃   ┣━━ 📄 deploy_to_k8s.yml          # Push to K8s via kubectl/helm
- ┃   ┗━━ 📄 retrain_on_data_change.yml # Optional: Triggered by new data
- ┃
- ┣━━ 📂 scripts
- ┃   ┣━━ 📝 build_image.sh
- ┃   ┣━━ 📝 push_to_registry.sh
- ┃   ┣━━ 📝 deploy_stack.sh
- ┃   ┗━━ 📝 notify_opsgenie.sh
-
-
-📦 deployment
- ┣━━ 📂 docker_compose
- ┃   ┣━━ 📄 full_stack_dev.yml
- ┃   ┣━━ 📄 fastapi_only.yml
- ┃   ┣━━ 📄 airflow_stack.yml
- ┃   ┗━━ 📄 kafka_nifi_stack.yml
- ┃
- ┣━━ 📂 kubernetes
- ┃   ┣━━ 📄 fastapi_deployment.yaml
- ┃   ┣━━ 📄 model-serving-service.yaml
- ┃   ┣━━ 📄 kafka-statefulset.yaml
- ┃   ┣━━ 📄 redis-deployment.yaml
- ┃   ┣━━ 📂 ingress
- ┃   ┃   ┗━━ 📄 ingress-routes.yaml
- ┃   ┣━━ 📂 secrets
- ┃   ┃   ┗━━ 📄 k8s-secrets.yaml
- ┃   ┣━━ 📂 configmaps
- ┃   ┗━━ 📄 horizontal-pod-autoscaler.yaml
- ┃
- ┗━━ 📂 helm_charts
-     ┣━━ 📂 airflow
-     ┣━━ 📂 kafka
-     ┣━━ 📂 model-serving
-     ┗━━ 📂 grafana
-
-
-📦 production_ops
+📦 production_ops           # All operational controls: security, governance, drift
  ┣━━ 📂 security
  ┃   ┣━━ 📂 secrets
- ┃   ┃   ┣━━ 📄 .env.secrets.template
- ┃   ┃   ┣━━ 📄 k8s-secrets.yaml
- ┃   ┃   ┗━━ 📄 vault_policy.hcl
+ ┃   ┃   ┣━━ .env.secrets.template    # Template for secret loading
+ ┃   ┃   ┣━━ k8s-secrets.yaml         # Kubernetes-managed secrets
+ ┃   ┃   ┗━━ vault_policy.hcl         # Vault policy for secret access
  ┃   ┣━━ 📂 auth
- ┃   ┃   ┣━━ 📄 oauth2_fastapi_middleware.py
- ┃   ┃   ┗━━ 📄 token_verifier.py
+ ┃   ┃   ┣━━ oauth2_fastapi_middleware.py  # Token-based auth middleware
+ ┃   ┃   ┗━━ token_verifier.py
  ┃   ┣━━ 📂 tls
- ┃   ┃   ┣━━ 📄 generate_cert.sh
- ┃   ┃   ┗━━ 📄 nginx_ssl.conf
+ ┃   ┃   ┣━━ generate_cert.sh         # SSL cert generation
+ ┃   ┃   ┗━━ nginx_ssl.conf           # SSL configuration for NGINX
  ┃   ┗━━ 📂 validation
- ┃       ┣━━ 📄 input_schema.py
- ┃       ┗━━ 📄 sanitization.py
- ┃
+ ┃       ┣━━ input_schema.py          # Input request schema validation
+ ┃       ┗━━ sanitization.py          # Clean up user inputs for security
  ┣━━ 📂 governance
  ┃   ┣━━ 📂 lineage
- ┃   ┃   ┣━━ 📄 openlineage_config.yaml
- ┃   ┃   ┣━━ 📄 dag_lineage_plugin.py
- ┃   ┃   ┗━━ 📄 mlflow_lineage_hook.py
+ ┃   ┃   ┣━━ openlineage_config.yaml  # Data lineage system integration
+ ┃   ┃   ┣━━ dag_lineage_plugin.py    # Airflow plugin for OpenLineage
+ ┃   ┃   ┗━━ mlflow_lineage_hook.py   # Logs model lifecycle lineage
  ┃   ┣━━ 📂 metadata
- ┃   ┃   ┣━━ 📄 datahub_ingest.py
- ┃   ┃   ┣━━ 📄 amundsen_config.py
- ┃   ┃   ┗━━ 📄 schema_registry.json
+ ┃   ┃   ┣━━ datahub_ingest.py        # Pushes metadata to DataHub
+ ┃   ┃   ┣━━ amundsen_config.py       # Metadata push to Amundsen
+ ┃   ┃   ┗━━ schema_registry.json     # Avro/JSON schema registry
  ┃   ┗━━ 📂 policies
- ┃       ┗━━ 📄 data_retention.yaml
- ┃
+ ┃       ┗━━ data_retention.yaml      # Data retention + archival policies
  ┣━━ 📂 fairness_bias
  ┃   ┣━━ 📂 explainability
- ┃   ┃   ┣━━ 📄 shap_visualizer.py
- ┃   ┃   ┗━━ 📄 lime_summary_plot.py
+ ┃   ┃   ┣━━ shap_visualizer.py       # Visual SHAP explanation plots
+ ┃   ┃   ┗━━ lime_summary_plot.py     # LIME-based local explanations
  ┃   ┣━━ 📂 fairness
- ┃   ┃   ┣━━ 📄 audit_report_generator.py
- ┃   ┃   ┣━━ 📄 subgroup_evaluator.py
- ┃   ┃   ┗━━ 📄 bias_metrics.py
+ ┃   ┃   ┣━━ audit_report_generator.py # Generates fairness audit reports
+ ┃   ┃   ┣━━ subgroup_evaluator.py     # Fairness across subgroups
+ ┃   ┃   ┗━━ bias_metrics.py           # Metrics like demographic parity
  ┃   ┗━━ 📂 tests
- ┃       ┗━━ 📄 test_demographic_parity.py
- ┃
+ ┃       ┗━━ test_demographic_parity.py # Unit test for bias audits
  ┣━━ 📂 retraining
  ┃   ┣━━ 📂 drift_detection
- ┃   ┃   ┣━━ 📄 drift_detector.py
- ┃   ┃   ┗━━ 📄 data_drift_dashboard.json
+ ┃   ┃   ┣━━ drift_detector.py         # Detects feature/model drift
+ ┃   ┃   ┗━━ data_drift_dashboard.json # Visualizes drift metrics
  ┃   ┣━━ 📂 auto_retrain
- ┃   ┃   ┣━━ 📄 retrain_if_drift.py
- ┃   ┃   ┗━━ 📄 trigger_airflow_dag.py
+ ┃   ┃   ┣━━ retrain_if_drift.py       # Auto-triggers retraining
+ ┃   ┃   ┗━━ trigger_airflow_dag.py    # Kicks off Airflow DAG
  ┃   ┗━━ 📂 configs
- ┃       ┗━━ 📄 thresholds.yaml
- ┃
+ ┃       ┗━━ thresholds.yaml           # Drift thresholds and alerts
  ┣━━ 📂 optimization
  ┃   ┣━━ 📂 ttl_cleanups
- ┃   ┃   ┣━━ 📄 delta_ttl_purger.py
- ┃   ┃   ┗━━ 📄 airflow_cleanup.py
+ ┃   ┃   ┣━━ delta_ttl_purger.py       # Deletes expired delta tables
+ ┃   ┃   ┗━━ airflow_cleanup.py        # DAG to delete old logs/checkpoints
  ┃   ┣━━ 📂 infra_savings
- ┃   ┃   ┣━━ 📄 spot_instance_checker.py
- ┃   ┃   ┗━━ 📄 downscale_when_idle.py
+ ┃   ┃   ┣━━ spot_instance_checker.py  # Checks spot instance usage
+ ┃   ┃   ┗━━ downscale_when_idle.py    # Auto-downscale idle services
  ┃   ┗━━ 📂 usage_reporting
- ┃       ┗━━ 📄 cost_summary_generator.py
+ ┃       ┗━━ cost_summary_generator.py # Cloud usage and cost reporting
 
 
-📦 shared_utils
- ┣━━ 📝 logging_config.py
- ┣━━ 📝 kafka_helpers.py
- ┣━━ 📝 s3_utils.py
- ┣━━ 📝 db_connection.py
- ┣━━ 📝 time_utils.py
- ┣━━ 📄 __init__.py
+📦 ci_cd                     # All CI/CD workflows and automation scripts
+ ┣━━ 📂 github_actions
+ ┃   ┣━━ build_model.yml             # Builds and logs ML models to MLflow
+ ┃   ┣━━ build_api.yml               # Lints + tests FastAPI code
+ ┃   ┣━━ deploy_to_k8s.yml           # Pushes app to Kubernetes
+ ┃   ┗━━ retrain_on_data_change.yml  # Optional: retrain trigger by new data
+ ┣━━ 📂 scripts
+ ┃   ┣━━ build_image.sh              # Docker image build utility
+ ┃   ┣━━ push_to_registry.sh         # Push Docker image to registry
+ ┃   ┣━━ deploy_stack.sh             # Orchestrates full-stack deploy
+ ┃   ┗━━ notify_opsgenie.sh          # CI/CD failure alerting
 
 
-📦 contracts/
+📦 deployment                # Dev/staging/prod deployment manifests
+ ┣━━ 📂 docker_compose
+ ┃   ┣━━ full_stack_dev.yml          # Entire project: Dev stack in one go
+ ┃   ┣━━ fastapi_only.yml            # For API testing in isolation
+ ┃   ┣━━ airflow_stack.yml           # Standalone airflow stack for testing
+ ┃   ┗━━ kafka_nifi_stack.yml        # Event pipeline containers
+ ┣━━ 📂 kubernetes
+ ┃   ┣━━ fastapi_deployment.yaml     # Deployment spec for model API
+ ┃   ┣━━ model-serving-service.yaml  # Exposes model as Kubernetes service
+ ┃   ┣━━ kafka-statefulset.yaml      # Kafka pod management
+ ┃   ┣━━ redis-deployment.yaml       # Caches features/model output
+ ┃   ┣━━ 📂 ingress
+ ┃   ┃   ┗━━ ingress-routes.yaml     # Ingress routing configs
+ ┃   ┣━━ 📂 secrets
+ ┃   ┃   ┗━━ k8s-secrets.yaml        # Secrets for prod environment
+ ┃   ┣━━ 📂 configmaps
+ ┃   ┗━━ horizontal-pod-autoscaler.yaml # Enables autoscaling on load
+ ┗━━ 📂 helm_charts
+     ┣━━ airflow
+     ┣━━ kafka
+     ┣━━ model-serving
+     ┗━━ grafana
+
+
+📦 shared_utils              # Common helper libraries for reuse
+ ┣━━ logging_config.py              # Standard logging config across services
+ ┣━━ kafka_helpers.py               # Common Kafka utility functions
+ ┣━━ s3_utils.py                    # MinIO or AWS S3 interactions
+ ┣━━ db_connection.py              # Reusable DB connection logic
+ ┣━━ time_utils.py                 # Timestamp formatting, delays
+ ┗━━ __init__.py
+
+
+📦 contracts                 # Event schemas and validation for data quality
  ┣━━ 📂 schemas
- ┃   ┣━━ 📝 click_event.schema.json
- ┃   ┗━━ 📝 transaction_event.schema.json
- ┣━━ 📂 validators
- ┃   ┗━━ 📝 validate_kafka_event.py
+ ┃   ┣━━ click_event.schema.json    # Defines schema for user click event
+ ┃   ┗━━ transaction_event.schema.json # Schema for POS transaction events
+ ┗━━ 📂 validators
+     ┗━━ validate_kafka_event.py     # Ensures Kafka messages follow schemas
 
 
-📦 config/
- ┣━━ 📄 dev.env
- ┣━━ 📄 staging.env
- ┣━━ 📄 prod.env
- ┣━━ 📄 default_config.yaml
- ┗━━ 📄 model_params_dev.yaml
+📦 config                    # All environment-specific configs
+ ┣━━ dev.env                         # Dev environment variables
+ ┣━━ staging.env                     # Staging environment variables
+ ┣━━ prod.env                        # Production secrets & configs
+ ┣━━ default_config.yaml             # Shared default configs
+ ┗━━ model_params_dev.yaml           # ML model training/test settings
 
 
-📦 tests/
- ┣━━ 📂 unit/
- ┃   ┗━━ test_model_serving.py
- ┣━━ 📂 integration/
- ┃   ┗━━ test_etl_end_to_end.py
- ┣━━ 📂 load_tests/
- ┃   ┗━━ locustfile.py
- ┣━━ 📂 smoke_tests/
- ┃   ┗━━ test_pipeline_smoke.py
+📦 tests                     # End-to-end project test coverage
+ ┣━━ 📂 unit
+ ┃   ┗━━ test_model_serving.py       # Unit test for model API
+ ┣━━ 📂 integration
+ ┃   ┗━━ test_etl_end_to_end.py      # Full ETL pipeline test
+ ┣━━ 📂 load_tests
+ ┃   ┗━━ locustfile.py               # Load testing FastAPI endpoints
+ ┗━━ 📂 smoke_tests
+     ┗━━ test_pipeline_smoke.py      # Minimal startup test for the pipeline
 
 
-📦 research/
- ┣━━ 📂 notebooks/
- ┃   ┗━━ model_exploration.ipynb
- ┣━━ 📂 whiteboard_diagrams/
- ┃   ┗━━ retraining_loop.png
- ┣━━ 📂 benchmarks/
- ┃   ┗━━ model_latency.csv
- ┣━━ 📂 discarded/
- ┃   ┗━━ old_feature_selection.py
+📦 research                  # Experiments, benchmarking, docs
+ ┣━━ 📂 notebooks
+ ┃   ┗━━ model_exploration.ipynb     # Data science exploration notebook
+ ┣━━ 📂 whiteboard_diagrams
+ ┃   ┗━━ retraining_loop.png         # Architecture visual for retraining
+ ┣━━ 📂 benchmarks
+ ┃   ┗━━ model_latency.csv           # Performance metrics tracking
+ ┗━━ 📂 discarded
+     ┗━━ old_feature_selection.py    # Deprecated or old logic
 
 
-📦 runbooks/
- ┣━━ 📄 how_to_fix_s3_access.md
- ┣━━ 📄 airflow_failure_coe.md
- ┣━━ 📄 model_drift_rca_2024_04.md
-
+📦 runbooks                  # Operational guides for support
+ ┣━━ how_to_fix_s3_access.md        # MinIO/S3 troubleshooting steps
+ ┣━━ airflow_failure_coe.md         # Correction of Error (COE) for DAG issues
+ ┗━━ model_drift_rca_2024_04.md     # RCA for model drift in April
 
 ```
 

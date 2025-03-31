@@ -1,1 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Envs
 .env
+*.env
+venv/
+.env.*
+
+# Logs
+*.log
+
+# Data
+*.csv
+*.parquet
+data/
+mlruns/
+
+# Secrets
+secrets/

@@ -6,6 +6,9 @@ on:
       - 'data_sources/**'
       - '.github/workflows/build_simulator.yml'
 
+  workflow_dispatch:
+
+
 jobs:
   build-push:
     runs-on: ubuntu-latest

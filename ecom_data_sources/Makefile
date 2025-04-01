@@ -1,5 +1,8 @@
 # Makefile to build, run, and push the data_sources microservice
 
+-include .env.secrets
+
+
 IMAGE_NAME=ecom_data_sources
 TAG=latest
 DOCKERHUB_USERNAME=tejasjay03
@@ -15,7 +18,7 @@ help:
 	@echo "  test         - Run simulation locally with Python"
 
 login:
-	docker login -u $(DOCKERHUB_USERNAME)
+	docker login -u $(DOCKERHUB_USERNAME) -p $(DOCKERHUB_PASSWORD)
 
 build:
 	docker build -t $(IMAGE_NAME):$(TAG) .
@@ -37,4 +40,10 @@ realtime:
 	docker run --rm -it ecom_data_sources:latest python3 -m pos_logs.unified_simulator --mode realtime --output stdout --avg_sessions 10 --concurrent_users 500
 
 
-
+check-secrets:
+	@if [ ! -f .env.secrets ]; then \
+		echo "❌ .env.secrets file not found!"; \
+		exit 1; \
+	else \
+		echo "✅ secrets loaded from .env.secrets"; \
+	fi

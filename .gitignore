@@ -25,4 +25,5 @@ data/
 mlruns/
 
 # Secrets
-secrets/
+secrets/*
+*.env.secrets

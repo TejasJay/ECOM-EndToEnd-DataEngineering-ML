@@ -3,7 +3,7 @@ name: Build & Push Data Sources Microservice
 on:
   push:
     paths:
-      - 'data_sources/**'
+      - 'ecom_data_sources/**'
       - '.github/workflows/build_simulator.yml'
 
   workflow_dispatch:

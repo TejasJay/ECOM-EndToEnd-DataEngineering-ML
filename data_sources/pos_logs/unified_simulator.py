@@ -57,9 +57,13 @@ def run_on_core(args, core_id, user_chunk, avg_sessions, concurrent_users):
     data = ECOM()
     producer = create_kafka_producer(args.bootstrap) if args.output == "kafka" else None
 
+    
+
     async def simulate_session():
         user = random.choice(user_chunk)
         user_id = user["user_id"]
+
+        logger.info(f"Starting session for [{user_id}]")
 
         async with session_lock:
             if user_id in active_sessions:
@@ -84,9 +88,11 @@ def run_on_core(args, core_id, user_chunk, avg_sessions, concurrent_users):
 
                 behaviour = data.behaviour_data(user, order, session)
                 emit_data(args, producer, "behaviours", behaviour)
-                logger.info(f"[{user_id}] Session {_} complete with behaviour.")
+                logger.info(f"Session {_} completed [{user_id}]")
 
                 await asyncio.sleep(random.uniform(1, 5))
+            logger.info(f"All sessions completed for [{user_id}]")
+        
         finally:
             async with session_lock:
                 active_sessions.remove(user_id)

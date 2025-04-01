@@ -3,11 +3,11 @@
 set -e  # Exit on any error
 
 # Step 1: Check if JSON already exists
-if [ ! -f ../json_files/full_data.json ]; then
+if [ ! -f data_sources/json_files/full_data.json ]; then
   echo "🛠 Generating batch data..."
   python3 -m pos_logs.unified_simulator --mode batch --count 10000 --avg_sessions 10
   echo "🧹 Cleaning session logs..."
-  rm -f ../logs/session_logs/core.*
+  rm -f data_sources/logs/session_logs/core.*
 fi
 
 # Step 2: Run external API fetcher in background if not running

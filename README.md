@@ -1,5 +1,5 @@
 # Main Architecture
-<img src="architecture2.png">
+<img src="others/architecture2.png">
 
 
 

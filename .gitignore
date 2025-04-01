@@ -19,7 +19,7 @@ venv/
 *.json
 
 # Data
-*.csv
+# *.csv
 *.parquet
 data/
 mlruns/

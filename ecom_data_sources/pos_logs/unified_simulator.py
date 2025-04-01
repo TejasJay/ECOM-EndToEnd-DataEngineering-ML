@@ -91,7 +91,7 @@ def run_on_core(args, core_id, user_chunk, avg_sessions, concurrent_users):
                 logger.info(f"Session {_} completed [{user_id}]")
 
                 await asyncio.sleep(random.uniform(1, 5))
-            logger.info(f"All sessions completed for [{user_id}]")
+            logger.info(f"All sessions completed for [{user_id}] ")
         
         finally:
             async with session_lock:

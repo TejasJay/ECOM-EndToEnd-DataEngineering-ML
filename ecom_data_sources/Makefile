@@ -45,5 +45,5 @@ check-secrets:
 		echo "❌ .env.secrets file not found!"; \
 		exit 1; \
 	else \
-		echo "✅ secrets loaded from .env.secrets"; \
+		echo "✅ secrets loaded from .env.secrets "; \
 	fi

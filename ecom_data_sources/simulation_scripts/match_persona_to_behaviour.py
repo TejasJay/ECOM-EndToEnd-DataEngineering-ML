@@ -1,4 +1,4 @@
-from data_sources.simulation_scripts.behaviour import *
+from simulation_scripts.behaviour import *
 
 def match_persona_to_behavior(persona, order_status, payment_status, session_start_time, session_end_time, order_completed_time=None):
     """

@@ -11,8 +11,8 @@ import psutil
 import argparse
 import orjson
 from kafka import KafkaProducer
-from data_sources.simulation_scripts.simulator_logic import ECOM
-from data_sources.simulation_scripts.historic_simulator import BatchDataSimulator
+from simulation_scripts.simulator_logic import ECOM
+from simulation_scripts.historic_simulator import BatchDataSimulator
 
 # Utility: Kafka Producer Setup
 def create_kafka_producer(bootstrap_servers="localhost:9092"):
@@ -26,8 +26,8 @@ def create_kafka_producer(bootstrap_servers="localhost:9092"):
 
 # Utility: Logger Setup
 def setup_logger(core_id):
-    os.makedirs("data_sources/logs/session_logs/", exist_ok=True)
-    log_file = f"data_sources/logs/session_logs/core_{core_id}.log"
+    os.makedirs("./logs/session_logs/", exist_ok=True)
+    log_file = f"./logs/session_logs/core_{core_id}.log"
     logger = logging.getLogger(f"Core{core_id}")
     logger.setLevel(logging.INFO)
     if logger.hasHandlers():
@@ -155,7 +155,7 @@ def main():
     parser.add_argument("--count", type=int, default=100)
     parser.add_argument("--avg_sessions", type=int, default=5)
     parser.add_argument("--concurrent_users", type=int, default=3)
-    parser.add_argument("--batch_data_path", type=str, default="data_sources/json_files/full_data.json")
+    parser.add_argument("--batch_data_path", type=str, default="./json_files/full_data.json")
     args = parser.parse_args()
 
     if args.mode == "batch":

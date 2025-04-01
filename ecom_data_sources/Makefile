@@ -2,7 +2,7 @@
 
 IMAGE_NAME=ecom_data_sources
 TAG=latest
-DOCKERHUB_USERNAME=your_dockerhub_username
+DOCKERHUB_USERNAME=tejasjay03
 
 .PHONY: help build run push login test
 
@@ -29,5 +29,12 @@ push: build
 
 test:
 	python3 -m pos_logs.unified_simulator --mode batch --count 10
+
+batch:
+	docker run --rm -it ecom_data_sources:latest python3 -m pos_logs.unified_simulator --mode batch --count 1000 --avg_sessions 10
+
+realtime:
+	docker run --rm -it ecom_data_sources:latest python3 -m pos_logs.unified_simulator --mode realtime --output stdout --avg_sessions 10 --concurrent_users 500
+
 
 

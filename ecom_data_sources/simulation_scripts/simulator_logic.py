@@ -6,7 +6,7 @@ import faker
 import json
 import regex as re
 import pandas as pd
-from data_sources.simulation_scripts.match_persona_to_behaviour import *
+from simulation_scripts.match_persona_to_behaviour import *
 import logging
 
 
@@ -127,7 +127,7 @@ class ECOM:
 
   def generate_product_catalog(self):
     """Load product catalog from CSV file while preserving actual prices."""
-    df = pd.read_csv("./data_sources/inventory/product_catalog.csv")
+    df = pd.read_csv("./inventory/product_catalog.csv")
 
     # Convert actual_price from ₹475 format to integer (475)
     df["discounted_price"] = (df["discounted_price"].astype(str).str.replace(r"[^\d]", "", regex=True).astype(int))/85.79

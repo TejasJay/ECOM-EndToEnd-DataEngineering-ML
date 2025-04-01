@@ -8,7 +8,7 @@ import signal
 import sys
 from datetime import datetime
 import psutil
-from data_sources.simulation_scripts.simulator_logic import ECOM
+from simulation_scripts.simulator_logic import ECOM
 
 
 def split_users(users, num_chunks):
@@ -17,8 +17,8 @@ def split_users(users, num_chunks):
 
 
 def setup_logger(core_id):
-    os.makedirs("data_sources/logs/session_logs/", exist_ok=True)
-    log_file = f"data_sources/logs/session_logs/core_{core_id}.log"
+    os.makedirs("./logs/session_logs/", exist_ok=True)
+    log_file = f"./logs/session_logs/core_{core_id}.log"
     logger = logging.getLogger(f"Core{core_id}")
     logger.setLevel(logging.INFO)
     if logger.hasHandlers():
@@ -77,7 +77,7 @@ def run_on_core(core_id, user_chunk, avg_sessions, concurrent_users):
                 logger.info(f"✅ Cart checkout time: {behaviour['checkout_completion_time']}s")
                 logger.info(f"💳 Payment time: {behaviour['payment_processing_time']}s")
                 behaviours.append(behaviour)
-                with open("/data_sources/user_activity/activity.json", "a") as json_file:
+                with open("./user_activity/activity.json", "a") as json_file:
                     json.dump(data, json_file, indent=4)
 
                 await asyncio.sleep(random.randint(1, 3600))
@@ -140,5 +140,5 @@ class RealTimeSimulator:
 
 
 if __name__ == "__main__":
-    sim = RealTimeSimulator(batch_data_path="data_sources/json_files/full_data.json", avg_sessions=10, concurrent_users=500)
+    sim = RealTimeSimulator(batch_data_path="./json_files/full_data.json", avg_sessions=10, concurrent_users=500)
     sim.run()

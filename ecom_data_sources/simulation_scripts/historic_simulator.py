@@ -1,10 +1,8 @@
 # Initialize ECOM instance
 import random
-from data_sources.simulation_scripts.simulator_logic import *
+from simulation_scripts.simulator_logic import *
 import json
 
-import json
-import random
 # from ECOM import ECOM  # Make sure ECOM class is defined in your module or same file
 
 class BatchDataSimulator:
@@ -12,7 +10,7 @@ class BatchDataSimulator:
     Batch simulator that generates synthetic E-Commerce user activity data and writes to a JSON file.
     """
 
-    def __init__(self, user_count=1, avg_sessions_per_user=10, output_file="./data_sources/json_files/full_data.json"):
+    def __init__(self, user_count=1, avg_sessions_per_user=10, output_file="./json_files/full_data.json"):
         """
         Initializes the simulator.
 

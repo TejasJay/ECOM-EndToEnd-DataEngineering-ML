@@ -4,7 +4,7 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY ./data_sources/ .
+COPY . .
 
 RUN pip install --no-cache-dir --upgrade pip \
  && pip install -r requirements.txt

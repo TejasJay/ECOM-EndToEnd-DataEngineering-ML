@@ -155,7 +155,7 @@ def main():
     parser.add_argument("--count", type=int, default=100)
     parser.add_argument("--avg_sessions", type=int, default=5)
     parser.add_argument("--concurrent_users", type=int, default=3)
-    parser.add_argument("--batch_data_path", type=str, default="./data_sources/json_files/full_data.json")
+    parser.add_argument("--batch_data_path", type=str, default="data_sources/json_files/full_data.json")
     args = parser.parse_args()
 
     if args.mode == "batch":

@@ -15,6 +15,9 @@ venv/
 # Logs
 *.log
 
+# Json
+json_files/
+
 # Data
 *.csv
 *.parquet

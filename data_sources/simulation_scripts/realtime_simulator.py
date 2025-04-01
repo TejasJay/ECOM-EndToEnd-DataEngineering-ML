@@ -77,7 +77,7 @@ def run_on_core(core_id, user_chunk, avg_sessions, concurrent_users):
                 logger.info(f"✅ Cart checkout time: {behaviour['checkout_completion_time']}s")
                 logger.info(f"💳 Payment time: {behaviour['payment_processing_time']}s")
                 behaviours.append(behaviour)
-                with open("data_sources/user_activity/activity.json", "a") as json_file:
+                with open("/data_sources/user_activity/activity.json", "a") as json_file:
                     json.dump(data, json_file, indent=4)
 
                 await asyncio.sleep(random.randint(1, 3600))
@@ -140,5 +140,5 @@ class RealTimeSimulator:
 
 
 if __name__ == "__main__":
-    sim = RealTimeSimulator(batch_data_path="./data_sources/json_files/full_data.json", avg_sessions=10, concurrent_users=500)
+    sim = RealTimeSimulator(batch_data_path="data_sources/json_files/full_data.json", avg_sessions=10, concurrent_users=500)
     sim.run()

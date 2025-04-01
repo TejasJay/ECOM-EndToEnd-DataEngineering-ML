@@ -39,6 +39,6 @@ jobs:
 
     - name: Build and Push Docker Image
       run: |
-        cd data_sources
+        cd ecom_data_sources
         docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/ecom_data_sources:latest .
         docker push ${{ secrets.DOCKERHUB_USERNAME }}/ecom_data_sources:latest

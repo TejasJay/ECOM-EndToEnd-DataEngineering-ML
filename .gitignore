@@ -16,7 +16,7 @@ venv/
 *.log
 
 # Json
-json_files/
+*.json
 
 # Data
 *.csv

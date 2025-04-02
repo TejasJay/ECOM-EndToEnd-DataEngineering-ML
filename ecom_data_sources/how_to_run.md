@@ -73,7 +73,7 @@ It is containerized using **Docker**, automated with **Makefile**, orchestrated 
 
 ```bash
 # Clone the repo
-git clone https://github.com/<your-username>/ECOM_PRJ.git
+git clone https://github.com/TejasJay/ECOM_EndToEnd_DataEngineering_ML.git
 cd ECOM_PRJ/ecom_data_sources
 
 # Login to DockerHub (reads from .env.secrets)

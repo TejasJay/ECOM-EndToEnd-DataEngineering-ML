@@ -37,7 +37,7 @@ batch:
 	docker run --rm -it ecom_data_sources:latest python3 -m pos_logs.unified_simulator --mode batch --count 1000 --avg_sessions 10
 
 realtime:
-	docker run --rm -it ecom_data_sources:latest python3 -m pos_logs.unified_simulator --mode realtime --output stdout --avg_sessions 10 --concurrent_users 500
+	docker run --rm -it ecom_data_sources:latest python3 -m pos_logs.unified_simulator --mode realtime --output kafka --avg_sessions 10 --concurrent_users 500
 
 
 check-secrets:

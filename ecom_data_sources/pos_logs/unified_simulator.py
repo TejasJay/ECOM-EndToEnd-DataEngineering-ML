@@ -15,7 +15,7 @@ from simulation_scripts.simulator_logic import ECOM
 from simulation_scripts.historic_simulator import BatchDataSimulator
 
 # Utility: Kafka Producer Setup
-def create_kafka_producer(bootstrap_servers="localhost:9092"):
+def create_kafka_producer(bootstrap_servers="host.docker.internal:9092"):
     return KafkaProducer(
         bootstrap_servers=bootstrap_servers,
         value_serializer=lambda v: orjson.dumps(v),
@@ -61,6 +61,7 @@ def run_on_core(args, core_id, user_chunk, avg_sessions, concurrent_users):
 
     async def simulate_session():
         user = random.choice(user_chunk)
+        print(user)
         user_id = user["user_id"]
 
         logger.info(f"Starting session for [{user_id}]")
@@ -150,8 +151,8 @@ def main():
     parser = argparse.ArgumentParser(description="E-Commerce Simulator")
     parser.add_argument("--mode", choices=["batch", "realtime"], default="batch")
     parser.add_argument("--output", choices=["stdout", "kafka"], default="stdout")
-    parser.add_argument("--bootstrap", default="localhost:9092")
-    parser.add_argument("--topic", default="ecom_events")
+    parser.add_argument("--bootstrap", default="host.docker.internal:9092")
+    parser.add_argument("--topic", default="users")
     parser.add_argument("--count", type=int, default=100)
     parser.add_argument("--avg_sessions", type=int, default=5)
     parser.add_argument("--concurrent_users", type=int, default=3)

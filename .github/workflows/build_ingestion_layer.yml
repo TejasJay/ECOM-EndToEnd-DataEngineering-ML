@@ -50,7 +50,7 @@ jobs:
     - name: Build and Push Topic Creator Image (Multi-Arch)
       uses: docker/build-push-action@v5
       with:
-        context: ./ecom_ingestion_layer/kafka/topic
+        context: ./ecom_ingestion_layer/kafka/topics
         push: true
         tags: |
           ${{ secrets.DOCKERHUB_USERNAME }}/ecom_create_topics:latest

@@ -16,7 +16,7 @@ TOPIC = "users"
 GROUP_ID = "test-consumer-group"
 
 def main():
-    print(f"🔄 Connecting to Kafka topic '{TOPIC}' on {BOOTSTRAP_SERVERS}...")
+    print(f"🔄 Connecting to Kafka topic '{TOPIC}' on {BOOTSTRAP_SERVERS}....")
 
     consumer = KafkaConsumer(
         TOPIC,

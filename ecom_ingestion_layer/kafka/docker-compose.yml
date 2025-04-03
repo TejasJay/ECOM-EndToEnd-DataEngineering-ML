@@ -1,0 +1,44 @@
+version: '3.8'  # Use Docker Compose version 3.8 (compatible with recent Docker features)
+
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.4.0  # Official Confluent Platform Zookeeper image
+    restart: unless-stopped  # Auto-restart unless explicitly stopped
+    ports:
+      - "2181:2181"  # Expose Zookeeper port on host
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181  # Zookeeper listening port
+      ZOOKEEPER_TICK_TIME: 2000  # Zookeeper heartbeat tick interval (in ms)
+    volumes:
+      - zk_data:/var/lib/zookeeper/data  # Persist zookeeper state between restarts
+    networks:
+      - kafka_net  # Connect to the same network as Kafka
+
+  kafka:
+    image: confluentinc/cp-kafka:7.4.0  # Official Kafka image from Confluent
+    restart: unless-stopped  # Restart Kafka unless you explicitly stop it
+    depends_on:
+      - zookeeper  # Ensure Kafka only starts after Zookeeper is running
+    ports:
+      - "9092:9092"  # Expose Kafka broker port on host
+    environment:
+      KAFKA_BROKER_ID: 1  # Unique ID for the Kafka broker
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181  # Tell Kafka where Zookeeper is
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092  # Kafka listens on all interfaces inside the container
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://host.docker.internal:9092  # Kafka advertises localhost for host communication
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT  # Define plaintext protocol mapping
+    volumes:
+      - ./config/server.properties:/etc/kafka/server.properties  # Mount your custom Kafka config file
+      - kafka_data:/var/lib/kafka/data  # Persist Kafka topic logs/data across container restarts
+    networks:
+      - kafka_net  # Connect Kafka to shared network with producers/consumers
+    command: ["bash", "-c", "kafka-server-start /etc/kafka/server.properties"]  # Explicitly start Kafka using your mounted config
+
+networks:
+  kafka_net:
+    driver: bridge  # Use Docker bridge network for container-to-container communication
+
+volumes:
+  kafka_data:  # Named volume to store Kafka logs
+  zk_data:     # Named volume to store Zookeeper state
+

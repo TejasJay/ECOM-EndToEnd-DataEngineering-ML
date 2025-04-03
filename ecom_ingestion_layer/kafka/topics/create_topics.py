@@ -17,7 +17,7 @@ TOPICS = [
     "sessions",
     "orders",
     "behaviours",
-    "marketings"
+    "marketings",
 ]
 
 NUM_PARTITIONS = 3

@@ -23,6 +23,9 @@ help:
 	@echo "  make ps                 - Alias for docker-compose ps"
 	@echo "  make nuke               - Remove all containers, volumes, and networks 💣"
 
+login:
+	docker login -u $(DOCKERHUB_USERNAME) -p $(DOCKERHUB_PASSWORD)
+
 # 🔹 Start Kafka and Zookeeper
 start:
 	@echo "🚀 Starting Kafka stack..."
@@ -51,39 +54,36 @@ status ps:
 	@echo "📦 Kafka container status:"
 	$(COMPOSE) ps
 
-# 🔹 Create topics using script
+build-topics:
+	@echo "🐳 Building Docker image for topic creation..."
+	docker build -t ecom_create_topics:latest ./topics
+
+push-topics: build-topics
+	docker tag ecom_create_topics:latest tejasjay03/ecom_create_topics:latest
+	docker push tejasjay03/ecom_create_topics:latest
+
 create-topics:
-	@echo "🧱 Creating Kafka topics..."
-	$(PYTHON) topics/create_topics.py
+	@echo "🧱 Creating Kafka topics via Docker container..."
+	docker run --rm --network kafka_kafka_net ecom_create_topics:latest
 
 # 🔹 Run Kafka Consumer for a specific topic
 consume-topic:
 	@echo "📥 Consuming from topic: $(TOPIC)"
 	$(PYTHON) consumer/test_consumer.py --topic $(TOPIC)
 
-# 🔹 Run Kafka Producer (optional)
-produce-topic:
-	@echo "📤 Producing test data to topic: $(TOPIC)"
-	$(PYTHON) producer/produce_topic.py --topic $(TOPIC)
-
-# 🔹 Kafka Consumer Docker Build & Run
-# 🔹 Build Kafka Consumer Image
-login:
-	docker login -u $(DOCKERHUB_USERNAME) -p $(DOCKERHUB_PASSWORD)
-
 build-consumer:
 	@echo "🐳 Building Kafka consumer image..."
 	docker build -t ecom_kafka_consumer:latest ./consumer
 
-push: build-consumer
+push-consumer: build-consumer
 	docker tag ecom_kafka_consumer:latest  tejasjay03/ecom_kafka_consumer:latest 
 	docker push tejasjay03/ecom_kafka_consumer:latest 
 
 # 🔹 Run Kafka Consumer Container
 run-consumer:
 	@echo "📦 Running Kafka consumer container..."
-	docker run --rm \
-		-e TOPIC=$(TOPIC) \
-		-e BOOTSTRAP=host.docker.internal:9092 \
-		ecom_kafka_consumer:latest
+	docker run --rm --network kafka_kafka_net ecom_kafka_consumer:latest
 
+
+
+bootstrap: start build-topics create-topics build-consumer run-consumer

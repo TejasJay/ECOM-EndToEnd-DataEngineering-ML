@@ -4,7 +4,7 @@ import socket
 def get_bootstrap_host():
     try:
         socket.gethostbyname("kafka")  # Works inside Docker
-        return "kafka:9092"
+        return "kafka:29092"
     except socket.error:
         print("⚠️ 'kafka' hostname not found. Falling back to localhost.")
         return "localhost:9092"

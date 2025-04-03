@@ -4,13 +4,10 @@ WORKDIR /app
 
 COPY . /app
 
+ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH="/app"
 
-# Install pgrep + Python dependencies
 RUN apt-get update && apt-get install -y procps && \
     pip install --upgrade pip && pip install -r requirements.txt
 
-CMD ["bash", "start_simulation.sh"]
-
-
-
+CMD ["python3", "-u", "pos_logs/unified_simulator.py"]

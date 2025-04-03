@@ -1,176 +1,72 @@
 import asyncio
+import argparse
 import json
 import logging
-import multiprocessing
 import os
 import random
-import signal
-import sys
+import socket
 from datetime import datetime
-import psutil
-import argparse
-import orjson
+
 from kafka import KafkaProducer
 from simulation_scripts.simulator_logic import ECOM
-from simulation_scripts.historic_simulator import BatchDataSimulator
 
-# Utility: Kafka Producer Setup
-def create_kafka_producer(bootstrap_servers="host.docker.internal:9092"):
+def get_bootstrap_host():
+    try:
+        socket.gethostbyname("kafka")
+        return "kafka:29092"
+    except socket.error:
+        return "localhost:9092"
+
+def create_kafka_producer(bootstrap_servers=None):
+    if bootstrap_servers is None:
+        bootstrap_servers = get_bootstrap_host()
     return KafkaProducer(
         bootstrap_servers=bootstrap_servers,
-        value_serializer=lambda v: orjson.dumps(v),
-        linger_ms=10,
-        batch_size=32 * 1024,
-        compression_type='gzip'
+        value_serializer=lambda v: json.dumps(v).encode("utf-8")
     )
 
-# Utility: Logger Setup
-def setup_logger(core_id):
-    os.makedirs("./logs/session_logs/", exist_ok=True)
-    log_file = f"./logs/session_logs/core_{core_id}.log"
-    logger = logging.getLogger(f"Core{core_id}")
-    logger.setLevel(logging.INFO)
-    if logger.hasHandlers():
-        logger.handlers.clear()
-    fh = logging.FileHandler(log_file)
-    fh.setFormatter(logging.Formatter('[%(asctime)s] %(message)s'))
-    logger.addHandler(fh)
-    return logger
+def emit(producer, topic, data):
+    producer.send(topic, data)
 
-# Utility: Data Output Handler
-def emit_data(args, producer, topic, data):
-    if args.output == "stdout":
-        print(json.dumps(data, indent=2))
-    elif args.output == "kafka":
-        producer.send(topic, data)
-
-# Utility: User chunking
-def split_users(users, num_chunks):
-    chunk_size = (len(users) + num_chunks - 1) // num_chunks
-    return [users[i:i + chunk_size] for i in range(0, len(users), chunk_size)]
-
-# Real-time simulator coroutine
-def run_on_core(args, core_id, user_chunk, avg_sessions, concurrent_users):
-    logger = setup_logger(core_id)
-    session_lock = asyncio.Lock()
-    active_sessions = set()
+async def simulate_sessions(args):
     data = ECOM()
-    producer = create_kafka_producer(args.bootstrap) if args.output == "kafka" else None
+    producer = create_kafka_producer(args.bootstrap)
+    users = json.load(open(args.batch_data_path))[0]
 
-    
+    while True:
+        user = random.choice(users)
+        print(f"🧪 Simulating session for {user['user_id']}")
+        emit(producer, "users", user)
 
-    async def simulate_session():
-        user = random.choice(user_chunk)
-        print(user)
-        user_id = user["user_id"]
+        marketing = data.marketing_data(user)[0]
+        emit(producer, "marketings", marketing)
 
-        logger.info(f"Starting session for [{user_id}]")
+        for _ in range(random.randint(1, args.avg_sessions)):
+            start = datetime.now()
+            await asyncio.sleep(random.uniform(0.5, 1.0))
+            end = datetime.now()
 
-        async with session_lock:
-            if user_id in active_sessions:
-                return
-            active_sessions.add(user_id)
+            session = data.session_data(user, start, end)[0]
+            emit(producer, "sessions", session)
 
-        try:
-            emit_data(args, producer, "users", user)
-            marketing = data.marketing_data(user)[0]
-            emit_data(args, producer, "marketings", marketing)
+            order = data.order_data(user, session, marketing)
+            emit(producer, "orders", order)
 
-            for _ in range(random.randint(1, avg_sessions)):
-                start = datetime.now()
-                await asyncio.sleep(random.uniform(0.5, 2))
-                end = datetime.now()
+            behaviour = data.behaviour_data(user, order, session)
+            emit(producer, "behaviours", behaviour)
 
-                session = data.session_data(user, start, end)[0]
-                emit_data(args, producer, "sessions", session)
+            await asyncio.sleep(random.uniform(1, 3))
 
-                order = data.order_data(user, session, marketing)
-                emit_data(args, producer, "orders", order)
+        await asyncio.sleep(2)
 
-                behaviour = data.behaviour_data(user, order, session)
-                emit_data(args, producer, "behaviours", behaviour)
-                logger.info(f"Session {_} completed [{user_id}]")
-
-                await asyncio.sleep(random.uniform(1, 5))
-            logger.info(f"All sessions completed for [{user_id}] ")
-        
-        finally:
-            async with session_lock:
-                active_sessions.remove(user_id)
-
-    async def run_loop():
-        try:
-            while True:
-                for _ in range(concurrent_users):
-                    asyncio.create_task(simulate_session())
-                    await asyncio.sleep(random.uniform(0.5, 1.5))
-                await asyncio.sleep(random.uniform(3, 5))
-        except asyncio.CancelledError:
-            logger.info("Cancelled coroutine")
-
-    try:
-        asyncio.run(run_loop())
-    except KeyboardInterrupt:
-        logger.info("Shutdown requested")
-
-# Real-time Simulator Class
-class RealTimeSimulator:
-    def __init__(self, batch_data_path, avg_sessions, concurrent_users, args):
-        self.batch_data = json.load(open(batch_data_path))[0]
-        self.avg_sessions = avg_sessions
-        self.concurrent_users = concurrent_users
-        self.total_cores = psutil.cpu_count(logical=False)
-        self.args = args
-        self.processes = []
-
-    def terminate_all(self, signum, frame):
-        print(f"\n⚠️ Caught signal {signum}. Terminating...")
-        for p in self.processes:
-            if p.is_alive():
-                p.terminate()
-        sys.exit(0)
-
-    def run(self):
-        user_chunks = split_users(self.batch_data, self.total_cores)
-        signal.signal(signal.SIGINT, self.terminate_all)
-        signal.signal(signal.SIGTERM, self.terminate_all)
-
-        for core, chunk in enumerate(user_chunks):
-            p = multiprocessing.Process(
-                target=run_on_core,
-                args=(self.args, core, chunk, self.avg_sessions, self.concurrent_users)
-            )
-            p.start()
-            self.processes.append(p)
-
-        for p in self.processes:
-            p.join()
-
-# Entry Point
 def main():
-    parser = argparse.ArgumentParser(description="E-Commerce Simulator")
-    parser.add_argument("--mode", choices=["batch", "realtime"], default="batch")
-    parser.add_argument("--output", choices=["stdout", "kafka"], default="stdout")
-    parser.add_argument("--bootstrap", default="host.docker.internal:9092")
-    parser.add_argument("--topic", default="users")
-    parser.add_argument("--count", type=int, default=100)
-    parser.add_argument("--avg_sessions", type=int, default=5)
-    parser.add_argument("--concurrent_users", type=int, default=3)
+    parser = argparse.ArgumentParser(description="Realtime Kafka Producer")
+    parser.add_argument("--bootstrap", default=get_bootstrap_host())
     parser.add_argument("--batch_data_path", type=str, default="./json_files/full_data.json")
+    parser.add_argument("--avg_sessions", type=int, default=5)
     args = parser.parse_args()
 
-    if args.mode == "batch":
-        simulator = BatchDataSimulator(user_count=args.count, avg_sessions_per_user=args.avg_sessions)
-        simulator.simulate()
-        
-    elif args.mode == "realtime":
-        sim = RealTimeSimulator(
-            batch_data_path=args.batch_data_path,
-            avg_sessions=args.avg_sessions,
-            concurrent_users=args.concurrent_users,
-            args=args
-        )
-        sim.run()
+    asyncio.run(simulate_sessions(args))
 
 if __name__ == "__main__":
     main()

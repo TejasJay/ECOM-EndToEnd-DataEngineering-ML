@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-# 🔁 Detect if running inside Docker
-if grep -q docker /proc/1/cgroup 2>/dev/null; then
-  BOOTSTRAP="kafka:9092"
+# Detect if running inside Docker (mount /proc/1/cgroup is safe on slim too)
+if grep -qE "/docker/|/kubepods/" /proc/1/cgroup 2>/dev/null; then
+  BOOTSTRAP="kafka:29092"
 else
   BOOTSTRAP="host.docker.internal:9092"
 fi
@@ -22,6 +22,6 @@ if ! pgrep -f promotion_fetch_api_request.py > /dev/null; then
   nohup python3 -m external_apis.promotion_fetch_api_request > ./logs/promotion.log 2>&1 &
 fi
 
-# Step 3: Run realtime simulator
+# Step 3: Run real-time simulator
 echo "🚀 Launching real-time simulator..."
-python3 -m pos_logs.unified_simulator --mode realtime --output kafka --bootstrap $BOOTSTRAP --avg_sessions 10 --concurrent_users 5
+python3 -m pos_logs.unified_simulator --mode realtime --output kafka --bootstrap "kafka:29092" --avg_sessions 10 --concurrent_users 5

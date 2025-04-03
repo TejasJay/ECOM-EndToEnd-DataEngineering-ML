@@ -37,7 +37,15 @@ batch:
 	docker run --rm -it ecom_data_sources:latest python3 -m pos_logs.unified_simulator --mode batch --count 1000 --avg_sessions 10
 
 realtime:
-	docker run --rm -it ecom_data_sources:latest python3 -m pos_logs.unified_simulator --mode realtime --output kafka --avg_sessions 10 --concurrent_users 500
+	docker run --rm \
+	--network kafka_kafka_net \
+	ecom_data_sources:latest \
+	python3 -m pos_logs.unified_simulator \
+	--mode realtime \
+	--output kafka \
+	--bootstrap kafka:29092 \
+	--avg_sessions 10 \
+	--concurrent_users 30
 
 
 check-secrets:
@@ -47,3 +55,14 @@ check-secrets:
 	else \
 		echo "✅ secrets loaded from .env.secrets "; \
 	fi
+
+build-producer:
+	docker build -t ecom_kafka_producer:latest .
+
+run-producer:
+	docker run --rm \
+		--network kafka_kafka_net \
+		ecom_kafka_producer:latest
+
+
+bootstrap: build-producer run-producer

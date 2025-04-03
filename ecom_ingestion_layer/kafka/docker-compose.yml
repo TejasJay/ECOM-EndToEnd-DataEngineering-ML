@@ -15,22 +15,27 @@ services:
       - kafka_net  # Connect to the same network as Kafka
 
   kafka:
+    container_name: kafka
     image: confluentinc/cp-kafka:7.4.0  # Official Kafka image from Confluent
     restart: unless-stopped  # Restart Kafka unless you explicitly stop it
     depends_on:
       - zookeeper  # Ensure Kafka only starts after Zookeeper is running
     ports:
-      - "9092:9092"  # Expose Kafka broker port on host
+      - "9092:9092"  # Expose Kafka broker port on host (external)
+      - "29092:29092" # internal 
     environment:
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://host.docker.internal:9092
-      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
-      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENERS: LISTENER_DOCKER://kafka:29092,LISTENER_HOST://localhost:9092
+      KAFKA_ADVERTISED_LISTENERS: LISTENER_DOCKER://kafka:29092,LISTENER_HOST://host.docker.internal:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_DOCKER:PLAINTEXT,LISTENER_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: LISTENER_DOCKER
     volumes:
-      - ./config/server.properties:/etc/kafka/server.properties  # Mount your custom Kafka config file
+      # - ./config/server.properties:/etc/kafka/server.properties  # Mount your custom Kafka config file
       - kafka_data:/var/lib/kafka/data  # Persist Kafka topic logs/data across container restarts
     networks:
       - kafka_net  # Connect Kafka to shared network with producers/consumers
-    command: ["bash", "-c", "kafka-server-start /etc/kafka/server.properties"]  # Explicitly start Kafka using your mounted config
+    # command: ["bash", "-c", "kafka-server-start /etc/kafka/server.properties"]  # Explicitly start Kafka using your mounted config
 
 networks:
   kafka_net:

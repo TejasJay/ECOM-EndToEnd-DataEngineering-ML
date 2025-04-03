@@ -1,36 +1,31 @@
 from kafka import KafkaConsumer
 import orjson
-import argparse
 import socket
+import json
 
+# Determine Kafka broker address (inside Docker uses "kafka", outside uses localhost)
 def get_bootstrap_host():
     try:
-        socket.gethostbyname("kafka")  # Inside Docker network
-        return "kafka:9092"
+        socket.gethostbyname("kafka")
+        return "kafka:29092"
     except socket.error:
-        return "localhost:9092"  # Fallback for local host runs
+        return "localhost:9092"
 
-BROKER_URL = get_bootstrap_host()
+BOOTSTRAP_SERVERS = get_bootstrap_host()
+TOPIC = "users"
+GROUP_ID = "test-consumer-group"
 
 def main():
-    parser = argparse.ArgumentParser(description="Kafka Consumer for Testing Topics")
-    parser.add_argument("--topic", type=str, default="users")
-    parser.add_argument("--bootstrap", type=str, default=BROKER_URL)
-    parser.add_argument("--group", type=str, default="test-consumer-group")
-    args = parser.parse_args()
-
-    print(f"🔄 Connecting to Kafka topic '{args.topic}' on {args.bootstrap}...")
+    print(f"🔄 Connecting to Kafka topic '{TOPIC}' on {BOOTSTRAP_SERVERS}...")
 
     consumer = KafkaConsumer(
-        args.topic,
-        bootstrap_servers=args.bootstrap,
+        TOPIC,
+        bootstrap_servers=BOOTSTRAP_SERVERS,
         auto_offset_reset="earliest",
-        enable_auto_commit=True,
-        group_id=args.group,
-        value_deserializer=lambda m: orjson.loads(m),
+        value_deserializer=lambda v: json.loads(v.decode("utf-8"))
     )
 
-    print(f"✅ Listening for messages on topic: {args.topic}...")
+    print(f"✅ Listening for messages on topic: {TOPIC}...")
     try:
         for message in consumer:
             print("📥 Received message:")

@@ -1,5 +1,4 @@
 from kafka import KafkaConsumer
-import orjson
 import socket
 import json
 

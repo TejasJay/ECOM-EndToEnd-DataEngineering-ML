@@ -4,7 +4,7 @@
 COMPOSE=docker-compose
 PYTHON=python3
 PROJECT_DIR=$(shell pwd)
-TOPIC?=users
+TOPIC?=sessions
 
 .PHONY: help start stop restart logs status create-topics consume produce
 

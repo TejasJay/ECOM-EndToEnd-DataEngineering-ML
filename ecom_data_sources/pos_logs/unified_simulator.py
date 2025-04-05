@@ -9,6 +9,8 @@ from datetime import datetime
 
 from kafka import KafkaProducer
 from simulation_scripts.simulator_logic import ECOM
+from simulation_scripts.historic_simulator import BatchDataSimulator
+
 
 def get_bootstrap_host():
     try:
@@ -16,6 +18,7 @@ def get_bootstrap_host():
         return "kafka:29092"
     except socket.error:
         return "localhost:9092"
+
 
 def create_kafka_producer(bootstrap_servers=None):
     if bootstrap_servers is None:
@@ -25,8 +28,14 @@ def create_kafka_producer(bootstrap_servers=None):
         value_serializer=lambda v: json.dumps(v).encode("utf-8")
     )
 
+
 def emit(producer, topic, data):
     producer.send(topic, data)
+
+
+def simulate_batch(args, user_count=1000, avg_sessions_per_user=10):
+    BatchDataSimulator(user_count, avg_sessions_per_user).simulate()
+
 
 async def simulate_sessions(args):
     data = ECOM()
@@ -59,14 +68,20 @@ async def simulate_sessions(args):
 
         await asyncio.sleep(2)
 
+
 def main():
-    parser = argparse.ArgumentParser(description="Realtime Kafka Producer")
+    parser = argparse.ArgumentParser(description="Kafka Data Simulator")
     parser.add_argument("--bootstrap", default=get_bootstrap_host())
+    parser.add_argument("--type", choices=["realtime", "batch"], default="realtime")
     parser.add_argument("--batch_data_path", type=str, default="./json_files/full_data.json")
     parser.add_argument("--avg_sessions", type=int, default=5)
     args = parser.parse_args()
 
-    asyncio.run(simulate_sessions(args))
+    if args.type == "realtime":
+        asyncio.run(simulate_sessions(args))
+    else:
+        simulate_batch(args, user_count=1000, avg_sessions_per_user=10)
+
 
 if __name__ == "__main__":
     main()

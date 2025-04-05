@@ -14,6 +14,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # ✅ Copy all source files
 COPY . .
 
-# 🔥 Replace shell script with direct Python command
+# 🔥 Replace shell script with direct Python command 
 CMD ["python3", "-u", "test_consumer.py"]
 

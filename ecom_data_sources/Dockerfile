@@ -6,7 +6,7 @@ WORKDIR /app
 # ✅ Copy only requirements first to leverage Docker layer caching
 COPY requirements.txt .
 
-# ✅ Install system packages and Python dependencies (cached if requirements.txt unchanged)
+# ✅ Install system packages and Python dependencies (cached if requirements.txt unchanged )
 RUN apt-get update && apt-get install -y --no-install-recommends procps \
     && pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir -r requirements.txt \

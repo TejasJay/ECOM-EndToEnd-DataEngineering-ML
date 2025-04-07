@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# ✅ Copy all source files
+# ✅ Copy all source files 
 COPY . .
 
 # 🔥 Replace shell script with direct Python command 

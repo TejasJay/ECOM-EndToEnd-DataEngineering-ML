@@ -1,26 +1,27 @@
-# Use Bitnami Spark base image
-FROM bitnami/spark:3.3.0
+# syntax=docker/dockerfile:1.4
 
-# Enable platform override for Mac M1 users
+# Use Apache's official Spark + Python base image
+FROM apache/spark-py:3.3.0
+
+# Support for multi-arch builds (Mac M1 and Linux)
 ARG TARGETPLATFORM
 
-# Set working directory inside container
+# Set working directory
 WORKDIR /app
 
-# Copy app code, config, and schemas into container
+# Copy Python dependencies first to cache them
+COPY requirements.txt .
+
+USER root
+
+# Install Python packages efficiently
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Now copy source code and configs
 COPY streaming_jobs/ ./streaming_jobs/
 COPY config/ ./config/
 
-# Install Python packages
-USER root
-RUN apt-get update && \
-    apt-get install -y python3-pip && \
-    pip3 install pandas requests pyyaml
-
-# Spark packages: Kafka connector and Delta Lake support
-ENV SPARK_PACKAGES=org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0,io.delta:delta-core_2.12:2.0.0
-
-# Entrypoint to run the streaming job
-ENTRYPOINT ["/opt/bitnami/spark/bin/spark-submit", \
+# Default entrypoint
+ENTRYPOINT ["/opt/spark/bin/spark-submit", \
   "--packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0,io.delta:delta-core_2.12:2.0.0", \
   "/app/streaming_jobs/enrich_transaction.py"]

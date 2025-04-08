@@ -1,16 +1,25 @@
+import yaml
+import os
+
+# Load YAML config
+with open("config/streaming_config.yaml", "r") as f:
+    config = yaml.safe_load(f)
+
+# Extract config values
+app_name = config["app_name"]
+brokers = config["kafka"]["brokers"]
+topic = config["kafka"]["topic"]
+starting_offsets = config["kafka"]["starting_offsets"]
+output_mode = config["output"]["mode"]
+truncate = config["output"]["truncate"]
+
+# Spark session
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, from_json
-from pyspark.sql.types import StructType, StringType, DoubleType, TimestampType
-
-# Step 1: Create Spark Session
-spark = SparkSession.builder \
-    .appName("EnrichTransactionStream") \
-    .getOrCreate()
-
-# Optional: Set log level to reduce noise
+spark = SparkSession.builder.appName(app_name).getOrCreate()
 spark.sparkContext.setLogLevel("WARN")
 
-# Step 2: Define schema for transaction events
+# Define schema (you can also load it from JSON later)
+from pyspark.sql.types import *
 transaction_schema = StructType() \
     .add("transaction_id", StringType()) \
     .add("user_id", StringType()) \
@@ -18,26 +27,23 @@ transaction_schema = StructType() \
     .add("amount", DoubleType()) \
     .add("timestamp", TimestampType())
 
-# Step 3: Read streaming data from Kafka topic
-raw_df = spark.readStream \
-    .format("kafka") \
-    .option("kafka.bootstrap.servers", "kafka:9092") \
-    .option("subscribe", "pos_transactions") \
-    .option("startingOffsets", "latest") \
+# Read from Kafka
+df = spark.readStream.format("kafka") \
+    .option("kafka.bootstrap.servers", brokers) \
+    .option("subscribe", topic) \
+    .option("startingOffsets", starting_offsets) \
     .load()
 
-# Step 4: Decode Kafka value column and apply schema
-parsed_df = raw_df.selectExpr("CAST(value AS STRING) as json_str") \
-    .select(from_json(col("json_str"), transaction_schema).alias("data")) \
+# Parse JSON messages
+from pyspark.sql.functions import col, from_json
+parsed = df.selectExpr("CAST(value AS STRING)") \
+    .select(from_json(col("value"), transaction_schema).alias("data")) \
     .select("data.*")
 
-# Step 5: Write the stream to console (testing phase)
-query = parsed_df.writeStream \
-    .format("console") \
-    .option("truncate", False) \
-    .outputMode("append") \
+# Output to console (from config)
+query = parsed.writeStream \
+    .format(output_mode) \
+    .option("truncate", truncate) \
     .start()
 
-# Step 6: Keep the stream running
 query.awaitTermination()
-

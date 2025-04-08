@@ -1,16 +1,18 @@
-# Makefile for building and running Spark Streaming job from spark_streaming/
+# spark_streaming/Makefile
 
 IMAGE_NAME=spark_streaming
 DOCKERFILE=Dockerfile
 NETWORK_NAME=kafka_net
 
-# Build the Docker image (context is current directory)
+# Build Docker image with explicit architecture for Mac M1 or Linux
 build:
-	docker build -t $(IMAGE_NAME) -f $(DOCKERFILE) .
+	DOCKER_DEFAULT_PLATFORM=linux/amd64 docker build \
+		--tag $(IMAGE_NAME) \
+		--file $(DOCKERFILE) .
 
-# Run the container and execute Spark job
+# Run container in correct Kafka network
 run:
 	docker run --rm --network $(NETWORK_NAME) $(IMAGE_NAME)
 
-# Rebuild and run the container
+# Shortcut for clean rebuild and run
 rebuild-run: build run

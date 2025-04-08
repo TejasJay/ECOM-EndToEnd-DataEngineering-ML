@@ -1,0 +1,14 @@
+app_name: EnrichTransactionStream
+
+kafka:
+  brokers: kafka:9092
+  topic: pos_transactions
+  starting_offsets: latest
+
+schema:
+  transaction_schema_path: resources/schemas/transaction_event.schema.json
+
+output:
+  mode: console
+  truncate: false
+

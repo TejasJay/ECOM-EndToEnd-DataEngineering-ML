@@ -1,0 +1,49 @@
+name: Build & Push Data Stream Processing Microservice
+
+on:
+  push:
+    paths:
+      - 'ecom_stream_processing/kafka/**'
+      - '.github/workflows/build_stream_processing.yml'
+  workflow_dispatch:
+
+jobs:
+  build-push:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+      with:
+        install: true
+
+    - name: Cache Docker layers
+      uses: actions/cache@v3
+      with:
+        path: /tmp/.buildx-cache
+        key: buildx-${{ github.sha }}
+        restore-keys: |
+          buildx-
+
+    - name: Docker Login
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+    - name: Build and Push Kafka Consumer Image
+      uses: docker/build-push-action@v5
+      with:
+        context: ./ecom_stream_processing/spark_streaming
+        push: true
+        tags: |
+          ${{ secrets.DOCKERHUB_USERNAME }}/ecom_spark_streaming:latest
+          ${{ secrets.DOCKERHUB_USERNAME }}/ecom_spark_streaming:${{ github.sha }}
+        platforms: linux/amd64,linux/arm64
+        cache-from: type=local,src=/tmp/.buildx-cache
+        cache-to: type=local,dest=/tmp/.buildx-cache
+
+

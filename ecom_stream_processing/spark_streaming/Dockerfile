@@ -8,7 +8,7 @@ ARG TARGETPLATFORM
 # Set working directory
 WORKDIR /app
 
-# Copy requirements separately to leverage caching
+# Copy requirements separately to leverage caching.
 COPY requirements.txt .
 
 USER root

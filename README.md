@@ -645,7 +645,7 @@
 
 ## 🔐 **PHASE 8: Security, Governance, Optimization**
 
-### 🔹 Goal: Ensure your system is secure, ethical, and cost-effective
+### 🔹 Goal: Ensure your system is secure, ethical, and cost-effective.
 
 | Area | Tools / Action |
 | --- | --- |

@@ -1,4 +1,4 @@
-# Main Architecture
+# Main Architecture.
 <img src="others/architecture2.png">
 
 

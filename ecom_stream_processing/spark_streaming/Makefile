@@ -1,6 +1,6 @@
 IMAGE_NAME=spark_streaming
 DOCKERFILE=Dockerfile
-NETWORK_NAME=kafka_net
+NETWORK_NAME=kafka_kafka_net
 
 # Build Docker image with explicit architecture for Mac M1 or Linux
 build:

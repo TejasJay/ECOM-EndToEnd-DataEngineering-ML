@@ -3,8 +3,7 @@ app_name: EnrichTransactionStream
 kafka:
   brokers: kafka:29092
   topics:
-    transactions: pos_transactions
-    users: users_topic
+    users: users
   starting_offsets: latest
 
 schema:
@@ -12,5 +11,5 @@ schema:
   user_schema_path: resources/schemas/user_event.schema.json
 
 output:
-  mode: console
+  mode: append
   truncate: false

@@ -1,7 +1,7 @@
 import yaml
 import os
 
-# Load YAML config
+# Load YAML config.
 with open("config/streaming_config.yaml", "r") as f:
     config = yaml.safe_load(f)
 

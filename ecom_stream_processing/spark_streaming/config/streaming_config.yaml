@@ -4,7 +4,7 @@ kafka:
   brokers: kafka:29092
   topics:
     users: users
-  starting_offsets: latest
+  starting_offsets: earliest
 
 schema:
   transaction_schema_path: resources/schemas/transaction_event.schema.json

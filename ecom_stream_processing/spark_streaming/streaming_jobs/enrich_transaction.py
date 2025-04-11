@@ -1,49 +1,93 @@
 import yaml
 import os
+from pyspark.sql import SparkSession
+from pyspark.sql.types import *
+from pyspark.sql.functions import col, from_json
 
-# Load YAML config.
+# Load YAML config
 with open("config/streaming_config.yaml", "r") as f:
     config = yaml.safe_load(f)
 
-# Extract config values
+
+
+# Config values
 app_name = config["app_name"]
 brokers = config["kafka"]["brokers"]
-topic = config["kafka"]["topic"]
+transaction_topic = config["kafka"]["topics"]["transactions"]
+user_topic = config["kafka"]["topics"]["users"]
 starting_offsets = config["kafka"]["starting_offsets"]
 output_mode = config["output"]["mode"]
 truncate = config["output"]["truncate"]
 
+print(f"🧪 Kafka brokers being used: {brokers}")
+
 # Spark session
-from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName(app_name).getOrCreate()
 spark.sparkContext.setLogLevel("WARN")
 
-# Define schema (you can also load it from JSON later)
-from pyspark.sql.types import *
-transaction_schema = StructType() \
-    .add("transaction_id", StringType()) \
-    .add("user_id", StringType()) \
-    .add("item_id", StringType()) \
-    .add("amount", DoubleType()) \
-    .add("timestamp", TimestampType())
+# Transaction schema
+transaction_schema = StructType([
+    StructField("transaction_id", StringType()),
+    StructField("user_id", StringType()),
+    StructField("item_id", StringType()),
+    StructField("amount", DoubleType()),
+    StructField("timestamp", TimestampType())
+])
 
-# Read from Kafka
-df = spark.readStream.format("kafka") \
+# User schema
+user_schema = StructType([
+    StructField("user_id", StringType()),
+    StructField("first_name", StringType()),
+    StructField("last_name", StringType()),
+    StructField("user_name", StringType()),
+    StructField("user_type", StringType()),
+    StructField("age_group", StringType()),
+    StructField("gender", StringType()),
+    StructField("address", StringType()),
+    StructField("city", StringType()),
+    StructField("state", StringType()),
+    StructField("zipcode", StringType()),
+    StructField("country", StringType()),
+    StructField("account_creation_date", TimestampType()),
+    StructField("last_login_time", TimestampType()),
+    StructField("preferred_language", StringType()),
+    StructField("persona", StringType())
+])
+
+# Read transaction stream
+transactions_df = spark.readStream.format("kafka") \
     .option("kafka.bootstrap.servers", brokers) \
-    .option("subscribe", topic) \
+    .option("subscribe", transaction_topic) \
     .option("startingOffsets", starting_offsets) \
     .load()
 
-# Parse JSON messages
-from pyspark.sql.functions import col, from_json
-parsed = df.selectExpr("CAST(value AS STRING)") \
+transactions_parsed = transactions_df.selectExpr("CAST(value AS STRING)") \
     .select(from_json(col("value"), transaction_schema).alias("data")) \
     .select("data.*")
 
-# Output to console (from config)
-query = parsed.writeStream \
+# Read user stream
+users_df = spark.readStream.format("kafka") \
+    .option("kafka.bootstrap.servers", brokers) \
+    .option("subscribe", user_topic) \
+    .option("startingOffsets", starting_offsets) \
+    .load()
+
+users_parsed = users_df.selectExpr("CAST(value AS STRING)") \
+    .select(from_json(col("value"), user_schema).alias("data")) \
+    .select("data.*")
+
+# Output both to console
+transactions_query = transactions_parsed.writeStream \
     .format(output_mode) \
     .option("truncate", truncate) \
+    .queryName("TransactionStream") \
     .start()
 
-query.awaitTermination()
+users_query = users_parsed.writeStream \
+    .format(output_mode) \
+    .option("truncate", truncate) \
+    .queryName("UserStream") \
+    .start()
+
+transactions_query.awaitTermination()
+users_query.awaitTermination()

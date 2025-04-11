@@ -24,5 +24,6 @@ COPY config/ ./config/
 
 # Run the Spark Streaming job with necessary packages
 ENTRYPOINT ["/opt/bitnami/spark/bin/spark-submit", \
-  "--packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0,io.delta:delta-core_2.12:2.0.0", \
+  "--packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0,org.apache.kafka:kafka-clients:2.8.0,io.delta:delta-core_2.12:2.0.0", \
   "/app/streaming_jobs/enrich_transaction.py"]
+

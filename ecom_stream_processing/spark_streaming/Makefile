@@ -1,5 +1,3 @@
-# spark_streaming/Makefile
-
 IMAGE_NAME=spark_streaming
 DOCKERFILE=Dockerfile
 NETWORK_NAME=kafka_net
@@ -10,8 +8,12 @@ build:
 		--tag $(IMAGE_NAME) \
 		--file $(DOCKERFILE) .
 
+# Create Docker network if it doesn't exist
+network:
+	docker network inspect $(NETWORK_NAME) >/dev/null 2>&1 || docker network create $(NETWORK_NAME)
+
 # Run container in correct Kafka network
-run:
+run: network
 	docker run --rm --network $(NETWORK_NAME) $(IMAGE_NAME)
 
 # Shortcut for clean rebuild and run

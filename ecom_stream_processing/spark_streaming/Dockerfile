@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.4
 
-# Use Bitnami Spark (includes Spark, Hadoop, and Python)
+# Use Bitnami Spark (includes Spark, Hadoop, Python)
 FROM bitnami/spark:3.3.0
 
 ARG TARGETPLATFORM
@@ -8,28 +8,28 @@ ARG TARGETPLATFORM
 # Set working directory
 WORKDIR /app
 
-# Install Python requirements cleanly
+# Copy requirements file and install Python dependencies
 COPY requirements.txt .
+
 USER root
+
+# Install curl + pip dependencies
 RUN apt-get update && \
-    apt-get install -y python3-pip && \
+    apt-get install -y python3-pip curl && \
     pip install --no-cache-dir -r requirements.txt
 
-# Manually download and cache Kafka + Delta JARs (to avoid Ivy downloading at runtime)
+# Manually download Kafka and Delta Lake JARs to avoid Ivy downloading them during runtime
 RUN mkdir -p /app/jars && \
     curl -L -o /app/jars/spark-sql-kafka-0-10_2.12-3.3.0.jar https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.3.0/spark-sql-kafka-0-10_2.12-3.3.0.jar && \
     curl -L -o /app/jars/spark-token-provider-kafka-0-10_2.12-3.3.0.jar https://repo1.maven.org/maven2/org/apache/spark/spark-token-provider-kafka-0-10_2.12/3.3.0/spark-token-provider-kafka-0-10_2.12-3.3.0.jar && \
     curl -L -o /app/jars/delta-core_2.12-2.0.0.jar https://repo1.maven.org/maven2/io/delta/delta-core_2.12/2.0.0/delta-core_2.12-2.0.0.jar
 
-# Copy app code and config
+# Copy code and config
 COPY streaming_jobs/ ./streaming_jobs/
 COPY config/ ./config/
-
-# Conditionally copy resources/ directory if it exists
-RUN mkdir -p /app/resources
 COPY resources/ ./resources/
 
-# Add the jars directory to the Spark classpath
+# Add jars to classpath
 ENV SPARK_EXTRA_CLASSPATH=/app/jars/*
 
 # Run the main Spark script

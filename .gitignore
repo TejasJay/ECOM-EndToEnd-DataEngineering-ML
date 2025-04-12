@@ -16,7 +16,7 @@ venv/
 *.log
 
 # Json
-*.json
+#*.json
 
 # Data
 # *.csv

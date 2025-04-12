@@ -1,0 +1,1729 @@
+[
+    [
+        {
+            "user_id": "USR-d0bfba99d82d47c088e2c261e38069ce",
+            "first_name": "Christy",
+            "last_name": "Huerta",
+            "user_name": "Christy Huerta",
+            "user_type": "New",
+            "age_group": "36-45",
+            "gender": "F",
+            "address": "336 Green Landing\nJennifertown, MO 03601",
+            "city": "Jennifertown",
+            "state": "MO",
+            "zipcode": "03601",
+            "country": "USA",
+            "account_creation_date": "2022-05-06 00:00:00",
+            "last_login_time": "2022-05-09 00:14:00",
+            "preferred_language": "French",
+            "persona": "Abandoner"
+        },
+        {
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "first_name": "Michael",
+            "last_name": "Richardson",
+            "user_name": "Michael Richardson",
+            "user_type": "Returning",
+            "age_group": "46-55",
+            "gender": "M",
+            "address": "5463 Kara Views\nEast Kimberly, AR 14106",
+            "city": "East Kimberly",
+            "state": "AR",
+            "zipcode": "14106",
+            "country": "USA",
+            "account_creation_date": "2022-04-29 00:00:00",
+            "last_login_time": "2022-05-10 01:06:00",
+            "preferred_language": "English",
+            "persona": "Bulk Buyer"
+        },
+        {
+            "user_id": "USR-a3a8393cdcd04cbc9d817909a5bab153",
+            "first_name": "Kelly",
+            "last_name": "Cain",
+            "user_name": "Kelly Cain",
+            "user_type": "Returning",
+            "age_group": "26-35",
+            "gender": "F",
+            "address": "3760 Castillo Corner\nDunnside, FL 90341",
+            "city": "Dunnside",
+            "state": "FL",
+            "zipcode": "90341",
+            "country": "USA",
+            "account_creation_date": "2022-04-08 00:00:00",
+            "last_login_time": "2022-05-10 01:32:00",
+            "preferred_language": "French",
+            "persona": "Last-Minute Shopper"
+        },
+        {
+            "user_id": "USR-377422773c034486a5782e97ec106d4e",
+            "first_name": "Richard",
+            "last_name": "Miles",
+            "user_name": "Richard Miles",
+            "user_type": "Returning",
+            "age_group": "18-25",
+            "gender": "M",
+            "address": "5633 Zoe Gateway Apt. 368\nNew Robert, NM 37245",
+            "city": "New Robert",
+            "state": "NM",
+            "zipcode": "37245",
+            "country": "USA",
+            "account_creation_date": "2022-04-12 00:00:00",
+            "last_login_time": "2022-05-12 01:34:00",
+            "preferred_language": "Italian",
+            "persona": "Last-Minute Shopper"
+        },
+        {
+            "user_id": "USR-30ad206cecd74bf6853dd886d8e153e0",
+            "first_name": "Sean",
+            "last_name": "Bailey",
+            "user_name": "Sean Bailey",
+            "user_type": "Returning",
+            "age_group": "36-45",
+            "gender": "M",
+            "address": "408 Donna Corner\nAtkinsland, VA 27761",
+            "city": "Atkinsland",
+            "state": "VA",
+            "zipcode": "27761",
+            "country": "USA",
+            "account_creation_date": "2022-04-23 00:00:00",
+            "last_login_time": "2022-05-14 02:00:00",
+            "preferred_language": "German",
+            "persona": "Window Shopper"
+        },
+        {
+            "user_id": "USR-6e6521ee0dcd49859f02cfe7f9c717f2",
+            "first_name": "Darren",
+            "last_name": "Lam",
+            "user_name": "Darren Lam",
+            "user_type": "Returning",
+            "age_group": "18-25",
+            "gender": "M",
+            "address": "70796 Melissa Canyon\nEast Aaron, PW 90173",
+            "city": "East Aaron",
+            "state": "PW",
+            "zipcode": "90173",
+            "country": "USA",
+            "account_creation_date": "2022-04-14 00:00:00",
+            "last_login_time": "2022-05-14 02:07:00",
+            "preferred_language": "English",
+            "persona": "Loyal Customer"
+        },
+        {
+            "user_id": "USR-785784eda0b645599c7db5969554665a",
+            "first_name": "Michael",
+            "last_name": "Potter",
+            "user_name": "Michael Potter",
+            "user_type": "Returning",
+            "age_group": "46-55",
+            "gender": "M",
+            "address": "80717 Raymond Parkways Suite 306\nSherylberg, IL 18028",
+            "city": "Sherylberg",
+            "state": "IL",
+            "zipcode": "18028",
+            "country": "USA",
+            "account_creation_date": "2022-04-30 00:00:00",
+            "last_login_time": "2022-05-15 02:44:00",
+            "preferred_language": "Spanish",
+            "persona": "Gift Buyer"
+        },
+        {
+            "user_id": "USR-e697f1033fc64195ac92ddad76c4b001",
+            "first_name": "Theodore",
+            "last_name": "Rodgers",
+            "user_name": "Theodore Rodgers",
+            "user_type": "Returning",
+            "age_group": "46-55",
+            "gender": "M",
+            "address": "56894 Christopher Hill Suite 247\nLake Richardburgh, MT 42149",
+            "city": "Lake Richardburgh",
+            "state": "MT",
+            "zipcode": "42149",
+            "country": "USA",
+            "account_creation_date": "2022-04-22 00:00:00",
+            "last_login_time": "2022-05-17 03:19:00",
+            "preferred_language": "English",
+            "persona": "Subscription Shopper"
+        },
+        {
+            "user_id": "USR-598adab04eb9462e875431783b2e2c26",
+            "first_name": "Vincent",
+            "last_name": "Solis",
+            "user_name": "Vincent Solis",
+            "user_type": "Returning",
+            "age_group": "26-35",
+            "gender": "M",
+            "address": "6986 Gaines Camp\nEast Ashleyville, TN 68111",
+            "city": "East Ashleyville",
+            "state": "TN",
+            "zipcode": "68111",
+            "country": "USA",
+            "account_creation_date": "2022-04-08 00:00:00",
+            "last_login_time": "2022-05-21 04:12:00",
+            "preferred_language": "German",
+            "persona": "Subscription Shopper"
+        },
+        {
+            "user_id": "USR-649d06f2d0f14bf1baa62afe081b26f5",
+            "first_name": "Nancy",
+            "last_name": "Bradford",
+            "user_name": "Nancy Bradford",
+            "user_type": "Returning",
+            "age_group": "26-35",
+            "gender": "F",
+            "address": "401 Taylor Courts\nRichardsonstad, NE 70496",
+            "city": "Richardsonstad",
+            "state": "NE",
+            "zipcode": "70496",
+            "country": "USA",
+            "account_creation_date": "2022-04-19 00:00:00",
+            "last_login_time": "2022-05-22 04:59:00",
+            "preferred_language": "French",
+            "persona": "Bargain Hunter"
+        }
+    ],
+    [
+        {
+            "user_id": "USR-d0bfba99d82d47c088e2c261e38069ce",
+            "session_id": "SES-5d59ae0ad8134e1ca6888f4be4d04fb1",
+            "device_type": "Gaming Console",
+            "browser_type": "Google Chrome",
+            "session_start_time": "2022-05-09 00:00:00",
+            "session_end_time": "2022-05-09 00:14:00",
+            "browsing_duration": 840.0
+        },
+        {
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "session_id": "SES-8ca8beb2b1294f1d8896028e0fbd32be",
+            "device_type": "Voice Assistant",
+            "browser_type": "Samsung Internet",
+            "session_start_time": "2022-05-09 00:14:00",
+            "session_end_time": "2022-05-09 00:17:00",
+            "browsing_duration": 180.0
+        },
+        {
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "session_id": "SES-fb042f98839240fb9c438530f8995214",
+            "device_type": "Smartphone",
+            "browser_type": "Apple Safari",
+            "session_start_time": "2022-05-09 00:17:00",
+            "session_end_time": "2022-05-09 00:22:00",
+            "browsing_duration": 300.0
+        },
+        {
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "session_id": "SES-38e2d7474bd442368e1da630c2b644b0",
+            "device_type": "Gaming Console",
+            "browser_type": "Samsung Internet",
+            "session_start_time": "2022-05-09 00:22:00",
+            "session_end_time": "2022-05-09 00:49:00",
+            "browsing_duration": 1620.0
+        },
+        {
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "session_id": "SES-e5a16ee2c5dc4cea8618b2e9714ae31f",
+            "device_type": "Gaming Console",
+            "browser_type": "Samsung Internet",
+            "session_start_time": "2022-05-09 00:49:00",
+            "session_end_time": "2022-05-09 00:55:00",
+            "browsing_duration": 360.0
+        },
+        {
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "session_id": "SES-48c1703b07f74b57bbff5c4d82e81395",
+            "device_type": "Tablet",
+            "browser_type": "Vivaldi",
+            "session_start_time": "2022-05-10 00:55:00",
+            "session_end_time": "2022-05-10 01:06:00",
+            "browsing_duration": 660.0
+        },
+        {
+            "user_id": "USR-a3a8393cdcd04cbc9d817909a5bab153",
+            "session_id": "SES-27e9828e3964421abdbeadf15bcd1262",
+            "device_type": "Smartwatch",
+            "browser_type": "Google Chrome",
+            "session_start_time": "2022-05-10 01:06:00",
+            "session_end_time": "2022-05-10 01:32:00",
+            "browsing_duration": 1560.0
+        },
+        {
+            "user_id": "USR-377422773c034486a5782e97ec106d4e",
+            "session_id": "SES-a965a8cd5ea24033a402d19386f4d20d",
+            "device_type": "Tablet",
+            "browser_type": "Mozilla Firefox",
+            "session_start_time": "2022-05-12 01:32:00",
+            "session_end_time": "2022-05-12 01:34:00",
+            "browsing_duration": 120.0
+        },
+        {
+            "user_id": "USR-30ad206cecd74bf6853dd886d8e153e0",
+            "session_id": "SES-544df96c9120447a840cad90c4954bf2",
+            "device_type": "Smartwatch",
+            "browser_type": "Mozilla Firefox",
+            "session_start_time": "2022-05-12 01:34:00",
+            "session_end_time": "2022-05-12 01:46:00",
+            "browsing_duration": 720.0
+        },
+        {
+            "user_id": "USR-30ad206cecd74bf6853dd886d8e153e0",
+            "session_id": "SES-5a8852e2a897479abd71486bdc5cc622",
+            "device_type": "Smartwatch",
+            "browser_type": "Google Chrome",
+            "session_start_time": "2022-05-14 01:46:00",
+            "session_end_time": "2022-05-14 02:00:00",
+            "browsing_duration": 840.0
+        },
+        {
+            "user_id": "USR-6e6521ee0dcd49859f02cfe7f9c717f2",
+            "session_id": "SES-a802ccebd1d545bb81df5906e67664d0",
+            "device_type": "Gaming Console",
+            "browser_type": "Vivaldi",
+            "session_start_time": "2022-05-14 02:00:00",
+            "session_end_time": "2022-05-14 02:07:00",
+            "browsing_duration": 420.0
+        },
+        {
+            "user_id": "USR-785784eda0b645599c7db5969554665a",
+            "session_id": "SES-5780b31a65304c188b4eedd864757cb8",
+            "device_type": "Smartphone",
+            "browser_type": "Microsoft Edge",
+            "session_start_time": "2022-05-14 02:07:00",
+            "session_end_time": "2022-05-14 02:35:00",
+            "browsing_duration": 1680.0
+        },
+        {
+            "user_id": "USR-785784eda0b645599c7db5969554665a",
+            "session_id": "SES-4d1fd2ba514342a3b6b5e5de4df899ba",
+            "device_type": "Laptop",
+            "browser_type": "Microsoft Edge",
+            "session_start_time": "2022-05-15 02:35:00",
+            "session_end_time": "2022-05-15 02:44:00",
+            "browsing_duration": 540.0
+        },
+        {
+            "user_id": "USR-e697f1033fc64195ac92ddad76c4b001",
+            "session_id": "SES-c8caf27e61db48be9f93eb8dde6f4ab9",
+            "device_type": "Smartwatch",
+            "browser_type": "Samsung Internet",
+            "session_start_time": "2022-05-16 02:44:00",
+            "session_end_time": "2022-05-16 02:51:00",
+            "browsing_duration": 420.0
+        },
+        {
+            "user_id": "USR-e697f1033fc64195ac92ddad76c4b001",
+            "session_id": "SES-122becdb16cd47b383669863763f8e27",
+            "device_type": "Laptop",
+            "browser_type": "Samsung Internet",
+            "session_start_time": "2022-05-17 02:51:00",
+            "session_end_time": "2022-05-17 03:19:00",
+            "browsing_duration": 1680.0
+        },
+        {
+            "user_id": "USR-598adab04eb9462e875431783b2e2c26",
+            "session_id": "SES-a9bf713659fe4326b806de70c4c97291",
+            "device_type": "Tablet",
+            "browser_type": "Mozilla Firefox",
+            "session_start_time": "2022-05-18 03:19:00",
+            "session_end_time": "2022-05-18 03:47:00",
+            "browsing_duration": 1680.0
+        },
+        {
+            "user_id": "USR-598adab04eb9462e875431783b2e2c26",
+            "session_id": "SES-f2e65f13833d4cc7b12b9523bf669fa2",
+            "device_type": "Tablet",
+            "browser_type": "Samsung Internet",
+            "session_start_time": "2022-05-20 03:47:00",
+            "session_end_time": "2022-05-20 03:56:00",
+            "browsing_duration": 540.0
+        },
+        {
+            "user_id": "USR-598adab04eb9462e875431783b2e2c26",
+            "session_id": "SES-ddc6169a989942bf9677866c2b715137",
+            "device_type": "Tablet",
+            "browser_type": "Google Chrome",
+            "session_start_time": "2022-05-21 03:56:00",
+            "session_end_time": "2022-05-21 04:12:00",
+            "browsing_duration": 960.0
+        },
+        {
+            "user_id": "USR-649d06f2d0f14bf1baa62afe081b26f5",
+            "session_id": "SES-e9a462b2a52a4299adee58a03191b8c8",
+            "device_type": "Gaming Console",
+            "browser_type": "Apple Safari",
+            "session_start_time": "2022-05-22 04:12:00",
+            "session_end_time": "2022-05-22 04:18:00",
+            "browsing_duration": 360.0
+        },
+        {
+            "user_id": "USR-649d06f2d0f14bf1baa62afe081b26f5",
+            "session_id": "SES-04cc0fd1ab61498caa666ad9f26aec2c",
+            "device_type": "Gaming Console",
+            "browser_type": "Apple Safari",
+            "session_start_time": "2022-05-22 04:18:00",
+            "session_end_time": "2022-05-22 04:42:00",
+            "browsing_duration": 1440.0
+        },
+        {
+            "user_id": "USR-649d06f2d0f14bf1baa62afe081b26f5",
+            "session_id": "SES-15fe3ffe108c4ccc85739a2bc7e7a769",
+            "device_type": "Voice Assistant",
+            "browser_type": "Apple Safari",
+            "session_start_time": "2022-05-22 04:42:00",
+            "session_end_time": "2022-05-22 04:59:00",
+            "browsing_duration": 1020.0
+        }
+    ],
+    [
+        {
+            "user_id": "USR-d0bfba99d82d47c088e2c261e38069ce",
+            "ad_campaign_id": "CAM-bc4ab294bfad42ffb3f99b3fe69890d9",
+            "referral_source": "Email",
+            "utm_source": "Google",
+            "utm_medium": "Referral",
+            "utm_campaign": "Black Friday",
+            "discount_code_used": true
+        },
+        {
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "ad_campaign_id": "CAM-4f29d565b7104f8ab56f0d03b819a236",
+            "referral_source": "Paid Ads",
+            "utm_source": "Twitter",
+            "utm_medium": "Referral",
+            "utm_campaign": "Summer Sale",
+            "discount_code_used": false
+        },
+        {
+            "user_id": "USR-a3a8393cdcd04cbc9d817909a5bab153",
+            "ad_campaign_id": "CAM-db9c88135c6c4b88956c8b72b2e4d946",
+            "referral_source": "Direct",
+            "utm_source": "Twitter",
+            "utm_medium": "CPC",
+            "utm_campaign": "Flash Sale",
+            "discount_code_used": false
+        },
+        {
+            "user_id": "USR-377422773c034486a5782e97ec106d4e",
+            "ad_campaign_id": "CAM-62c653cb9c6f4a78b9392053da752741",
+            "referral_source": "Organic Search",
+            "utm_source": "Facebook",
+            "utm_medium": "Organic",
+            "utm_campaign": "Flash Sale",
+            "discount_code_used": true
+        },
+        {
+            "user_id": "USR-30ad206cecd74bf6853dd886d8e153e0",
+            "ad_campaign_id": "CAM-4449ed3063bf498ebe1abb8d232d9e21",
+            "referral_source": "Social",
+            "utm_source": "Instagram",
+            "utm_medium": "Referral",
+            "utm_campaign": "Black Friday",
+            "discount_code_used": false
+        },
+        {
+            "user_id": "USR-6e6521ee0dcd49859f02cfe7f9c717f2",
+            "ad_campaign_id": "CAM-7f46230870ce47f1a94224de71108da9",
+            "referral_source": "Email",
+            "utm_source": "Google",
+            "utm_medium": "CPC",
+            "utm_campaign": "Holiday Discounts",
+            "discount_code_used": true
+        },
+        {
+            "user_id": "USR-785784eda0b645599c7db5969554665a",
+            "ad_campaign_id": "CAM-d0b8879671f2407d93d3326274c75be1",
+            "referral_source": "Direct",
+            "utm_source": "Google",
+            "utm_medium": "Organic",
+            "utm_campaign": "Summer Sale",
+            "discount_code_used": false
+        },
+        {
+            "user_id": "USR-e697f1033fc64195ac92ddad76c4b001",
+            "ad_campaign_id": "CAM-2d5e94ab94494901ab61cd0687bd0289",
+            "referral_source": "Paid Ads",
+            "utm_source": "Facebook",
+            "utm_medium": "Organic",
+            "utm_campaign": "Holiday Discounts",
+            "discount_code_used": true
+        },
+        {
+            "user_id": "USR-598adab04eb9462e875431783b2e2c26",
+            "ad_campaign_id": "CAM-8bf17d07a566472eb3652fe83c92172e",
+            "referral_source": "Organic Search",
+            "utm_source": "Google",
+            "utm_medium": "Organic",
+            "utm_campaign": "Black Friday",
+            "discount_code_used": true
+        },
+        {
+            "user_id": "USR-649d06f2d0f14bf1baa62afe081b26f5",
+            "ad_campaign_id": "CAM-0c77a9e92f834d519039b1fbe81174a3",
+            "referral_source": "Organic Search",
+            "utm_source": "Facebook",
+            "utm_medium": "CPC",
+            "utm_campaign": "Summer Sale",
+            "discount_code_used": true
+        }
+    ],
+    [
+        {
+            "user_id": "USR-d0bfba99d82d47c088e2c261e38069ce",
+            "session_id": "SES-5d59ae0ad8134e1ca6888f4be4d04fb1",
+            "order_id": "ORD-6ceeb22f681245949675c15b583e2e80",
+            "order_status": "Abandoned",
+            "num_items_in_order": 5,
+            "order_total_value": 46.33,
+            "payment_method": "PayPal",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 5.11,
+            "shipping_address": "336 Green Landing\nJennifertown, MO 03601",
+            "billing_address": "336 Green Landing\nJennifertown, MO 03601",
+            "order_created_time": "2022-05-09 00:08:53",
+            "order_completed_time": null,
+            "order_products": [
+                {
+                    "order_id": "ORD-6ceeb22f681245949675c15b583e2e80",
+                    "product_id": "B09VGKFM7Y",
+                    "product_name": "Amazon Basics 2 Amp USB Wall Charger & Micro USB Cable (White)",
+                    "category": "Electronics|Mobiles&Accessories|MobileAccessories|Chargers|WallChargers",
+                    "actual_price": 5.816528732952558,
+                    "discounted_price": 2.5527450751835876,
+                    "quantity": 2,
+                    "total_price": 5.105490150367175
+                },
+                {
+                    "order_id": "ORD-6ceeb22f681245949675c15b583e2e80",
+                    "product_id": "B0B53QLB9H",
+                    "product_name": "PTron Newly Launched Force X10 Bluetooth Calling Smartwatch with 1.7\" Full Touch Color Display, Real Heart Rate Monitor, SpO2, Watch Faces, 5 Days Runtime, Fitness Trackers & IP68 Waterproof (Blue)",
+                    "category": "Electronics|WearableTechnology|SmartWatches",
+                    "actual_price": 69.9265648677002,
+                    "discounted_price": 15.141624898006759,
+                    "quantity": 2,
+                    "total_price": 30.283249796013518
+                },
+                {
+                    "order_id": "ORD-6ceeb22f681245949675c15b583e2e80",
+                    "product_id": "B0711PVX6Z",
+                    "product_name": "AmazonBasics Micro USB Fast Charging Cable for Android Phones with Gold Plated Connectors (3 Feet, Black)",
+                    "category": "Computers&Accessories|Accessories&Peripherals|Cables&Accessories|Cables|USBCables",
+                    "actual_price": 5.828185103158876,
+                    "discounted_price": 2.0864902669308774,
+                    "quantity": 1,
+                    "total_price": 2.0864902669308774
+                },
+                {
+                    "order_id": "ORD-6ceeb22f681245949675c15b583e2e80",
+                    "product_id": "B01J1CFO5I",
+                    "product_name": "Redgear MP35 Speed-Type Gaming Mousepad (Black/Red)",
+                    "category": "Computers&Accessories|Accessories&Peripherals|PCGamingPeripherals|Gamepads",
+                    "actual_price": 6.411003613474763,
+                    "discounted_price": 3.4852546916890077,
+                    "quantity": 1,
+                    "total_price": 3.4852546916890077
+                },
+                {
+                    "order_id": "ORD-6ceeb22f681245949675c15b583e2e80",
+                    "product_id": "B0BMZ6SY89",
+                    "product_name": "!!HANEUL!!1000 Watt/2000-Watt Room Heater!! Fan Heater!!Pure White!!HN-2500!!Made in India!!Thermoset!!",
+                    "category": "Home&Kitchen|Heating,Cooling&AirQuality|RoomHeaters|FanHeaters",
+                    "actual_price": 18.638535959902086,
+                    "discounted_price": 10.479076815479658,
+                    "quantity": 1,
+                    "total_price": 10.479076815479658
+                }
+            ]
+        },
+        {
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "session_id": "SES-8ca8beb2b1294f1d8896028e0fbd32be",
+            "order_id": "ORD-dacec3623d1a46eba6765b5f48054090",
+            "order_status": "Abandoned",
+            "num_items_in_order": 4,
+            "order_total_value": 56.6,
+            "payment_method": "PayPal",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 0.0,
+            "shipping_address": "5463 Kara Views\nEast Kimberly, AR 14106",
+            "billing_address": "5463 Kara Views\nEast Kimberly, AR 14106",
+            "order_created_time": "2022-05-09 00:14:05",
+            "order_completed_time": null,
+            "order_products": [
+                {
+                    "order_id": "ORD-dacec3623d1a46eba6765b5f48054090",
+                    "product_id": "B09KRHXTLN",
+                    "product_name": "Candes Gloster All in One Silent Blower Fan Room Heater Ideal for Small and Medium Area, 2000 Watts (White)",
+                    "category": "Home&Kitchen|Heating,Cooling&AirQuality|RoomHeaters|FanHeaters",
+                    "actual_price": 19.80417298053386,
+                    "discounted_price": 12.460659750553676,
+                    "quantity": 3,
+                    "total_price": 37.38197925166103
+                },
+                {
+                    "order_id": "ORD-dacec3623d1a46eba6765b5f48054090",
+                    "product_id": "B0789LZTCJ",
+                    "product_name": "boAt Rugged v3 Extra Tough Unbreakable Braided Micro USB Cable 1.5 Meter (Black)",
+                    "category": "Computers&Accessories|Accessories&Peripherals|Cables&Accessories|Cables|USBCables",
+                    "actual_price": 9.313439794847884,
+                    "discounted_price": 3.4852546916890077,
+                    "quantity": 1,
+                    "total_price": 3.4852546916890077
+                },
+                {
+                    "order_id": "ORD-dacec3623d1a46eba6765b5f48054090",
+                    "product_id": "B09PNR6F8Q",
+                    "product_name": "realme 10W Fast Charging Micro-USB Cable (Braided, Black)",
+                    "category": "Computers&Accessories|Accessories&Peripherals|Cables&Accessories|Cables|USBCables",
+                    "actual_price": 4.650891712320783,
+                    "discounted_price": 2.9024361813731203,
+                    "quantity": 2,
+                    "total_price": 5.804872362746241
+                },
+                {
+                    "order_id": "ORD-dacec3623d1a46eba6765b5f48054090",
+                    "product_id": "B0B8CB7MHW",
+                    "product_name": "KNOWZA Electric Handheld Milk Wand Mixer Frother for Latte Coffee Hot Milk, Milk Frother for Coffee, Egg Beater, Hand Blender, Coffee Beater (BLACK COFFEE BEATER)",
+                    "category": "Home&Kitchen|Kitchen&HomeAppliances|SmallKitchenAppliances|HandBlenders",
+                    "actual_price": 11.644713836111434,
+                    "discounted_price": 4.965613707891363,
+                    "quantity": 2,
+                    "total_price": 9.931227415782725
+                }
+            ]
+        },
+        {
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "session_id": "SES-fb042f98839240fb9c438530f8995214",
+            "order_id": "ORD-ac283fa3d72441679f20bcf9334b77ed",
+            "order_status": "Abandoned",
+            "num_items_in_order": 2,
+            "order_total_value": 46.36,
+            "payment_method": "Debit Card",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 0.0,
+            "shipping_address": "5463 Kara Views\nEast Kimberly, AR 14106",
+            "billing_address": "5463 Kara Views\nEast Kimberly, AR 14106",
+            "order_created_time": "2022-05-09 00:19:30",
+            "order_completed_time": null,
+            "order_products": [
+                {
+                    "order_id": "ORD-ac283fa3d72441679f20bcf9334b77ed",
+                    "product_id": "B088WCFPQF",
+                    "product_name": "Cafe JEI French Press Coffee and Tea Maker 600ml with 4 Level Filtration System, Heat Resistant Borosilicate Glass (Black, 600ml)",
+                    "category": "Home&Kitchen|Kitchen&HomeAppliances|Coffee,Tea&Espresso|CoffeePresses",
+                    "actual_price": 17.484555309476626,
+                    "discounted_price": 12.81035085674321,
+                    "quantity": 1,
+                    "total_price": 12.81035085674321
+                },
+                {
+                    "order_id": "ORD-ac283fa3d72441679f20bcf9334b77ed",
+                    "product_id": "B0BR4F878Q",
+                    "product_name": "Swiffer Instant Electric Water Heater Faucet Tap Home-Kitchen Instantaneous Water Heater Tank less for Tap, LED Electric Head Water Heaters Tail Gallon Comfort(3000W) ((Pack of 1))",
+                    "category": "Home&Kitchen|Heating,Cooling&AirQuality|WaterHeaters&Geysers|InstantWaterHeaters",
+                    "actual_price": 23.301084042429185,
+                    "discounted_price": 16.773516726891245,
+                    "quantity": 2,
+                    "total_price": 33.54703345378249
+                }
+            ]
+        },
+        {
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "session_id": "SES-38e2d7474bd442368e1da630c2b644b0",
+            "order_id": "ORD-f1826d520d5c40db98c17cd3b2bfff30",
+            "order_status": "Abandoned",
+            "num_items_in_order": 3,
+            "order_total_value": 638.29,
+            "payment_method": "PayPal",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 0.0,
+            "shipping_address": "5463 Kara Views\nEast Kimberly, AR 14106",
+            "billing_address": "5463 Kara Views\nEast Kimberly, AR 14106",
+            "order_created_time": "2022-05-09 00:41:41",
+            "order_completed_time": null,
+            "order_products": [
+                {
+                    "order_id": "ORD-f1826d520d5c40db98c17cd3b2bfff30",
+                    "product_id": "B01NBX5RSB",
+                    "product_name": "HP 65W AC Laptops Charger Adapter 4.5mm for HP Pavilion Black (Without Power Cable)",
+                    "category": "Computers&Accessories|Accessories&Peripherals|LaptopAccessories|LaptopChargers&PowerSupplies",
+                    "actual_price": 18.032404709173562,
+                    "discounted_price": 8.975405058864668,
+                    "quantity": 1,
+                    "total_price": 8.975405058864668
+                },
+                {
+                    "order_id": "ORD-f1826d520d5c40db98c17cd3b2bfff30",
+                    "product_id": "B0B3XXSB1K",
+                    "product_name": "LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55UQ7500PSF (Ceramic Black)",
+                    "category": "Electronics|HomeTheater,TV&Video|Televisions|SmartTelevisions",
+                    "actual_price": 932.393052803357,
+                    "discounted_price": 559.3892062011889,
+                    "quantity": 1,
+                    "total_price": 559.3892062011889
+                },
+                {
+                    "order_id": "ORD-f1826d520d5c40db98c17cd3b2bfff30",
+                    "product_id": "B09FZ89DK6",
+                    "product_name": "Eureka Forbes Supervac 1600 Watts Powerful Suction,bagless Vacuum Cleaner with cyclonic Technology,7 Accessories,1 Year Warranty,Compact,Lightweight & Easy to use (Red)",
+                    "category": "Home&Kitchen|Kitchen&HomeAppliances|Vacuum,Cleaning&Ironing|Vacuums&FloorCare|Vacuums|CanisterVacuums",
+                    "actual_price": 116.5520456929712,
+                    "discounted_price": 69.9265648677002,
+                    "quantity": 1,
+                    "total_price": 69.9265648677002
+                }
+            ]
+        },
+        {
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "session_id": "SES-e5a16ee2c5dc4cea8618b2e9714ae31f",
+            "order_id": "ORD-03ca46bc6b4f469e84bdf9338eb114c2",
+            "order_status": "Abandoned",
+            "num_items_in_order": 5,
+            "order_total_value": 218.09,
+            "payment_method": "Credit Card",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 0.0,
+            "shipping_address": "5463 Kara Views\nEast Kimberly, AR 14106",
+            "billing_address": "5463 Kara Views\nEast Kimberly, AR 14106",
+            "order_created_time": "2022-05-09 00:52:59",
+            "order_completed_time": null,
+            "order_products": [
+                {
+                    "order_id": "ORD-03ca46bc6b4f469e84bdf9338eb114c2",
+                    "product_id": "B08GJ57MKL",
+                    "product_name": "Coway Professional Air Purifier for Home, Longest Filter Life 8500 Hrs, Green True HEPA Filter, Traps 99.99% Virus & PM 0.1 Particles, Warranty 7 Years (AirMega 150 (AP-1019C))",
+                    "category": "Home&Kitchen|Heating,Cooling&AirQuality|AirPurifiers|HEPAAirPurifiers",
+                    "actual_price": 698.2165753584334,
+                    "discounted_price": 167.85173097097564,
+                    "quantity": 1,
+                    "total_price": 167.85173097097564
+                },
+                {
+                    "order_id": "ORD-03ca46bc6b4f469e84bdf9338eb114c2",
+                    "product_id": "B0765B3TH7",
+                    "product_name": "Gizga Essentials Hard Drive Case Shell, 6.35cm/2.5-inch, Portable Storage Organizer Bag for Earphone USB Cable Power Bank Mobile Charger Digital Gadget Hard Disk, Water Resistance Material, Black",
+                    "category": "Computers&Accessories|Accessories&Peripherals|HardDiskBags",
+                    "actual_price": 6.982165753584333,
+                    "discounted_price": 2.3196176710572325,
+                    "quantity": 1,
+                    "total_price": 2.3196176710572325
+                },
+                {
+                    "order_id": "ORD-03ca46bc6b4f469e84bdf9338eb114c2",
+                    "product_id": "B0BCZCQTJX",
+                    "product_name": "Firestick Remote",
+                    "category": "Electronics|HomeTheater,TV&Video|Accessories|RemoteControls",
+                    "actual_price": 46.61382445506469,
+                    "discounted_price": 16.715234875859657,
+                    "quantity": 1,
+                    "total_price": 16.715234875859657
+                },
+                {
+                    "order_id": "ORD-03ca46bc6b4f469e84bdf9338eb114c2",
+                    "product_id": "B07W4HTS8Q",
+                    "product_name": "ACTIVA Instant 3 LTR 3 KVA SPECIAL Anti Rust Coated Tank Geyser with Full ABS Body with 5 Year Warranty Premium (White)",
+                    "category": "Home&Kitchen|Heating,Cooling&AirQuality|WaterHeaters&Geysers|InstantWaterHeaters",
+                    "actual_price": 44.17764308194428,
+                    "discounted_price": 22.13544702179741,
+                    "quantity": 1,
+                    "total_price": 22.13544702179741
+                },
+                {
+                    "order_id": "ORD-03ca46bc6b4f469e84bdf9338eb114c2",
+                    "product_id": "B08NW8GHCJ",
+                    "product_name": "Synqe USB C to USB C 60W Nylon Braided Fast Charging Type C to Type C Cable Compatible with Samsung Galaxy Note 20/Ultra, S20 S22 S21 S20 FE A73 A53 A33 (2M, Black)",
+                    "category": "Computers&Accessories|Accessories&Peripherals|Cables&Accessories|Cables|USBCables",
+                    "actual_price": 11.644713836111434,
+                    "discounted_price": 4.534328010257606,
+                    "quantity": 2,
+                    "total_price": 9.068656020515212
+                }
+            ]
+        },
+        {
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "session_id": "SES-48c1703b07f74b57bbff5c4d82e81395",
+            "order_id": "ORD-5dff5beb6d65455596120de0990d8394",
+            "order_status": "Abandoned",
+            "num_items_in_order": 2,
+            "order_total_value": 308.85,
+            "payment_method": "Wallet",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 0.0,
+            "shipping_address": "5463 Kara Views\nEast Kimberly, AR 14106",
+            "billing_address": "5463 Kara Views\nEast Kimberly, AR 14106",
+            "order_created_time": "2022-05-10 01:01:09",
+            "order_completed_time": null,
+            "order_products": [
+                {
+                    "order_id": "ORD-5dff5beb6d65455596120de0990d8394",
+                    "product_id": "B0BMM7R92G",
+                    "product_name": "Noise_Colorfit Smart Watch Charger 2 Pin USB Fast Charger Magnetic Charging Cable Adapter (Smart Watch Charger 2 pin)",
+                    "category": "Electronics|WearableTechnology|SmartWatches",
+                    "actual_price": 11.644713836111434,
+                    "discounted_price": 2.9024361813731203,
+                    "quantity": 2,
+                    "total_price": 5.804872362746241
+                },
+                {
+                    "order_id": "ORD-5dff5beb6d65455596120de0990d8394",
+                    "product_id": "B0B4F2XCK3",
+                    "product_name": "Samsung Galaxy M13 (Aqua Green, 6GB, 128GB Storage) | 6000mAh Battery | Upto 12GB RAM with RAM Plus",
+                    "category": "Electronics|Mobiles&Accessories|Smartphones&BasicMobiles|Smartphones",
+                    "actual_price": 209.8030073435132,
+                    "discounted_price": 151.52115631192444,
+                    "quantity": 2,
+                    "total_price": 303.0423126238489
+                }
+            ]
+        },
+        {
+            "user_id": "USR-a3a8393cdcd04cbc9d817909a5bab153",
+            "session_id": "SES-27e9828e3964421abdbeadf15bcd1262",
+            "order_id": "ORD-e68def8f14df4eda909064a06ff88bf8",
+            "order_status": "Canceled",
+            "num_items_in_order": 4,
+            "order_total_value": 729.57,
+            "payment_method": "PayPal",
+            "payment_status": "Successful",
+            "promo_discount_applied": 0.0,
+            "shipping_address": "3760 Castillo Corner\nDunnside, FL 90341",
+            "billing_address": "3760 Castillo Corner\nDunnside, FL 90341",
+            "order_created_time": "2022-05-10 01:26:28",
+            "order_completed_time": "2022-05-10 01:28:04",
+            "order_products": [
+                {
+                    "order_id": "ORD-e68def8f14df4eda909064a06ff88bf8",
+                    "product_id": "B0BHNHMR3H",
+                    "product_name": "LONAXA Mini Travel Rechargeable Fruit Juicer - USB Electric Fruit & Vegetable Juice Blender/Grinder for Home and Office Use (Multicolor)\u2026",
+                    "category": "Home&Kitchen|Kitchen&HomeAppliances|SmallKitchenAppliances|JuicerMixerGrinders",
+                    "actual_price": 15.141624898006759,
+                    "discounted_price": 5.816528732952558,
+                    "quantity": 3,
+                    "total_price": 17.449586198857673
+                },
+                {
+                    "order_id": "ORD-e68def8f14df4eda909064a06ff88bf8",
+                    "product_id": "B01GFTEV5Y",
+                    "product_name": "Pigeon by Stovekraft Cruise 1800 watt Induction Cooktop (Black)",
+                    "category": "Home&Kitchen|Kitchen&HomeAppliances|SmallKitchenAppliances|InductionCooktop",
+                    "actual_price": 37.218790068772584,
+                    "discounted_price": 19.80417298053386,
+                    "quantity": 2,
+                    "total_price": 39.60834596106772
+                },
+                {
+                    "order_id": "ORD-e68def8f14df4eda909064a06ff88bf8",
+                    "product_id": "B07H3WDC4X",
+                    "product_name": "Simxen Egg Boiler Electric Automatic Off 7 Egg Poacher for Steaming, Cooking Also Boiling and Frying 400 W (Blue, Pink)",
+                    "category": "Home&Kitchen|Kitchen&HomeAppliances|SmallKitchenAppliances|EggBoilers",
+                    "actual_price": 11.644713836111434,
+                    "discounted_price": 4.0680732020048955,
+                    "quantity": 2,
+                    "total_price": 8.136146404009791
+                },
+                {
+                    "order_id": "ORD-e68def8f14df4eda909064a06ff88bf8",
+                    "product_id": "B0B7B9V9QP",
+                    "product_name": "VU 108 cm (43 inches) Premium Series Full HD Smart LED TV 43GA (Black)",
+                    "category": "Electronics|HomeTheater,TV&Video|Televisions|SmartTelevisions",
+                    "actual_price": 407.9729572211213,
+                    "discounted_price": 221.45937754983098,
+                    "quantity": 3,
+                    "total_price": 664.378132649493
+                }
+            ]
+        },
+        {
+            "user_id": "USR-377422773c034486a5782e97ec106d4e",
+            "session_id": "SES-a965a8cd5ea24033a402d19386f4d20d",
+            "order_id": "ORD-84412f4ec0884713a0645cf9134d7aa3",
+            "order_status": "Completed",
+            "num_items_in_order": 1,
+            "order_total_value": 1122.42,
+            "payment_method": "PayPal",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 40.96,
+            "shipping_address": "5633 Zoe Gateway Apt. 368\nNew Robert, NM 37245",
+            "billing_address": "5633 Zoe Gateway Apt. 368\nNew Robert, NM 37245",
+            "order_created_time": "2022-05-12 01:33:26",
+            "order_completed_time": "2022-05-12 01:33:33",
+            "order_products": [
+                {
+                    "order_id": "ORD-84412f4ec0884713a0645cf9134d7aa3",
+                    "product_id": "B01LY9W8AF",
+                    "product_name": "Cello Eliza Plastic Laundry Bag/Basket, 50 litres, Light Grey",
+                    "category": "Home&Kitchen|HomeStorage&Organization|LaundryOrganization|LaundryBaskets",
+                    "actual_price": 14.943466604499358,
+                    "discounted_price": 1163.3756848117496,
+                    "quantity": 1,
+                    "total_price": 1163.3756848117496
+                }
+            ]
+        },
+        {
+            "user_id": "USR-30ad206cecd74bf6853dd886d8e153e0",
+            "session_id": "SES-544df96c9120447a840cad90c4954bf2",
+            "order_id": "ORD-bb4d8e7dd7fc4065b5c89ab326fb02ca",
+            "order_status": "Abandoned",
+            "num_items_in_order": 3,
+            "order_total_value": 474.26,
+            "payment_method": "Bank Transfer",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 0.0,
+            "shipping_address": "408 Donna Corner\nAtkinsland, VA 27761",
+            "billing_address": "408 Donna Corner\nAtkinsland, VA 27761",
+            "order_created_time": "2022-05-12 01:34:02",
+            "order_completed_time": null,
+            "order_products": [
+                {
+                    "order_id": "ORD-bb4d8e7dd7fc4065b5c89ab326fb02ca",
+                    "product_id": "B07WJV6P1R",
+                    "product_name": "iQOO Z6 Lite 5G by vivo (Stellar Green, 6GB RAM, 128GB Storage) | World's First Snapdragon 4 Gen 1 | 120Hz Refresh Rate | 5000mAh Battery | Travel Adapter to be Purchased Separately",
+                    "category": "Electronics|Mobiles&Accessories|Smartphones&BasicMobiles|Smartphones",
+                    "actual_price": 221.45937754983098,
+                    "discounted_price": 180.66208182771882,
+                    "quantity": 1,
+                    "total_price": 180.66208182771882
+                },
+                {
+                    "order_id": "ORD-bb4d8e7dd7fc4065b5c89ab326fb02ca",
+                    "product_id": "B0116MIKKC",
+                    "product_name": "Goldmedal Curve Plus 202042 Plastic Spice 3-Pin 240V Universal Travel Adaptor (White)",
+                    "category": "Electronics|Mobiles&Accessories|MobileAccessories|Chargers|WallChargers",
+                    "actual_price": 1.9932393052803357,
+                    "discounted_price": 1.1539806504254575,
+                    "quantity": 2,
+                    "total_price": 2.307961300850915
+                },
+                {
+                    "order_id": "ORD-bb4d8e7dd7fc4065b5c89ab326fb02ca",
+                    "product_id": "B08FD2VSD9",
+                    "product_name": "TCL 108 cm (43 inches) 4K Ultra HD Certified Android Smart LED TV 43P615 (Black)",
+                    "category": "Electronics|HomeTheater,TV&Video|Televisions|SmartTelevisions",
+                    "actual_price": 606.0146870264599,
+                    "discounted_price": 291.29269145588063,
+                    "quantity": 1,
+                    "total_price": 291.29269145588063
+                }
+            ]
+        },
+        {
+            "user_id": "USR-30ad206cecd74bf6853dd886d8e153e0",
+            "session_id": "SES-5a8852e2a897479abd71486bdc5cc622",
+            "order_id": "ORD-6b83fc961e0d48b0b6b3e40717e4f3b7",
+            "order_status": "Completed",
+            "num_items_in_order": 5,
+            "order_total_value": 94.99,
+            "payment_method": "PayPal",
+            "payment_status": "Refunded",
+            "promo_discount_applied": 0.0,
+            "shipping_address": "408 Donna Corner\nAtkinsland, VA 27761",
+            "billing_address": "408 Donna Corner\nAtkinsland, VA 27761",
+            "order_created_time": "2022-05-14 01:47:03",
+            "order_completed_time": "2022-05-14 01:49:41",
+            "order_products": [
+                {
+                    "order_id": "ORD-6b83fc961e0d48b0b6b3e40717e4f3b7",
+                    "product_id": "B0BPCJM7TB",
+                    "product_name": "WIDEWINGS Electric Handheld Milk Wand Mixer Frother for Latte Coffee Hot Milk, Milk Frother for Coffee, Egg Beater, Hand Blender, Coffee Beater with Stand",
+                    "category": "Home&Kitchen|Kitchen&HomeAppliances|SmallKitchenAppliances|HandBlenders",
+                    "actual_price": 11.644713836111434,
+                    "discounted_price": 3.018999883436298,
+                    "quantity": 2,
+                    "total_price": 6.037999766872596
+                },
+                {
+                    "order_id": "ORD-6b83fc961e0d48b0b6b3e40717e4f3b7",
+                    "product_id": "B07QCWY5XV",
+                    "product_name": "Mobilife Bluetooth Extendable Selfie Stick with Tripod Stand and Wireless Remote,3-in-1 Multifunctional Selfie Stick Tripod for iPhone Samsung Mi Realme Oppo Vivo Google More,Black",
+                    "category": "Electronics|Mobiles&Accessories|MobileAccessories|Photo&VideoAccessories|SelfieSticks",
+                    "actual_price": 16.307261918638535,
+                    "discounted_price": 6.982165753584333,
+                    "quantity": 2,
+                    "total_price": 13.964331507168666
+                },
+                {
+                    "order_id": "ORD-6b83fc961e0d48b0b6b3e40717e4f3b7",
+                    "product_id": "B07DFYJRQV",
+                    "product_name": "JBL C200SI, Premium in Ear Wired Earphones with Mic, Signature Sound, One Button Multi-Function Remote, Angled Earbuds for Comfort fit (Blue)",
+                    "category": "Electronics|Headphones,Earbuds&Accessories|Headphones|In-Ear",
+                    "actual_price": 17.47289893927031,
+                    "discounted_price": 9.313439794847884,
+                    "quantity": 1,
+                    "total_price": 9.313439794847884
+                },
+                {
+                    "order_id": "ORD-6b83fc961e0d48b0b6b3e40717e4f3b7",
+                    "product_id": "B0814ZY6FP",
+                    "product_name": "Zebronics ZEB-VITA Wireless Bluetooth 10W Portable Bar Speaker With Supporting USB, SD Card, AUX, FM, TWS & Call Function",
+                    "category": "Electronics|HomeAudio|Speakers|BluetoothSpeakers",
+                    "actual_price": 13.975987877374985,
+                    "discounted_price": 10.479076815479658,
+                    "quantity": 3,
+                    "total_price": 31.437230446438974
+                },
+                {
+                    "order_id": "ORD-6b83fc961e0d48b0b6b3e40717e4f3b7",
+                    "product_id": "B09MQ9PDHR",
+                    "product_name": "SaiEllin Room Heater For Home 2000 Watts Room Heater For Bedroom | ISI Approved With 1 Year Warranty | For 250 Sq. Feet Blower Heater & Room Heaters Home For Winters",
+                    "category": "Home&Kitchen|Heating,Cooling&AirQuality|RoomHeaters|FanHeaters",
+                    "actual_price": 23.301084042429185,
+                    "discounted_price": 11.411586431985079,
+                    "quantity": 3,
+                    "total_price": 34.234759295955236
+                }
+            ]
+        },
+        {
+            "user_id": "USR-6e6521ee0dcd49859f02cfe7f9c717f2",
+            "session_id": "SES-a802ccebd1d545bb81df5906e67664d0",
+            "order_id": "ORD-203c6335516c41b39ce3391dd8213e88",
+            "order_status": "Abandoned",
+            "num_items_in_order": 5,
+            "order_total_value": 110.79,
+            "payment_method": "Bank Transfer",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 23.34,
+            "shipping_address": "70796 Melissa Canyon\nEast Aaron, PW 90173",
+            "billing_address": "70796 Melissa Canyon\nEast Aaron, PW 90173",
+            "order_created_time": "2022-05-14 02:02:54",
+            "order_completed_time": null,
+            "order_products": [
+                {
+                    "order_id": "ORD-203c6335516c41b39ce3391dd8213e88",
+                    "product_id": "B08H9Z3XQW",
+                    "product_name": "boAt Bassheads 242 in Ear Wired Earphones with Mic(Blue)",
+                    "category": "Electronics|Headphones,Earbuds&Accessories|Headphones|In-Ear",
+                    "actual_price": 17.36799160741345,
+                    "discounted_price": 5.303648443874577,
+                    "quantity": 1,
+                    "total_price": 5.303648443874577
+                },
+                {
+                    "order_id": "ORD-203c6335516c41b39ce3391dd8213e88",
+                    "product_id": "B07Q4NJQC5",
+                    "product_name": "Ionix Jewellery Scale | Weight Scale | Digital Weight Machine | weight machine for gold | Electronic weighing machines for Jewellery 0.01G to 200G Small Weight Machine for Shop - Silver",
+                    "category": "Home&Kitchen|Kitchen&HomeAppliances|SmallKitchenAppliances|DigitalKitchenScales",
+                    "actual_price": 6.982165753584333,
+                    "discounted_price": 3.438629210863737,
+                    "quantity": 1,
+                    "total_price": 3.438629210863737
+                },
+                {
+                    "order_id": "ORD-203c6335516c41b39ce3391dd8213e88",
+                    "product_id": "B00H3H03Q4",
+                    "product_name": "HUL Pureit Germkill kit for Classic 23 L water purifier - 3000 L Capacity",
+                    "category": "Home&Kitchen|Kitchen&HomeAppliances|WaterPurifiers&Accessories|WaterCartridges",
+                    "actual_price": 13.171698333139059,
+                    "discounted_price": 13.171698333139059,
+                    "quantity": 2,
+                    "total_price": 26.343396666278117
+                },
+                {
+                    "order_id": "ORD-203c6335516c41b39ce3391dd8213e88",
+                    "product_id": "B0BF563HB4",
+                    "product_name": "Fire-Boltt Ninja Call Pro Plus 1.83\" Smart Watch with Bluetooth Calling, AI Voice Assistance, 100 Sports Modes IP67 Rating, 240*280 Pixel High Resolution",
+                    "category": "Electronics|WearableTechnology|SmartWatches",
+                    "actual_price": 233.11574775614872,
+                    "discounted_price": 20.969810001165637,
+                    "quantity": 1,
+                    "total_price": 20.969810001165637
+                },
+                {
+                    "order_id": "ORD-203c6335516c41b39ce3391dd8213e88",
+                    "product_id": "B08H6B3G96",
+                    "product_name": "Philips EasySpeed Plus Steam Iron GC2147/30-2400W, Quick Heat up with up to 30 g/min steam, 150g steam Boost, Scratch Resistant Ceramic Soleplate, Vertical steam, Drip-Stop",
+                    "category": "Home&Kitchen|Kitchen&HomeAppliances|Vacuum,Cleaning&Ironing|Irons,Steamers&Accessories|Irons|SteamIrons",
+                    "actual_price": 46.56719897423942,
+                    "discounted_price": 39.03718382095815,
+                    "quantity": 2,
+                    "total_price": 78.0743676419163
+                }
+            ]
+        },
+        {
+            "user_id": "USR-785784eda0b645599c7db5969554665a",
+            "session_id": "SES-5780b31a65304c188b4eedd864757cb8",
+            "order_id": "ORD-f4d65f03dd6944c6b991e88cd2f62732",
+            "order_status": "Abandoned",
+            "num_items_in_order": 1,
+            "order_total_value": 299.13,
+            "payment_method": "Credit Card",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 0.0,
+            "shipping_address": "80717 Raymond Parkways Suite 306\nSherylberg, IL 18028",
+            "billing_address": "80717 Raymond Parkways Suite 306\nSherylberg, IL 18028",
+            "order_created_time": "2022-05-14 02:23:10",
+            "order_completed_time": null,
+            "order_products": [
+                {
+                    "order_id": "ORD-f4d65f03dd6944c6b991e88cd2f62732",
+                    "product_id": "B0B65P827P",
+                    "product_name": "Zebronics CU3100V Fast charging Type C cable with QC 18W support, 3A max capacity, 1 meter braided cable, Data transfer and Superior durability (Braided Black )",
+                    "category": "Computers&Accessories|Accessories&Peripherals|Cables&Accessories|Cables|USBCables",
+                    "actual_price": 6.399347243268446,
+                    "discounted_price": 149.56288611726308,
+                    "quantity": 2,
+                    "total_price": 299.12577223452615
+                }
+            ]
+        },
+        {
+            "user_id": "USR-785784eda0b645599c7db5969554665a",
+            "session_id": "SES-4d1fd2ba514342a3b6b5e5de4df899ba",
+            "order_id": "ORD-b1fd08d0e0a54c53a20352b998448655",
+            "order_status": "Abandoned",
+            "num_items_in_order": 4,
+            "order_total_value": 180.48,
+            "payment_method": "PayPal",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 0.0,
+            "shipping_address": "80717 Raymond Parkways Suite 306\nSherylberg, IL 18028",
+            "billing_address": "80717 Raymond Parkways Suite 306\nSherylberg, IL 18028",
+            "order_created_time": "2022-05-15 02:40:34",
+            "order_completed_time": null,
+            "order_products": [
+                {
+                    "order_id": "ORD-b1fd08d0e0a54c53a20352b998448655",
+                    "product_id": "B0BJ966M5K",
+                    "product_name": "Aquadpure Copper + Mineral RO+UV+UF 10 to 12 Liter RO + UV + TDS ADJUSTER Water Purifier with Copper Charge Technology black & copper Best For Home and Office (Made In India)",
+                    "category": "Home&Kitchen|Kitchen&HomeAppliances|WaterPurifiers&Accessories|WaterFilters&Purifiers",
+                    "actual_price": 291.3975987877375,
+                    "discounted_price": 58.27019466138244,
+                    "quantity": 2,
+                    "total_price": 116.54038932276488
+                },
+                {
+                    "order_id": "ORD-b1fd08d0e0a54c53a20352b998448655",
+                    "product_id": "B09P22HXH6",
+                    "product_name": "Lenovo 300 FHD Webcam with Full Stereo Dual Built-in mics | FHD 1080P 2.1 Megapixel CMOS Camera |Privacy Shutter | Ultra-Wide 95 Lens | 360 Rotation | Flexible Mount, Plug-n-Play | Cloud Grey",
+                    "category": "Computers&Accessories|Accessories&Peripherals|Audio&VideoAccessories|Webcams&VoIPEquipment|Webcams",
+                    "actual_price": 63.993472432684456,
+                    "discounted_price": 22.03053968994055,
+                    "quantity": 1,
+                    "total_price": 22.03053968994055
+                },
+                {
+                    "order_id": "ORD-b1fd08d0e0a54c53a20352b998448655",
+                    "product_id": "B07W7Z6DVL",
+                    "product_name": "Infinity (JBL Fuze 100, Wireless Portable Bluetooth Speaker with Mic, Deep Bass, Dual Equalizer, IPX7 Waterproof, Rugged Fabric Design (Black)",
+                    "category": "Electronics|HomeAudio|Speakers|OutdoorSpeakers",
+                    "actual_price": 34.957454248746934,
+                    "discounted_price": 17.47289893927031,
+                    "quantity": 2,
+                    "total_price": 34.94579787854062
+                },
+                {
+                    "order_id": "ORD-b1fd08d0e0a54c53a20352b998448655",
+                    "product_id": "B00NH11PEY",
+                    "product_name": "AmazonBasics USB 2.0 - A-Male to A-Female Extension Cable for Personal Computer, Printer (Black, 9.8 Feet/3 Meters)",
+                    "category": "Computers&Accessories|Accessories&Peripherals|Cables&Accessories|Cables|USBCables",
+                    "actual_price": 8.742277654738313,
+                    "discounted_price": 2.3196176710572325,
+                    "quantity": 3,
+                    "total_price": 6.958853013171698
+                }
+            ]
+        },
+        {
+            "user_id": "USR-e697f1033fc64195ac92ddad76c4b001",
+            "session_id": "SES-c8caf27e61db48be9f93eb8dde6f4ab9",
+            "order_id": "ORD-910e3f04635f4c27aa3bc5e12eba0eb8",
+            "order_status": "Abandoned",
+            "num_items_in_order": 4,
+            "order_total_value": 218.14,
+            "payment_method": "Wallet",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 6.02,
+            "shipping_address": "56894 Christopher Hill Suite 247\nLake Richardburgh, MT 42149",
+            "billing_address": "56894 Christopher Hill Suite 247\nLake Richardburgh, MT 42149",
+            "order_created_time": "2022-05-16 02:45:56",
+            "order_completed_time": null,
+            "order_products": [
+                {
+                    "order_id": "ORD-910e3f04635f4c27aa3bc5e12eba0eb8",
+                    "product_id": "B06XFTHCNY",
+                    "product_name": "CableCreation RCA to 3.5mm Male Audio Cable, 3.5mm to 2RCA Cable Male RCA Cable,Y Splitter Stereo Jack Cable for Home Theater,Subwoofer, Receiver, Speakers and More (3Feet/0.9Meter,Black)",
+                    "category": "Electronics|HomeTheater,TV&Video|Accessories|Cables|RCACables",
+                    "actual_price": 8.835528616388856,
+                    "discounted_price": 5.117146520573493,
+                    "quantity": 1,
+                    "total_price": 5.117146520573493
+                },
+                {
+                    "order_id": "ORD-910e3f04635f4c27aa3bc5e12eba0eb8",
+                    "product_id": "B083342NKJ",
+                    "product_name": "MI Braided USB Type-C Cable for Charging Adapter (Red)",
+                    "category": "Computers&Accessories|Accessories&Peripherals|Cables&Accessories|Cables|USBCables",
+                    "actual_price": 4.650891712320783,
+                    "discounted_price": 4.0680732020048955,
+                    "quantity": 3,
+                    "total_price": 12.204219606014686
+                },
+                {
+                    "order_id": "ORD-910e3f04635f4c27aa3bc5e12eba0eb8",
+                    "product_id": "B09F5Z694W",
+                    "product_name": "Canon E4570 All-in-One Wi-Fi Ink Efficient Colour Printer with FAX/ADF/Duplex Printing (Black)- Smart Speaker Compatible, Standard",
+                    "category": "Computers&Accessories|Printers,Inks&Accessories|Printers|InkjetPrinters",
+                    "actual_price": 112.19256323580836,
+                    "discounted_price": 97.3190348525469,
+                    "quantity": 2,
+                    "total_price": 194.6380697050938
+                },
+                {
+                    "order_id": "ORD-910e3f04635f4c27aa3bc5e12eba0eb8",
+                    "product_id": "B09F3PDDRF",
+                    "product_name": "Lapster USB 3.0 sata Cable for 2.5 inch SSD and HDD , USB 3.0 to SATA III Hard Driver Adapter , sata to USB Cable-(Blue)",
+                    "category": "Computers&Accessories|Accessories&Peripherals|Cables&Accessories|Cables|SATACables",
+                    "actual_price": 11.644713836111434,
+                    "discounted_price": 4.0680732020048955,
+                    "quantity": 3,
+                    "total_price": 12.204219606014686
+                }
+            ]
+        },
+        {
+            "user_id": "USR-e697f1033fc64195ac92ddad76c4b001",
+            "session_id": "SES-122becdb16cd47b383669863763f8e27",
+            "order_id": "ORD-a4fd2fb8951d42e5a4d5a3f04bfe37b5",
+            "order_status": "Abandoned",
+            "num_items_in_order": 2,
+            "order_total_value": 39.96,
+            "payment_method": "Debit Card",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 3.95,
+            "shipping_address": "56894 Christopher Hill Suite 247\nLake Richardburgh, MT 42149",
+            "billing_address": "56894 Christopher Hill Suite 247\nLake Richardburgh, MT 42149",
+            "order_created_time": "2022-05-17 03:09:49",
+            "order_completed_time": null,
+            "order_products": [
+                {
+                    "order_id": "ORD-a4fd2fb8951d42e5a4d5a3f04bfe37b5",
+                    "product_id": "B08TGG316Z",
+                    "product_name": "10k 8k 4k HDMI Cable, Certified 48Gbps 1ms Ultra High Speed HDMI 2.1 Cable 4k 120Hz 144Hz 2k 165Hz 8k 60Hz Dynamic HDR ARC eARC DTS:X Compatible for Mac Gaming PC Soundbar TV Monitor Laptop PS5 4 Xbox",
+                    "category": "Electronics|HomeTheater,TV&Video|Accessories|Cables|HDMICables",
+                    "actual_price": 27.963632124956288,
+                    "discounted_price": 11.644713836111434,
+                    "quantity": 3,
+                    "total_price": 34.9341415083343
+                },
+                {
+                    "order_id": "ORD-a4fd2fb8951d42e5a4d5a3f04bfe37b5",
+                    "product_id": "B01NBX5RSB",
+                    "product_name": "HP 65W AC Laptops Charger Adapter 4.5mm for HP Pavilion Black (Without Power Cable)",
+                    "category": "Computers&Accessories|Accessories&Peripherals|LaptopAccessories|LaptopChargers&PowerSupplies",
+                    "actual_price": 18.032404709173562,
+                    "discounted_price": 8.975405058864668,
+                    "quantity": 1,
+                    "total_price": 8.975405058864668
+                }
+            ]
+        },
+        {
+            "user_id": "USR-598adab04eb9462e875431783b2e2c26",
+            "session_id": "SES-a9bf713659fe4326b806de70c4c97291",
+            "order_id": "ORD-3388958a40924572bfa30abbfdb63ead",
+            "order_status": "Abandoned",
+            "num_items_in_order": 4,
+            "order_total_value": 87.71,
+            "payment_method": "PayPal",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 12.07,
+            "shipping_address": "6986 Gaines Camp\nEast Ashleyville, TN 68111",
+            "billing_address": "6986 Gaines Camp\nEast Ashleyville, TN 68111",
+            "order_created_time": "2022-05-18 03:22:31",
+            "order_completed_time": null,
+            "order_products": [
+                {
+                    "order_id": "ORD-3388958a40924572bfa30abbfdb63ead",
+                    "product_id": "B082T6V3DT",
+                    "product_name": "AmazonBasics New Release Nylon USB-A to Lightning Cable Cord, Fast Charging MFi Certified Charger for Apple iPhone, iPad (6-Ft, Rose Gold)",
+                    "category": "Computers&Accessories|Accessories&Peripherals|Cables&Accessories|Cables|USBCables",
+                    "actual_price": 24.47837743326728,
+                    "discounted_price": 9.313439794847884,
+                    "quantity": 1,
+                    "total_price": 9.313439794847884
+                },
+                {
+                    "order_id": "ORD-3388958a40924572bfa30abbfdb63ead",
+                    "product_id": "B09J2SCVQT",
+                    "product_name": "NutriPro Juicer Mixer Grinder - Smoothie Maker - 500 Watts (3 Jars 2 Blades)",
+                    "category": "Home&Kitchen|Kitchen&HomeAppliances|SmallKitchenAppliances|JuicerMixerGrinders",
+                    "actual_price": 58.28185103158876,
+                    "discounted_price": 22.951392936239653,
+                    "quantity": 1,
+                    "total_price": 22.951392936239653
+                },
+                {
+                    "order_id": "ORD-3388958a40924572bfa30abbfdb63ead",
+                    "product_id": "B09V17S2BG",
+                    "product_name": "boAt Wave Lite Smartwatch with 1.69\" HD Display, Heart Rate & SpO2 Level Monitor, Multiple Watch Faces, Activity Tracker, Multiple Sports Modes & IP68 (Deep Blue)",
+                    "category": "Electronics|WearableTechnology|SmartWatches",
+                    "actual_price": 81.47802774216109,
+                    "discounted_price": 17.47289893927031,
+                    "quantity": 3,
+                    "total_price": 52.418696817810925
+                },
+                {
+                    "order_id": "ORD-3388958a40924572bfa30abbfdb63ead",
+                    "product_id": "B012MQS060",
+                    "product_name": "Logitech MK215 Wireless Keyboard and Mouse Combo for Windows, 2.4 GHz Wireless, Compact Design, 2-Year Battery Life(Keyboard),5 Month Battery Life(Mouse) PC/Laptop- Black",
+                    "category": "Computers&Accessories|Accessories&Peripherals|Keyboards,Mice&InputDevices|Keyboard&MouseSets",
+                    "actual_price": 20.923184520340364,
+                    "discounted_price": 15.094999417181489,
+                    "quantity": 1,
+                    "total_price": 15.094999417181489
+                }
+            ]
+        },
+        {
+            "user_id": "USR-598adab04eb9462e875431783b2e2c26",
+            "session_id": "SES-f2e65f13833d4cc7b12b9523bf669fa2",
+            "order_id": "ORD-bfbf442c331f4854a5b519597423b19b",
+            "order_status": "Completed",
+            "num_items_in_order": 4,
+            "order_total_value": 147.19,
+            "payment_method": "Credit Card",
+            "payment_status": "Successful",
+            "promo_discount_applied": 22.52,
+            "shipping_address": "6986 Gaines Camp\nEast Ashleyville, TN 68111",
+            "billing_address": "6986 Gaines Camp\nEast Ashleyville, TN 68111",
+            "order_created_time": "2022-05-20 03:49:18",
+            "order_completed_time": "2022-05-20 03:55:08",
+            "order_products": [
+                {
+                    "order_id": "ORD-bfbf442c331f4854a5b519597423b19b",
+                    "product_id": "B07JZSG42Y",
+                    "product_name": "Borosil Prime Grill Sandwich Maker (Grey)",
+                    "category": "Home&Kitchen|Kitchen&HomeAppliances|SmallKitchenAppliances|SandwichMakers",
+                    "actual_price": 30.189998834362978,
+                    "discounted_price": 22.473481757780625,
+                    "quantity": 2,
+                    "total_price": 44.94696351556125
+                },
+                {
+                    "order_id": "ORD-bfbf442c331f4854a5b519597423b19b",
+                    "product_id": "B078HRR1XV",
+                    "product_name": "Wacom One by CTL-472/K0-CX Digital Drawing Graphics Pen Tablet (Red & Black) Small (6-inch x 3.5-inch)(15x8cm) | Battery Free Cordless Pen with 2048 Pressure Level",
+                    "category": "Computers&Accessories|Accessories&Peripherals|Keyboards,Mice&InputDevices|GraphicTablets",
+                    "actual_price": 54.773283599487115,
+                    "discounted_price": 38.50099079146754,
+                    "quantity": 3,
+                    "total_price": 115.50297237440262
+                },
+                {
+                    "order_id": "ORD-bfbf442c331f4854a5b519597423b19b",
+                    "product_id": "B084N18QZY",
+                    "product_name": "Belkin USB C to USB-C Fast Charging Type C Cable, 60W PD, 3.3 feet (1 meter) for Laptop, Personal Computer, Tablet, Smartphone - Black, USB-IF Certified",
+                    "category": "Computers&Accessories|Accessories&Peripherals|Cables&Accessories|Cables|USBCables",
+                    "actual_price": 9.896258305163771,
+                    "discounted_price": 6.982165753584333,
+                    "quantity": 1,
+                    "total_price": 6.982165753584333
+                },
+                {
+                    "order_id": "ORD-bfbf442c331f4854a5b519597423b19b",
+                    "product_id": "B00RFWNJMC",
+                    "product_name": "Airtel DigitalTV DTH Remote SD/HD/HD Recording Compatible for Television (Shining Black )",
+                    "category": "Electronics|HomeTheater,TV&Video|Accessories|RemoteControls",
+                    "actual_price": 5.816528732952558,
+                    "discounted_price": 2.2729921902319616,
+                    "quantity": 1,
+                    "total_price": 2.2729921902319616
+                }
+            ]
+        },
+        {
+            "user_id": "USR-598adab04eb9462e875431783b2e2c26",
+            "session_id": "SES-ddc6169a989942bf9677866c2b715137",
+            "order_id": "ORD-5113e88616634636921bb7b9418b82d8",
+            "order_status": "Abandoned",
+            "num_items_in_order": 4,
+            "order_total_value": 708.99,
+            "payment_method": "Wallet",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 56.69,
+            "shipping_address": "6986 Gaines Camp\nEast Ashleyville, TN 68111",
+            "billing_address": "6986 Gaines Camp\nEast Ashleyville, TN 68111",
+            "order_created_time": "2022-05-21 03:57:37",
+            "order_completed_time": null,
+            "order_products": [
+                {
+                    "order_id": "ORD-5113e88616634636921bb7b9418b82d8",
+                    "product_id": "B09XB7DPW1",
+                    "product_name": "Redmi 10A (Sea Blue, 4GB RAM, 64GB Storage) | 2 Ghz Octa Core Helio G25 | 5000 mAh Battery | Finger Print Sensor | Upto 5GB RAM with RAM Booster",
+                    "category": "Electronics|Mobiles&Accessories|Smartphones&BasicMobiles|Smartphones",
+                    "actual_price": 139.8647861056067,
+                    "discounted_price": 104.89567548665345,
+                    "quantity": 3,
+                    "total_price": 314.68702645996035
+                },
+                {
+                    "order_id": "ORD-5113e88616634636921bb7b9418b82d8",
+                    "product_id": "B098JYT4SY",
+                    "product_name": "Zebronics Zeb-Jaguar Wireless Mouse, 2.4GHz with USB Nano Receiver, High Precision Optical Tracking, 4 Buttons, Plug & Play, Ambidextrous, for PC/Mac/Laptop (Black+Grey)",
+                    "category": "Computers&Accessories|Accessories&Peripherals|Keyboards,Mice&InputDevices|Mice",
+                    "actual_price": 13.871080545518124,
+                    "discounted_price": 4.650891712320783,
+                    "quantity": 3,
+                    "total_price": 13.95267513696235
+                },
+                {
+                    "order_id": "ORD-5113e88616634636921bb7b9418b82d8",
+                    "product_id": "B00O2R38C4",
+                    "product_name": "Luminous Vento Deluxe 150 mm Exhaust Fan for Kitchen, Bathroom with Strong Air Suction, Rust Proof Body and Dust Protection Shutters (2-Year Warranty, White)",
+                    "category": "Home&Kitchen|Heating,Cooling&AirQuality|Fans|ExhaustFans",
+                    "actual_price": 17.36799160741345,
+                    "discounted_price": 11.644713836111434,
+                    "quantity": 3,
+                    "total_price": 34.9341415083343
+                },
+                {
+                    "order_id": "ORD-5113e88616634636921bb7b9418b82d8",
+                    "product_id": "B0B1YVCJ2Y",
+                    "product_name": "Acer 80 cm (32 inches) I Series HD Ready Android Smart LED TV AR32AR2841HDFL (Black)",
+                    "category": "Electronics|HomeTheater,TV&Video|Televisions|SmartTelevisions",
+                    "actual_price": 233.01084042429187,
+                    "discounted_price": 134.03660100244784,
+                    "quantity": 3,
+                    "total_price": 402.10980300734354
+                }
+            ]
+        },
+        {
+            "user_id": "USR-649d06f2d0f14bf1baa62afe081b26f5",
+            "session_id": "SES-e9a462b2a52a4299adee58a03191b8c8",
+            "order_id": "ORD-a810a77bf4e9430aae7c1e45353d4ded",
+            "order_status": "Abandoned",
+            "num_items_in_order": 1,
+            "order_total_value": 7.45,
+            "payment_method": "Wallet",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 0.22,
+            "shipping_address": "401 Taylor Courts\nRichardsonstad, NE 70496",
+            "billing_address": "401 Taylor Courts\nRichardsonstad, NE 70496",
+            "order_created_time": "2022-05-22 04:12:16",
+            "order_completed_time": null,
+            "order_products": [
+                {
+                    "order_id": "ORD-a810a77bf4e9430aae7c1e45353d4ded",
+                    "product_id": "B01GGKZ0V6",
+                    "product_name": "AmazonBasics USB Type-C to USB Type-C 2.0 Cable - 3 Feet Laptop (0.9 Meters) - White",
+                    "category": "Computers&Accessories|Accessories&Peripherals|Cables&Accessories|Cables|USBCables",
+                    "actual_price": 9.8496328243385,
+                    "discounted_price": 3.8349457978785404,
+                    "quantity": 2,
+                    "total_price": 7.669891595757081
+                }
+            ]
+        },
+        {
+            "user_id": "USR-649d06f2d0f14bf1baa62afe081b26f5",
+            "session_id": "SES-04cc0fd1ab61498caa666ad9f26aec2c",
+            "order_id": "ORD-887c4b6d2a214b648e2c45b5f8d40009",
+            "order_status": "Completed",
+            "num_items_in_order": 2,
+            "order_total_value": 53.14,
+            "payment_method": "Wallet",
+            "payment_status": "Successful",
+            "promo_discount_applied": 1.13,
+            "shipping_address": "401 Taylor Courts\nRichardsonstad, NE 70496",
+            "billing_address": "401 Taylor Courts\nRichardsonstad, NE 70496",
+            "order_created_time": "2022-05-22 04:24:20",
+            "order_completed_time": "2022-05-22 04:25:56",
+            "order_products": [
+                {
+                    "order_id": "ORD-887c4b6d2a214b648e2c45b5f8d40009",
+                    "product_id": "B07WNK1FFN",
+                    "product_name": "AGARO Esteem Multi Kettle 1.2 Litre, 600W with 3 Heating Modes & Rapid Boil Technology",
+                    "category": "Home&Kitchen|Kitchen&HomeAppliances|SmallKitchenAppliances|Kettles&HotWaterDispensers|ElectricKettles",
+                    "actual_price": 19.80417298053386,
+                    "discounted_price": 14.687026459960368,
+                    "quantity": 3,
+                    "total_price": 44.06107937988111
+                },
+                {
+                    "order_id": "ORD-887c4b6d2a214b648e2c45b5f8d40009",
+                    "product_id": "B00PVT30YI",
+                    "product_name": "Kitchen Mart Stainless Steel South Indian Filter Coffee Drip Maker, Madras Kappi, Drip Decotion Maker160ml (2 Cup)",
+                    "category": "Home&Kitchen|Kitchen&HomeAppliances|Coffee,Tea&Espresso|DripCoffeeMachines",
+                    "actual_price": 5.816528732952558,
+                    "discounted_price": 3.4036601002447835,
+                    "quantity": 3,
+                    "total_price": 10.21098030073435
+                }
+            ]
+        },
+        {
+            "user_id": "USR-649d06f2d0f14bf1baa62afe081b26f5",
+            "session_id": "SES-15fe3ffe108c4ccc85739a2bc7e7a769",
+            "order_id": "ORD-c7ec70fb89e947d9bce052670e6c04f2",
+            "order_status": "Abandoned",
+            "num_items_in_order": 2,
+            "order_total_value": 13.99,
+            "payment_method": "Bank Transfer",
+            "payment_status": "Abandoned",
+            "promo_discount_applied": 2.87,
+            "shipping_address": "401 Taylor Courts\nRichardsonstad, NE 70496",
+            "billing_address": "401 Taylor Courts\nRichardsonstad, NE 70496",
+            "order_created_time": "2022-05-22 04:42:23",
+            "order_completed_time": null,
+            "order_products": [
+                {
+                    "order_id": "ORD-c7ec70fb89e947d9bce052670e6c04f2",
+                    "product_id": "B01HJI0FS2",
+                    "product_name": "Dell MS116 1000Dpi USB Wired Optical Mouse, Led Tracking, Scrolling Wheel, Plug and Play.",
+                    "category": "Computers&Accessories|Accessories&Peripherals|Keyboards,Mice&InputDevices|Mice",
+                    "actual_price": 7.576640634106539,
+                    "discounted_price": 3.4852546916890077,
+                    "quantity": 3,
+                    "total_price": 10.455764075067023
+                },
+                {
+                    "order_id": "ORD-c7ec70fb89e947d9bce052670e6c04f2",
+                    "product_id": "B01MY839VW",
+                    "product_name": "Orient Electric Fabrijoy DIFJ10BP 1000-Watt Dry Iron, Non-Stick (White and Blue)",
+                    "category": "Home&Kitchen|Kitchen&HomeAppliances|Vacuum,Cleaning&Ironing|Irons,Steamers&Accessories|Irons|DryIrons",
+                    "actual_price": 12.70544352488635,
+                    "discounted_price": 6.399347243268446,
+                    "quantity": 1,
+                    "total_price": 6.399347243268446
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "mouse_hover_time": 28.42,
+            "scroll_depth": 36.2,
+            "cart_view_time": 163.36,
+            "num_clicks_before_purchase": 12,
+            "checkout_completion_time": 0.0,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-d0bfba99d82d47c088e2c261e38069ce",
+            "session_id": "SES-5d59ae0ad8134e1ca6888f4be4d04fb1",
+            "tracking_id": "TRK-8a84fe126e214481a1b56846ff0aa735"
+        },
+        {
+            "mouse_hover_time": 8.01,
+            "scroll_depth": 33.18,
+            "cart_view_time": 42.64,
+            "num_clicks_before_purchase": 4,
+            "checkout_completion_time": 15.42,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "session_id": "SES-8ca8beb2b1294f1d8896028e0fbd32be",
+            "tracking_id": "TRK-aaa494f00e8e4e60aa5803b6f8e3ff86"
+        },
+        {
+            "mouse_hover_time": 9.86,
+            "scroll_depth": 56.28,
+            "cart_view_time": 53.76,
+            "num_clicks_before_purchase": 9,
+            "checkout_completion_time": 47.67,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "session_id": "SES-fb042f98839240fb9c438530f8995214",
+            "tracking_id": "TRK-140937c7f00b4927ab32732128c3e808"
+        },
+        {
+            "mouse_hover_time": 16.42,
+            "scroll_depth": 25.24,
+            "cart_view_time": 31.39,
+            "num_clicks_before_purchase": 7,
+            "checkout_completion_time": 34.57,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "session_id": "SES-38e2d7474bd442368e1da630c2b644b0",
+            "tracking_id": "TRK-d110d110c63748adbcbb8ca4c22b58b0"
+        },
+        {
+            "mouse_hover_time": 10.22,
+            "scroll_depth": 27.54,
+            "cart_view_time": 51.13,
+            "num_clicks_before_purchase": 5,
+            "checkout_completion_time": 16.6,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "session_id": "SES-e5a16ee2c5dc4cea8618b2e9714ae31f",
+            "tracking_id": "TRK-860d3a0afff14637bb8cb65ba1295f5a"
+        },
+        {
+            "mouse_hover_time": 5.7,
+            "scroll_depth": 33.39,
+            "cart_view_time": 43.3,
+            "num_clicks_before_purchase": 9,
+            "checkout_completion_time": 26.53,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-9769b964ec8849c895b5cb3300254074",
+            "session_id": "SES-48c1703b07f74b57bbff5c4d82e81395",
+            "tracking_id": "TRK-3f0c8fedad304830979cc5313e5ad893"
+        },
+        {
+            "mouse_hover_time": 7.12,
+            "scroll_depth": 52.13,
+            "cart_view_time": 9.08,
+            "num_clicks_before_purchase": 1,
+            "checkout_completion_time": 6.92,
+            "payment_processing_time": 2.68,
+            "user_id": "USR-a3a8393cdcd04cbc9d817909a5bab153",
+            "session_id": "SES-27e9828e3964421abdbeadf15bcd1262",
+            "tracking_id": "TRK-691a8dda661b47b4b9c6b0459d2ae97a"
+        },
+        {
+            "mouse_hover_time": 7.47,
+            "scroll_depth": 41.68,
+            "cart_view_time": 16.97,
+            "num_clicks_before_purchase": 3,
+            "checkout_completion_time": 45.79,
+            "payment_processing_time": 8.09,
+            "user_id": "USR-377422773c034486a5782e97ec106d4e",
+            "session_id": "SES-a965a8cd5ea24033a402d19386f4d20d",
+            "tracking_id": "TRK-27b0a691d7ec488e88eacbc0f46242e5"
+        },
+        {
+            "mouse_hover_time": 36.33,
+            "scroll_depth": 45.47,
+            "cart_view_time": 3.15,
+            "num_clicks_before_purchase": 7,
+            "checkout_completion_time": 0.0,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-30ad206cecd74bf6853dd886d8e153e0",
+            "session_id": "SES-544df96c9120447a840cad90c4954bf2",
+            "tracking_id": "TRK-021acf9429bf45b49e4d82d6437c38bc"
+        },
+        {
+            "mouse_hover_time": 42.07,
+            "scroll_depth": 81.15,
+            "cart_view_time": 91.37,
+            "num_clicks_before_purchase": 6,
+            "checkout_completion_time": 0.0,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-30ad206cecd74bf6853dd886d8e153e0",
+            "session_id": "SES-5a8852e2a897479abd71486bdc5cc622",
+            "tracking_id": "TRK-4ef54dcd89a14996a976d10dd995478f"
+        },
+        {
+            "mouse_hover_time": 8.54,
+            "scroll_depth": 25.65,
+            "cart_view_time": 53.99,
+            "num_clicks_before_purchase": 6,
+            "checkout_completion_time": 13.21,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-6e6521ee0dcd49859f02cfe7f9c717f2",
+            "session_id": "SES-a802ccebd1d545bb81df5906e67664d0",
+            "tracking_id": "TRK-685f2b4db79f4231ba9f6b69c76e8f80"
+        },
+        {
+            "mouse_hover_time": 22.7,
+            "scroll_depth": 31.9,
+            "cart_view_time": 48.62,
+            "num_clicks_before_purchase": 11,
+            "checkout_completion_time": 32.29,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-785784eda0b645599c7db5969554665a",
+            "session_id": "SES-5780b31a65304c188b4eedd864757cb8",
+            "tracking_id": "TRK-967f8244b72b402c80acf89a4b12b570"
+        },
+        {
+            "mouse_hover_time": 25.98,
+            "scroll_depth": 44.97,
+            "cart_view_time": 96.75,
+            "num_clicks_before_purchase": 6,
+            "checkout_completion_time": 43.97,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-785784eda0b645599c7db5969554665a",
+            "session_id": "SES-4d1fd2ba514342a3b6b5e5de4df899ba",
+            "tracking_id": "TRK-ef932942cb2347aa893c426d60949c95"
+        },
+        {
+            "mouse_hover_time": 13.48,
+            "scroll_depth": 44.01,
+            "cart_view_time": 71.66,
+            "num_clicks_before_purchase": 11,
+            "checkout_completion_time": 20.64,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-e697f1033fc64195ac92ddad76c4b001",
+            "session_id": "SES-c8caf27e61db48be9f93eb8dde6f4ab9",
+            "tracking_id": "TRK-e551947db2b940aaacc90e944c26cb32"
+        },
+        {
+            "mouse_hover_time": 27.71,
+            "scroll_depth": 40.9,
+            "cart_view_time": 63.26,
+            "num_clicks_before_purchase": 12,
+            "checkout_completion_time": 59.12,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-e697f1033fc64195ac92ddad76c4b001",
+            "session_id": "SES-122becdb16cd47b383669863763f8e27",
+            "tracking_id": "TRK-b98f72fbaac1409189277d9e44eb98ad"
+        },
+        {
+            "mouse_hover_time": 29.16,
+            "scroll_depth": 52.61,
+            "cart_view_time": 36.74,
+            "num_clicks_before_purchase": 14,
+            "checkout_completion_time": 16.75,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-598adab04eb9462e875431783b2e2c26",
+            "session_id": "SES-a9bf713659fe4326b806de70c4c97291",
+            "tracking_id": "TRK-b67cb178490a430b9d87a0b9c95e28d8"
+        },
+        {
+            "mouse_hover_time": 14.49,
+            "scroll_depth": 56.33,
+            "cart_view_time": 67.1,
+            "num_clicks_before_purchase": 13,
+            "checkout_completion_time": 51.47,
+            "payment_processing_time": 13.24,
+            "user_id": "USR-598adab04eb9462e875431783b2e2c26",
+            "session_id": "SES-f2e65f13833d4cc7b12b9523bf669fa2",
+            "tracking_id": "TRK-9bf6fbbd41d048ed8f7ba412c09d626d"
+        },
+        {
+            "mouse_hover_time": 12.57,
+            "scroll_depth": 36.63,
+            "cart_view_time": 55.33,
+            "num_clicks_before_purchase": 15,
+            "checkout_completion_time": 53.2,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-598adab04eb9462e875431783b2e2c26",
+            "session_id": "SES-ddc6169a989942bf9677866c2b715137",
+            "tracking_id": "TRK-1a5b599f5bcc450a9895d4e4d5281bed"
+        },
+        {
+            "mouse_hover_time": 7.05,
+            "scroll_depth": 24.13,
+            "cart_view_time": 131.66,
+            "num_clicks_before_purchase": 14,
+            "checkout_completion_time": 192.24,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-649d06f2d0f14bf1baa62afe081b26f5",
+            "session_id": "SES-e9a462b2a52a4299adee58a03191b8c8",
+            "tracking_id": "TRK-d0ad7499108e47fb80f73bc806e8737d"
+        },
+        {
+            "mouse_hover_time": 26.54,
+            "scroll_depth": 66.29,
+            "cart_view_time": 100.75,
+            "num_clicks_before_purchase": 16,
+            "checkout_completion_time": 124.74,
+            "payment_processing_time": 14.12,
+            "user_id": "USR-649d06f2d0f14bf1baa62afe081b26f5",
+            "session_id": "SES-04cc0fd1ab61498caa666ad9f26aec2c",
+            "tracking_id": "TRK-a5c36a9eb0d6443597895776d875a4be"
+        },
+        {
+            "mouse_hover_time": 11.05,
+            "scroll_depth": 81.89,
+            "cart_view_time": 491.31,
+            "num_clicks_before_purchase": 29,
+            "checkout_completion_time": 433.58,
+            "payment_processing_time": 0.0,
+            "user_id": "USR-649d06f2d0f14bf1baa62afe081b26f5",
+            "session_id": "SES-15fe3ffe108c4ccc85739a2bc7e7a769",
+            "tracking_id": "TRK-6f22204b3f764614aa335852ba967486"
+        }
+    ]
+]

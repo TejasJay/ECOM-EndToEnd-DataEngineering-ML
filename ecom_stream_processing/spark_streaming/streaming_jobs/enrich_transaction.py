@@ -1,6 +1,7 @@
 import yaml
+import json
 from pyspark.sql import SparkSession
-from pyspark.sql.types import *
+from pyspark.sql.types import StructType
 from pyspark.sql.functions import col, from_json
 
 # Load YAML config
@@ -14,43 +15,30 @@ user_topic = config["kafka"]["topics"]["users"]
 starting_offsets = config["kafka"]["starting_offsets"]
 output_mode = config["output"]["mode"]
 truncate = config["output"]["truncate"]
+user_schema_path = config["schema"]["user_schema_path"]
 
 print(f"🧪 Kafka brokers being used: {brokers}")
 print(f"📡 Subscribing to topic: {user_topic}")
 print(f"⏳ Starting offset: {starting_offsets}")
 
-# Initialize Spark session
+# Initialize Spark
 spark = SparkSession.builder.appName(app_name).getOrCreate()
 spark.sparkContext.setLogLevel("WARN")
 
-# Define the user schema inline
-user_schema = StructType([
-    StructField("user_id", StringType()),
-    StructField("first_name", StringType()),
-    StructField("last_name", StringType()),
-    StructField("user_name", StringType()),
-    StructField("user_type", StringType()),
-    StructField("age_group", StringType()),
-    StructField("gender", StringType()),
-    StructField("address", StringType()),
-    StructField("city", StringType()),
-    StructField("state", StringType()),
-    StructField("zipcode", StringType()),
-    StructField("country", StringType()),
-    StructField("account_creation_date", TimestampType()),
-    StructField("last_login_time", TimestampType()),
-    StructField("preferred_language", StringType()),
-    StructField("persona", StringType())
-])
+# Load user schema from JSON
+with open(user_schema_path, "r") as f:
+    user_schema_json = json.load(f)
 
-# Read from Kafka topic
+user_schema = StructType.fromJson(user_schema_json)
+
+# Read user stream
 users_df = spark.readStream.format("kafka") \
     .option("kafka.bootstrap.servers", brokers) \
     .option("subscribe", user_topic) \
     .option("startingOffsets", starting_offsets) \
     .load()
 
-# Parse and extract fields
+# Parse Kafka JSON messages
 users_parsed = users_df.selectExpr("CAST(value AS STRING)") \
     .select(from_json(col("value"), user_schema).alias("data")) \
     .select("data.*")
@@ -64,5 +52,4 @@ users_query = users_parsed.writeStream \
     .queryName("UserStream") \
     .start()
 
-# Await termination
 spark.streams.awaitAnyTermination()

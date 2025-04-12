@@ -1,22 +1,22 @@
 {
     "type": "struct",
     "fields": [
-      {"name": "user_id", "type": "string", "nullable": true},
-      {"name": "first_name", "type": "string", "nullable": true},
-      {"name": "last_name", "type": "string", "nullable": true},
-      {"name": "user_name", "type": "string", "nullable": true},
-      {"name": "user_type", "type": "string", "nullable": true},
-      {"name": "age_group", "type": "string", "nullable": true},
-      {"name": "gender", "type": "string", "nullable": true},
-      {"name": "address", "type": "string", "nullable": true},
-      {"name": "city", "type": "string", "nullable": true},
-      {"name": "state", "type": "string", "nullable": true},
-      {"name": "zipcode", "type": "string", "nullable": true},
-      {"name": "country", "type": "string", "nullable": true},
-      {"name": "account_creation_date", "type": "timestamp", "nullable": true},
-      {"name": "last_login_time", "type": "timestamp", "nullable": true},
-      {"name": "preferred_language", "type": "string", "nullable": true},
-      {"name": "persona", "type": "string", "nullable": true}
+      { "name": "user_id", "type": "string", "nullable": true, "metadata": {} },
+      { "name": "first_name", "type": "string", "nullable": true, "metadata": {} },
+      { "name": "last_name", "type": "string", "nullable": true, "metadata": {} },
+      { "name": "user_name", "type": "string", "nullable": true, "metadata": {} },
+      { "name": "user_type", "type": "string", "nullable": true, "metadata": {} },
+      { "name": "age_group", "type": "string", "nullable": true, "metadata": {} },
+      { "name": "gender", "type": "string", "nullable": true, "metadata": {} },
+      { "name": "address", "type": "string", "nullable": true, "metadata": {} },
+      { "name": "city", "type": "string", "nullable": true, "metadata": {} },
+      { "name": "state", "type": "string", "nullable": true, "metadata": {} },
+      { "name": "zipcode", "type": "string", "nullable": true, "metadata": {} },
+      { "name": "country", "type": "string", "nullable": true, "metadata": {} },
+      { "name": "account_creation_date", "type": "timestamp", "nullable": true, "metadata": {} },
+      { "name": "last_login_time", "type": "timestamp", "nullable": true, "metadata": {} },
+      { "name": "preferred_language", "type": "string", "nullable": true, "metadata": {} },
+      { "name": "persona", "type": "string", "nullable": true, "metadata": {} }
     ]
   }
   

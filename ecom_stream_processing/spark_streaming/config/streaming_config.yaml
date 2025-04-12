@@ -7,7 +7,7 @@ kafka:
   starting_offsets: earliest
 
 schema:
-  transaction_schema_path: resources/schemas/transaction_event.schema.json
+  user_schema_path: resources/schemas/user_event.schema.json
 
 output:
   mode: append

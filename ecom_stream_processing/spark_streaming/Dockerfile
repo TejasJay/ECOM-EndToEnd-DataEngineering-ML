@@ -15,8 +15,7 @@ RUN apt-get update && \
 
 # Copy application code and configuration
 COPY streaming_jobs/ ./streaming_jobs/
-COPY config/ ./config/
-COPY resources/ ./resources/
+
 
 # 🧠 Run Spark Streaming job with packages auto-resolved at runtime
 ENTRYPOINT ["/opt/bitnami/spark/bin/spark-submit", \

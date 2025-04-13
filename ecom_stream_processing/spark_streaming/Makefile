@@ -1,20 +1,40 @@
-IMAGE_NAME=spark_streaming
-DOCKERFILE=Dockerfile
-NETWORK_NAME=kafka_kafka_net
+# Project settings
+PROJECT_NAME=spark_streaming
+SERVICE_NAME=spark-submit-job
+DOCKER_COMPOSE=docker-compose.yml
 
-# Build Docker image with explicit architecture for Mac M1 or Linux
-build:
-	DOCKER_DEFAULT_PLATFORM=linux/amd64 docker build \
-		--tag $(IMAGE_NAME) \
-		--file $(DOCKERFILE) .
+# Build and bring up the full stack
+up:
+	@echo "🚀 Starting Spark + Kafka stack with streaming job..."
+	DOCKER_DEFAULT_PLATFORM=linux/amd64 docker compose -f $(DOCKER_COMPOSE) up --build
 
-# Create Docker network if it doesn't exist
-network:
-	docker network inspect $(NETWORK_NAME) >/dev/null 2>&1 || docker network create $(NETWORK_NAME)
+# Rebuild the streaming job only (faster if only Python code changes)
+rebuild:
+	@echo "🔄 Rebuilding spark-submit-job image..."
+	DOCKER_DEFAULT_PLATFORM=linux/amd64 docker compose -f $(DOCKER_COMPOSE) build $(SERVICE_NAME)
 
-# Run container in correct Kafka network
-run: network
-	docker run --rm --network $(NETWORK_NAME) $(IMAGE_NAME)
+# Tail logs from the streaming job
+logs:
+	@echo "📜 Showing logs for $(SERVICE_NAME)..."
+	docker compose -f $(DOCKER_COMPOSE) logs -f $(SERVICE_NAME)
 
-# Shortcut for clean rebuild and run
-rebuild-run: build run
+# Tear down everything
+down:
+	@echo "🧹 Shutting down and removing containers..."
+	docker compose -f $(DOCKER_COMPOSE) down
+
+# Remove build cache
+clean:
+	@echo "🧽 Removing Docker build cache..."
+	docker builder prune -f
+
+# Shortcut to restart job service only
+restart-job:
+	docker compose -f $(DOCKER_COMPOSE) stop $(SERVICE_NAME)
+	docker compose -f $(DOCKER_COMPOSE) rm -f $(SERVICE_NAME)
+	DOCKER_DEFAULT_PLATFORM=linux/amd64 docker compose -f $(DOCKER_COMPOSE) up --build $(SERVICE_NAME)
+
+# One-liner: Build, create network, and run all services
+pipeline:
+	make clean && make rebuild && make up
+

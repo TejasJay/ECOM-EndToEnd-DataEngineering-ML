@@ -8,7 +8,7 @@ else
   BOOTSTRAP="host.docker.internal:9092"
 fi
 
-# Step 1: Generate batch data if not exists
+# Step 1: Generate batch data if not exists only
 if [ ! -f ./json_files/full_data.json ]; then
   echo "🛠 Generating batch data..."
   python3 -m pos_logs.unified_simulator --mode batch --count 10000 --avg_sessions 10

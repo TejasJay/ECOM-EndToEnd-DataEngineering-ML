@@ -3,7 +3,7 @@ FROM python:3.11-slim
 # Set working directory early.
 WORKDIR /app
 
-# ✅ Copy only requirements first to leverage Docker layer caching
+# Copy only requirements first to leverage Docker layer caching
 COPY requirements.txt .
 
 # ✅ Install system packages and Python dependencies (cached if requirements.txt unchanged )

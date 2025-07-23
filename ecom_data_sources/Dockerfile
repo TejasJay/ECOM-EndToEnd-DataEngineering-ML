@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends procps \
     && pip install --no-cache-dir -r requirements.txt \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# ✅ Then copy the rest of the source code
+# Then copy the rest of the source code
 COPY . .
 
 # ✅ Set environment variables

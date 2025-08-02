@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.4
 
-# 🐳 Base Image: Bitnami Spark includes Spark, Hadoop, Python
+# 🐳 Base Image: Bitnami Spark, includes Spark, Hadoop, Python
 FROM bitnami/spark:3.3.0
 
 # Set working directory inside container

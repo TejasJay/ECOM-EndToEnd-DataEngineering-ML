@@ -3,7 +3,7 @@
 
 This microservice generates and streams realistic e-commerce simulation data (POS logs, promotions, user activity, etc.) for downstream analytics pipelines via **batch files** or **real-time Kafka streams**.
 
-It is containerized using **Docker**, automated with **Makefile**, orchestrated with **GitHub Actions**, and intended to be run standalone or integrated into larger ML pipelines
+It is containerized using **Docker**, automated with **Makefile**, orchestrated with **GitHub Actions**, and intended to be run standalone or integrated into larger ML pipelines.
 
 ---
 

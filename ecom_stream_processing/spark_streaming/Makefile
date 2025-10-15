@@ -3,7 +3,7 @@ PROJECT_NAME=spark_streaming
 SERVICE_NAME=spark-submit-job
 DOCKER_COMPOSE=docker-compose.yml
 
-# Build and bring up the full stack
+# Build and bring up the full stack.
 up:
 	@echo "🚀 Starting Spark + Kafka stack with streaming job..."
 	DOCKER_DEFAULT_PLATFORM=linux/amd64 docker compose -f $(DOCKER_COMPOSE) up --build

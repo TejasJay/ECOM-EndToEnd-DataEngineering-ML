@@ -12,7 +12,7 @@ services:
     volumes:
       - zk_data:/var/lib/zookeeper/data  # Persist zookeeper state between restarts
     networks:
-      - kafka_net  # Connect to the same network as Kafka
+      - kafka_net  # Connect to the same network as Kafka.
 
   kafka:
     container_name: kafka

@@ -2,7 +2,7 @@ version: '3.8'  # Use Docker Compose version 3.8 (compatible with recent Docker 
 
 services:
   zookeeper:
-    image: confluentinc/cp-zookeeper:7.4.0  # Official Confluent Platform Zookeeper image
+    image: confluentinc/cp-zookeeper:7.4.0  # Official Confluent Platform Zookeeper image.
     restart: unless-stopped  # Auto-restart unless explicitly stopped
     ports:
       - "2181:2181"  # Expose Zookeeper port on host
